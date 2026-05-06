@@ -1,36 +1,50 @@
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useMemo, useRef, useState } from 'react'
 
-/** Αν υπάρχει το `src/assets/BIOFILLER.mov`, φορτώνεται από το bundler· αλλιώς `/BIOFILLER.mov` στο `public/`. */
-const biofillerAsset = import.meta.glob<string>('../assets/BIOFILLER.mov', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-}) as Record<string, string>
-const BIOFILLER_VIDEO_SRC =
-  (Object.values(biofillerAsset)[0] as string | undefined) ?? '/BIOFILLER.mov'
+/**
+ * Το πρωτότυπο .mov σε πολλά browsers (Chrome / Android κ.ά.) ΔΕΝ αποκωδικοποιείται σε <video>.
+ * Το προεπιλεγμένο asset είναι το `public/videos/biofiller.mp4` (H.264 + AAC · faststart).
+ * Προαιρετικά: στο Netlify όρισε `VITE_BIOFILLER_VIDEO_URL` = απόλυτο HTTPS URL σε .mp4.
+ */
+function resolveBiofillerMp4Src(): string {
+  const env = import.meta.env.VITE_BIOFILLER_VIDEO_URL
+  if (typeof env === 'string' && env.trim() !== '') return env.trim()
+  return '/videos/biofiller.mp4'
+}
 
 export function BiofillerSpotlight() {
   const videoRef = useRef<HTMLVideoElement>(null)
   const [active, setActive] = useState(false)
+  const [videoError, setVideoError] = useState('')
+  const src = useMemo(() => resolveBiofillerMp4Src(), [])
+
+  const resetError = useCallback(() => setVideoError(''), [])
 
   const play = useCallback(() => {
     const v = videoRef.current
     if (!v) return
-    void v.play().catch(() => {})
+    resetError()
+    void v.play().catch((e) => {
+      setVideoError(
+        e instanceof Error ? e.message : String(e || 'Το πρόγραμμα περιήγησης μπλόκαρε την αναπαραγωγή.'),
+      )
+    })
     setActive(true)
-  }, [])
+  }, [resetError])
 
   const togglePlay = useCallback(() => {
     const v = videoRef.current
     if (!v) return
     if (v.paused) {
-      void v.play().catch(() => {})
+      resetError()
+      void v.play().catch((e) => {
+        setVideoError(e instanceof Error ? e.message : 'Δεν ήταν δυνατή η έναρξη αναπαραγωγής.')
+      })
       setActive(true)
     } else {
       v.pause()
       setActive(false)
     }
-  }, [])
+  }, [resetError])
 
   const requestVideoFullscreen = useCallback(() => {
     const v = videoRef.current
@@ -77,63 +91,79 @@ export function BiofillerSpotlight() {
         <figure className="biofiller-spotlight-visual fade-in">
           <div className="biofiller-visual-aura" aria-hidden />
           <div className="biofiller-video-shell">
-              <video
-                ref={videoRef}
-                className="biofiller-video"
-                src={BIOFILLER_VIDEO_SRC}
-                playsInline
-                controls={active}
-                preload="metadata"
-                onPlay={() => setActive(true)}
-                onPause={() => setActive(false)}
-                onEnded={() => setActive(false)}
-              />
-              <div className={`biofiller-video-overlay${active ? ' is-hidden' : ''}`} aria-hidden={active}>
-                <span className="biofiller-video-overlay-shine" />
-              </div>
-              <div className="biofiller-video-actions">
-                <button
-                  type="button"
-                  className="biofiller-btn biofiller-btn-play"
-                  onClick={active ? togglePlay : play}
-                  aria-label={active ? 'Παύση βίντεο' : 'Αναπαραγωγή βίντεο'}
-                >
-                  {active ? (
-                    <span className="biofiller-btn-icon" aria-hidden>
-                      ❚❚
-                    </span>
-                  ) : (
-                    <span className="biofiller-btn-icon biofiller-btn-icon-play" aria-hidden>
-                      ▶
-                    </span>
-                  )}
-                  <span className="biofiller-btn-text">{active ? 'Παύση' : 'Αναπαραγωγή'}</span>
-                </button>
-                <button
-                  type="button"
-                  className="biofiller-btn biofiller-btn-fs"
-                  onClick={requestVideoFullscreen}
-                  aria-label="Πλήρης οθόνη"
-                >
+            <video
+              ref={videoRef}
+              className="biofiller-video"
+              playsInline
+              controls={active}
+              preload="metadata"
+              onPlay={() => {
+                setActive(true)
+                setVideoError('')
+              }}
+              onPause={() => setActive(false)}
+              onEnded={() => setActive(false)}
+              onError={() => {
+                setVideoError(
+                  'Δεν ήταν δυνατή η φόρτωση του βίντεο. Ελέγξτε τη σύνδεση ή δοκιμάστε άλλο φυλλομετρητή (π.χ. Safari).',
+                )
+                setActive(false)
+              }}
+              onLoadedData={resetError}
+            >
+              <source src={src} type="video/mp4" />
+            </video>
+            {videoError ? (
+              <p className="biofiller-video-error" role="alert">
+                {videoError}
+              </p>
+            ) : null}
+            <div className={`biofiller-video-overlay${active ? ' is-hidden' : ''}`} aria-hidden={active}>
+              <span className="biofiller-video-overlay-shine" />
+            </div>
+            <div className="biofiller-video-actions">
+              <button
+                type="button"
+                className="biofiller-btn biofiller-btn-play"
+                onClick={active ? togglePlay : play}
+                aria-label={active ? 'Παύση βίντεο' : 'Αναπαραγωγή βίντεο'}
+              >
+                {active ? (
                   <span className="biofiller-btn-icon" aria-hidden>
-                    ⛶
+                    ❚❚
                   </span>
-                  <span className="biofiller-btn-text">Πλήρης οθόνη</span>
-                </button>
-              </div>
-              {!active ? (
-                <button
-                  type="button"
-                  className="biofiller-hero-play"
-                  onClick={play}
-                  aria-label="Έναρξη αναπαραγωγής βίντεο Biofiller"
-                >
-                  <span className="biofiller-hero-play-ring" aria-hidden />
-                  <span className="biofiller-hero-play-icon" aria-hidden>
+                ) : (
+                  <span className="biofiller-btn-icon biofiller-btn-icon-play" aria-hidden>
                     ▶
                   </span>
-                </button>
-              ) : null}
+                )}
+                <span className="biofiller-btn-text">{active ? 'Παύση' : 'Αναπαραγωγή'}</span>
+              </button>
+              <button
+                type="button"
+                className="biofiller-btn biofiller-btn-fs"
+                onClick={requestVideoFullscreen}
+                aria-label="Πλήρης οθόνη"
+              >
+                <span className="biofiller-btn-icon" aria-hidden>
+                  ⛶
+                </span>
+                <span className="biofiller-btn-text">Πλήρης οθόνη</span>
+              </button>
+            </div>
+            {!active ? (
+              <button
+                type="button"
+                className="biofiller-hero-play"
+                onClick={play}
+                aria-label="Έναρξη αναπαραγωγής βίντεο Biofiller"
+              >
+                <span className="biofiller-hero-play-ring" aria-hidden />
+                <span className="biofiller-hero-play-icon" aria-hidden>
+                  ▶
+                </span>
+              </button>
+            ) : null}
           </div>
           <figcaption className="biofiller-spotlight-caption">
             Παρακολουθήστε τη θεραπεία Biofiller: πατήστε για αναπαραγωγή ή πλήρη οθόνη.
