@@ -3,6 +3,28 @@ const path = require('path')
 const { withStoreLock } = require('../utils/storeLock')
 const { DATA_DIR, AVAILABILITY_FILE, BOOKINGS_FILE } = require('../utils/paths')
 
+/** Seed από τα αρχεία του repo — χρησιμοποιείται στην πρώτη εγγραφή Blobs. */
+const seedAvailability = require('../data/availability.json')
+const seedBookings = require('../data/bookings.json')
+
+const BLOB_KEY = 'booking-state-v1'
+
+function useBlobStore() {
+  return process.env.USE_BLOB_STORAGE === 'true'
+}
+
+function getBlobStore() {
+  const { getStore } = require('@netlify/blobs')
+  return getStore({ name: 'advanced-derma-booking' })
+}
+
+function cloneSeed() {
+  return {
+    availability: JSON.parse(JSON.stringify(seedAvailability)),
+    bookings: JSON.parse(JSON.stringify(seedBookings)),
+  }
+}
+
 async function ensureDataDir() {
   await fs.mkdir(DATA_DIR, { recursive: true })
 }
@@ -32,78 +54,116 @@ function slotKey(s) {
   return `${s.clinic}|${s.date}|${s.time}`
 }
 
+async function readFullState() {
+  if (useBlobStore()) {
+    const store = getBlobStore()
+    const data = await store.get(BLOB_KEY, { type: 'json' })
+    if (data != null && Array.isArray(data.availability) && Array.isArray(data.bookings)) {
+      return { availability: data.availability, bookings: data.bookings }
+    }
+    const seed = cloneSeed()
+    await store.setJSON(BLOB_KEY, seed)
+    return seed
+  }
+
+  const availability = await readJsonArray(AVAILABILITY_FILE)
+  const bookings = await readJsonArray(BOOKINGS_FILE)
+  return { availability, bookings }
+}
+
+async function writeFullState(state) {
+  if (useBlobStore()) {
+    const store = getBlobStore()
+    await store.setJSON(BLOB_KEY, {
+      availability: state.availability,
+      bookings: state.bookings,
+    })
+    return
+  }
+
+  await atomicWriteJson(AVAILABILITY_FILE, state.availability)
+  await atomicWriteJson(BOOKINGS_FILE, state.bookings)
+}
+
 function readAvailability() {
-  return readJsonArray(AVAILABILITY_FILE)
+  return readFullState().then((s) => s.availability)
 }
 
 function readBookings() {
-  return readJsonArray(BOOKINGS_FILE)
+  return readFullState().then((s) => s.bookings)
 }
 
 async function writeAvailability(slots) {
-  await atomicWriteJson(AVAILABILITY_FILE, slots)
+  return withStoreLock(async () => {
+    const state = await readFullState()
+    state.availability = slots
+    await writeFullState(state)
+  })
 }
 
 async function writeBookings(bookings) {
-  await atomicWriteJson(BOOKINGS_FILE, bookings)
+  return withStoreLock(async () => {
+    const state = await readFullState()
+    state.bookings = bookings
+    await writeFullState(state)
+  })
 }
 
 /** Slots that exist in availability and are not yet booked */
 async function getFreeSlotsForClinic(clinic) {
   return withStoreLock(async () => {
-    const avail = await readAvailability()
-    const bookings = await readBookings()
+    const { availability, bookings } = await readFullState()
     const booked = new Set(bookings.map((b) => slotKey(b)))
-    return avail.filter((s) => s.clinic === clinic && !booked.has(slotKey(s)))
+    return availability.filter((s) => s.clinic === clinic && !booked.has(slotKey(s)))
   })
 }
 
 async function addAvailabilitySlot(slot) {
   return withStoreLock(async () => {
-    const list = await readAvailability()
-    if (list.some((s) => slotKey(s) === slotKey(slot))) {
+    const state = await readFullState()
+    if (state.availability.some((s) => slotKey(s) === slotKey(slot))) {
       const err = new Error('Slot already exists')
       err.status = 409
       throw err
     }
-    list.push(slot)
-    await writeAvailability(list)
+    state.availability.push(slot)
+    await writeFullState(state)
     return slot
   })
 }
 
 async function removeAvailabilitySlot(slot) {
   return withStoreLock(async () => {
-    const list = await readAvailability()
-    const next = list.filter((s) => slotKey(s) !== slotKey(slot))
-    if (next.length === list.length) {
+    const state = await readFullState()
+    const next = state.availability.filter((s) => slotKey(s) !== slotKey(slot))
+    if (next.length === state.availability.length) {
       const err = new Error('Slot not found')
       err.status = 404
       throw err
     }
-    await writeAvailability(next)
+    state.availability = next
+    await writeFullState(state)
     return true
   })
 }
 
 async function createBooking(record) {
   return withStoreLock(async () => {
-    const avail = await readAvailability()
-    const bookings = await readBookings()
-    const existsInAvail = avail.some((s) => slotKey(s) === slotKey(record))
+    const state = await readFullState()
+    const existsInAvail = state.availability.some((s) => slotKey(s) === slotKey(record))
     if (!existsInAvail) {
       const err = new Error('Slot is not available')
       err.status = 400
       throw err
     }
-    if (bookings.some((b) => slotKey(b) === slotKey(record))) {
+    if (state.bookings.some((b) => slotKey(b) === slotKey(record))) {
       const err = new Error('Slot already booked')
       err.status = 409
       throw err
     }
     const stored = { ...record }
-    bookings.push(stored)
-    await writeBookings(bookings)
+    state.bookings.push(stored)
+    await writeFullState(state)
     return stored
   })
 }

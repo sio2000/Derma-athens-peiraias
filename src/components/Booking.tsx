@@ -123,8 +123,11 @@ export function Booking() {
       if (raw) {
         const d = JSON.parse(raw) as Record<string, unknown>
         if (d.version === 1) {
-          hasTreatment = isTreatmentKey(d.treatment)
-          if (hasTreatment) setTreatment(d.treatment)
+          const draftTreatment = d.treatment
+          if (isTreatmentKey(draftTreatment)) {
+            hasTreatment = true
+            setTreatment(draftTreatment)
+          }
           if (isClinicId(d.loc)) setLoc(d.loc)
           if (typeof d.slot === 'string' && /^\d{2}:\d{2}$/.test(d.slot)) setSlot(d.slot)
           if (typeof d.pickedDay === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d.pickedDay)) setPickedDay(d.pickedDay)
