@@ -543,10 +543,29 @@ export function AdminPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ password }),
       })
-      const data = await res.json().catch(() => ({}))
-      if (!res.ok) throw new Error(data.error || 'Σφάλμα σύνδεσης')
-      sessionStorage.setItem('derma_admin_token', data.token)
-      setToken(data.token)
+      const text = await res.text()
+      let data: Record<string, unknown> = {}
+      try {
+        if (text) data = JSON.parse(text) as Record<string, unknown>
+      } catch {
+        /* 502/HTML από edge — όχι JSON */
+      }
+      if (!res.ok) {
+        if (res.status === 502 || res.status === 503) {
+          throw new Error(
+            'Ο διακομιστής δεν απάντησε (503/502). Συχνότερα χρειάζεται επαν-deploy ή έλεγχος των Netlify Functions, όχι λάθος κωδικός.',
+          )
+        }
+        const apiErr =
+          typeof data.error === 'string' && data.error.trim() !== '' ? data.error : ''
+        throw new Error(apiErr || 'Σφάλμα σύνδεσης')
+      }
+      const newToken = data.token
+      if (typeof newToken !== 'string' || !newToken) {
+        throw new Error('Η απάντηση του διακομιστή δεν περιλαμβάνει token')
+      }
+      sessionStorage.setItem('derma_admin_token', newToken)
+      setToken(newToken)
       setPassword('')
     } catch (err) {
       setLoginErr(err instanceof Error ? err.message : 'Σφάλμα')
