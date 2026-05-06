@@ -12,8 +12,25 @@ async function cloneSeedFromDisk() {
   return { availability, bookings }
 }
 
+/**
+ * Στο Netlify Functions το filesystem κάτω από `/var/task` είναι read-only → κάθε εγγραφή
+ * πρέπει να γίνεται μέσω Netlify Blobs, όχι `atomicWriteJson` σε `backend/data/`.
+ *
+ * - Ρητό `USE_BLOB_STORAGE=true|false|…` έχει προτεραιότητα.
+ * - Αλλιώς, αν `NETLIFY=true` (που βάζει η πλατφόρμα στις Functions), χρησιμοποιούμε Blobs.
+ * - Τοπικά `node backend/server.js`: χωρίς NETLIFY → σωματικό JSON στους δίσκους.
+ */
 function useBlobStore() {
-  return process.env.USE_BLOB_STORAGE === 'true'
+  const raw = process.env.USE_BLOB_STORAGE
+  if (typeof raw === 'string' && raw.trim() !== '') {
+    const hint = raw.trim().toLowerCase()
+    if (['0', 'false', 'no', 'off'].includes(hint)) return false
+    if (['1', 'true', 'yes', 'on'].includes(hint)) return true
+  }
+
+  if (process.env.NETLIFY === 'true' || process.env.NETLIFY === '1') return true
+
+  return false
 }
 
 function getBlobStore() {
