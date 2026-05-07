@@ -113,6 +113,10 @@ export function Doctor() {
 
           <div className="doctor-stats fade-up">
             <div className="doctor-stat">
+              <strong>15+</strong>
+              <span>Χρόνια εμπειρίας</span>
+            </div>
+            <div className="doctor-stat">
               <strong>9K+</strong>
               <span>Ασθενείς</span>
             </div>
