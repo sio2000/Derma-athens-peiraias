@@ -3,8 +3,39 @@ import { useState } from 'react';
 
 type Review = { name: string; stars: number; text: string };
 
-/* Πραγματικές αξιολογήσεις πελατών (Google) — Advanced Derma. Μεταφέρθηκαν αυτούσιες. */
+/* Πραγματικές αξιολογήσεις ασθενών (Google) — Advanced Derma. Μεταφέρθηκαν αυτούσιες. */
 const reviews: Review[] = [
+  {
+    name: 'Anastasia',
+    stars: 5,
+    text: `Αν ψάχνετε για τις απόλυτες βασίλισσες της ομορφιάς, του επαγγελματισμού και των μεταμορφωτικών αποτελεσμάτων, μην ψάχνετε άλλο από το Advance Derma. Αυτό το μέρος δεν είναι απλώς μια κλινική - είναι ένα καταφύγιο λάμψης όπου η επιστήμη συναντά τη μαγεία.
+
+Από τη στιγμή που μπαίνετε μέσα, νιώθετε σαν να μπαίνετε σε έναν κόσμο σχεδιασμένο για θεές - και αυτό το συναίσθημα γίνεται πραγματικότητα χάρη στις δύο Wonderwoman που κάνουν θαύματα:
+
+✨ Κα. Κωνσταντίνα - Η Θεά του Laser
+
+Η θεραπεία με λέιζερ από την κα. Κωνσταντίνα είναι απλά τελειότητα.
+Η τεχνική της; Ακριβής. Ανώδυνη. Δυνατή.
+Η παρουσία της; Ζεστή, πανέμορφη και γεμάτη αυτοπεποίθηση.
+Εξηγεί τα πάντα με σαφήνεια, σας φέρεται με φροντίδα και προσφέρει αποτελέσματα που αφήνουν το δέρμα σας πιο λείο, φωτεινότερο και απόλυτα άψογο. Αν το λέιζερ είχε βασίλισσα, αυτή θα ήταν αυτή.
+
+✨ Δρ. Χρύσα Ζησίμου - Η Μία και Μοναδική
+
+Έπειτα, υπάρχει η Δρ. Χρυσά Ζησίμου - η μία και μοναδική, η γιατρός που συνδυάζει την ιατρική εξειδίκευση με την καλλιτεχνική φινέτσα. Είναι ο ορισμός του επαγγελματισμού, της ομορφιάς και της δύναμης.
+Οι γνώσεις της ακτινοβολούν μέσα από κάθε συμβουλευτική συνεδρία και η προσέγγισή της σας κάνει να νιώθετε ασφαλείς, σίγουροι και ορατοί. Μια αληθινή Wonderwoman - κομψή, λαμπρή και δυνατή.
+
+💎 Advance Derma = Αποτελέσματα + Πολυτέλεια + Ενδυνάμωση
+
+Κάθε επίσκεψη μοιάζει με τον τέλειο συνδυασμό πολυτέλειας και επιστήμης.
+Κάθε θεραπεία προσφέρει ακριβώς αυτό που υπόσχεται - και ακόμα περισσότερα.
+Κάθε στιγμή εκεί σας υπενθυμίζει ότι αξίζετε το καλύτερο.
+
+Αν θέλετε να νιώσετε όμορφη, ενδυναμωμένη και να σας φροντίζουν οι πιο δυνατοί, έξυπνοι και εκπληκτικοί επαγγελματίες, το Advance Derma είναι το ΜΟΝΟ μέρος που πρέπει να πάτε.
+
+Πέντε αστέρια δεν είναι αρκετά.
+Αυτή η ομάδα αξίζει ολόκληρο τον γαλαξία. ✨🌟💫`,
+  },
+  { name: 'Khalid Alhamad', stars: 5, text: 'The Greek doctor has never seen herself in history with this art.' },
   { name: 'Aisha Yousif', stars: 5, text: 'I had an amazing experience with Dr. CHRYSOULA from Europe ❤️. She treated my skin using the Vivace Fractional Microneedle RF device combined with Exosome therapy, and I was genuinely impressed with the results. Even after my first session, I noticed my skin looked firmer, my collagen seemed noticeably stimulated, and my fine lines were visibly softer. Dr. CHRYSOULA was incredibly skilled, gentle, and made me feel comfortable throughout the entire treatment. I’m so happy with my results and can’t wait to continue my sessions. I highly recommend her to anyone looking for natural skin rejuvenation!' },
   { name: 'Helena Lena', stars: 5, text: 'ΗΤΑΝ ΟΛΑ ΓΡΉΓΟΡΑ ΚΑΙ ΥΠΕΡΟΧΑ ΚΑΙ ΚΑΘΑΡΑ. ΜΟΥ ΚΑΝΑΝΕ ΤΟΣΑ ΟΜΟΡΦΑ ΔΩΡΑ ΚΑΙ ΜΕ ΠΡΟΣΕΞΑΝ ΚΑΙ ΕΙΝΑΙ ΥΠΕΡΟΧΕΣ ΚΟΡΙΤΣΙΑ ΤΡΕΞΤΕ ΔΕΝ ΘΑ ΒΡΕΙΤΕ ΚΑΛΤΕΡΕΣ 💗🌷💗🌷🌷💗🌷🔥🔥💗🔥 Η PENNYY ΥΠΕΡΟΧΗΗΗΗΗΗΗΗΗΗ ΤΗΝ ΑΓΑΠΑΩΩΩΩ 💗🔥🔥🔥💗💗' },
   { name: 'Gabriella Stamatiou', stars: 5, text: 'Όλα τα κορίτσια είναι εξαιρετικά όπως κ η γιατρός πάντα άψογη στη δουλειά της!!! Στο παρελθόν είχα επισκεφθεί κ άλλα ιατρεία αλλά σε κανένα δεν είχα αυτό το αποτέλεσμα.' },
@@ -102,7 +133,7 @@ export default function TestimonialsSection() {
             textAlign: 'center',
           }}
         >
-          Είπαν για εμάς...
+          Είπαν για εμάς
         </h2>
         <p
           style={{
@@ -110,11 +141,90 @@ export default function TestimonialsSection() {
             fontSize: '16px',
             color: '#888',
             textAlign: 'center',
-            marginBottom: '40px',
+            marginBottom: '28px',
           }}
         >
-          {TOTAL_REVIEWS} αξιολογήσεις πελατών από το Google
+          Λίγα λόγια από τους ασθενείς μας
         </p>
+
+        {/* Google rating summary card */}
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
+          <div
+            style={{
+              backgroundColor: '#fff',
+              border: '1px solid rgb(244, 238, 224)',
+              borderRadius: '12px',
+              boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
+              padding: '24px 32px',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '10px',
+              maxWidth: '340px',
+              width: '100%',
+            }}
+          >
+            <span
+              style={{
+                fontFamily: 'HarmoniaSans, sans-serif',
+                fontSize: '18px',
+                fontWeight: 700,
+                color: '#333',
+              }}
+            >
+              κριτικές
+            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span
+                style={{
+                  fontFamily: 'HarmoniaSans, sans-serif',
+                  fontSize: '30px',
+                  fontWeight: 700,
+                  color: '#333',
+                  lineHeight: 1,
+                }}
+              >
+                4.70
+              </span>
+              <span style={{ display: 'flex', gap: '2px' }} aria-label="4.70 στα 5 αστέρια">
+                {Array.from({ length: 5 }).map((_, si) => (
+                  <span key={si} style={{ color: '#FBBC04', fontSize: '22px', lineHeight: 1 }}>★</span>
+                ))}
+              </span>
+              <span
+                style={{
+                  fontFamily: 'HarmoniaSans, sans-serif',
+                  fontSize: '15px',
+                  color: '#888',
+                }}
+              >
+                (866)
+              </span>
+            </div>
+            <a
+              href="https://www.google.com/search?sca_esv=33ade75dbb948c2a&sxsrf=APpeQntgnruITvA8NMwbOY3bFOOaE1mBsg:1783217339469&q=Advanced+Derma+Athens+%CE%91%CE%BE%CE%B9%CE%BF%CE%BB%CE%BF%CE%B3%CE%AE%CF%83%CE%B5%CE%B9%CF%82&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-__aFEiHevihIMBM0SVGfaE9oO14XsvepXJ-TLSKN5TEiwpED3LqiZTEfdtGf9qfB7sLYWvg%3D&uds=AJ5uw18nNIe6iM3ZvBqn-kM2E7cZKCbDamlH4m9EBi4wY3S_DBrGSIQi9JfZLsNZNp94WekPRXQMVHLNCGO9AkHMqB83kYH0NVSW9vRynZZ0af5LtCt08lPBe5DOgp-3UF4MJXbYOGE8XhZi6h3lDJUnmIUUUNMUow&sa=X"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                backgroundColor: '#1a73e8',
+                color: '#fff',
+                fontFamily: 'HarmoniaSans, sans-serif',
+                fontSize: '14px',
+                fontWeight: 500,
+                padding: '10px 18px',
+                borderRadius: '6px',
+                textDecoration: 'none',
+                marginTop: '4px',
+              }}
+            >
+              Κριτική σε εμάς στο Google
+            </a>
+          </div>
+        </div>
 
         <div
           className="ad-rgrid"
@@ -150,6 +260,7 @@ export default function TestimonialsSection() {
                   color: '#333',
                   lineHeight: 1.7,
                   fontStyle: 'italic',
+                  whiteSpace: 'pre-line',
                   flex: 1,
                 }}
               >

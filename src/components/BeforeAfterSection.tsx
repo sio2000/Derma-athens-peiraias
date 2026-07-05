@@ -2,9 +2,12 @@ import Image from 'next/image';
 
 /* Πριν & Μετά — κάθε εικόνα περιέχει ήδη το «πριν» (αριστερά) και το «μετά» (δεξιά).
    Αντιστοιχούν στα αρχεία αποτελεσμάτων του πελάτη (gallery/g02..g32). */
-const beforeAfter = ['g02', 'g03', 'g04', 'g11', 'g13', 'g14', 'g16', 'g17', 'g28', 'g31', 'g32'].map(
-  (g) => `/images/gallery/${g}.png`
-);
+const beforeAfter = [
+  ...['g02', 'g03', 'g04', 'g11', 'g13', 'g14', 'g16', 'g17', 'g28', 'g31'].map(
+    (g) => `/images/gallery/${g}.png`
+  ),
+  '/images/gallery/akmi.jpeg',
+];
 
 export default function BeforeAfterSection() {
   return (
@@ -61,7 +64,7 @@ export default function BeforeAfterSection() {
               style={{
                 position: 'relative',
                 width: '100%',
-                aspectRatio: '1 / 1',
+                aspectRatio: '3 / 4',
                 borderRadius: '10px',
                 overflow: 'hidden',
                 boxShadow: '0 2px 14px rgba(110, 90, 51,0.12)',
@@ -73,7 +76,8 @@ export default function BeforeAfterSection() {
                 alt={`Πριν και Μετά — αποτέλεσμα θεραπείας ${i + 1}`}
                 fill
                 loading="lazy"
-                style={{ objectFit: 'cover' }}
+                sizes="(max-width: 600px) 100vw, 260px"
+                style={{ objectFit: 'contain' }}
               />
             </div>
           ))}

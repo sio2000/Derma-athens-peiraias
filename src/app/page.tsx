@@ -82,7 +82,7 @@ export default function Home() {
             <strong>πρόληψη</strong>.
           </>
         }
-        imageSrc="/images/kilinikidermaneaeikona.png"
+        imageSrc="/images/treatment-hydrafacial.png"
         imageAlt="Κλινική Δερματολογία"
         buttonText="Δείτε τις επιλογές σας"
         buttonHref="/el/ypiresies/kliniki-dermatologia/"

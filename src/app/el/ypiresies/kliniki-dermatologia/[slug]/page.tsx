@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -70,13 +69,23 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
               boxShadow: '0 8px 28px rgba(110, 90, 51, 0.18)',
             }}
           >
-            <Image
-              src={treatment.heroImage}
-              alt={treatment.name}
-              fill
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
-              priority
-            />
+            {treatment.slug === 'smn' ? (
+              <video
+                src="/images/smn.mp4"
+                autoPlay
+                controls
+                loop
+                playsInline
+                preload="metadata"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
+            ) : (
+              <img
+                src={treatment.heroImage}
+                alt={treatment.name}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+              />
+            )}
           </div>
           <div className="ad-thero-text" style={{ flex: 1 }}>
             <h1

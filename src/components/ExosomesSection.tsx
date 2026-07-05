@@ -48,19 +48,14 @@ export default function ExosomesSection() {
           alignItems: 'center',
         }}
       >
-        {/* Title — shown on mobile only */}
-        <div
-          className="exo-title"
-          style={{
-            display: 'none',
-            fontFamily: 'HarmoniaSans, sans-serif',
-          }}
-        >
+        {/* Title (Desktop: hidden in grid order, Mobile: first) */}
+        <div className="exo-title" style={{ display: 'none', gridColumn: '1 / -1' }}>
           <p
             style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '8px',
+              fontFamily: 'HarmoniaSans, sans-serif',
               fontSize: '16px',
               fontWeight: 600,
               letterSpacing: '2px',
@@ -74,6 +69,7 @@ export default function ExosomesSection() {
           </p>
           <h2
             style={{
+              fontFamily: 'HarmoniaSans, sans-serif',
               fontSize: '52px',
               fontWeight: 700,
               color: 'rgb(110, 90, 51)',
@@ -85,6 +81,7 @@ export default function ExosomesSection() {
           </h2>
           <p
             style={{
+              fontFamily: 'HarmoniaSans, sans-serif',
               fontSize: '16px',
               color: 'rgb(147, 123, 76)',
               marginBottom: '20px',

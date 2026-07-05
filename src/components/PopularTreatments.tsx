@@ -4,23 +4,36 @@ import Link from 'next/link';
 import { prosopoTreatments, somaTreatments } from '@/data/treatments';
 
 const popularSlugs = [
+  'apotrixosi-laser-alexandrite',
   'fractional-laser',
   'bacio',
   'polynucleotides',
   'botox',
   'hydrafacial',
   'aqualyx-michelangelo',
-  'apotrixosi-laser-alexandrite',
 ];
 
 const allTreatments = [...prosopoTreatments, ...somaTreatments];
+
+// Card image overrides for the popular grid only (does not affect the treatment
+// pages or category listings).
+const popularImageOverride: Record<string, string> = {
+  hydrafacial: '/images/Hydrafacial2.png',
+  'apotrixosi-laser-alexandrite': '/images/laser-alexandrite-photo-2.png',
+  polynucleotides: '/images/rejuran2.png',
+};
+
+// These replacements are promo graphics with text/branding — show them whole
+// (objectFit: contain) instead of cropping them.
+const containSlugs = new Set(['hydrafacial', 'apotrixosi-laser-alexandrite', 'polynucleotides']);
 
 const treatments = popularSlugs
   .map((slug) => allTreatments.find((item) => item.slug === slug))
   .filter((item): item is (typeof allTreatments)[number] => Boolean(item))
   .map((treatment) => ({
     ...treatment,
-    image: treatment.thumb ?? treatment.heroImage,
+    image: popularImageOverride[treatment.slug] ?? treatment.thumb ?? treatment.heroImage,
+    contain: containSlugs.has(treatment.slug),
     href: `/el/ypiresies/${treatment.category}/${treatment.slug}/`,
   }));
 
@@ -86,12 +99,21 @@ export default function PopularTreatments() {
                 e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.12)';
               }}
             >
-              <div style={{ width: '100%', height: '300px', overflow: 'hidden', position: 'relative' }}>
+              <div
+                style={{
+                  width: '100%',
+                  height: '300px',
+                  overflow: 'hidden',
+                  position: 'relative',
+                  backgroundColor: treatment.contain ? '#fff' : undefined,
+                }}
+              >
                 <Image
                   src={treatment.image}
                   alt={treatment.name}
                   fill
-                  style={{ objectFit: 'cover', objectPosition: 'center' }}
+                  sizes="(max-width: 900px) 100vw, 400px"
+                  style={{ objectFit: treatment.contain ? 'contain' : 'cover', objectPosition: 'center' }}
                 />
               </div>
               <div

@@ -16,7 +16,7 @@ export default function NewsSection() {
           maxWidth: '1400px',
           width: '100%',
           margin: '0 auto',
-          backgroundImage: "url('/images/treatment-prx-t33.png')",
+          backgroundImage: "url('/images/dermimage.png')",
           backgroundSize: 'cover',
           backgroundPosition: 'right center',
           minHeight: '405px',

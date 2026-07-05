@@ -244,6 +244,26 @@ strong, b {
   }
 }
 
+@media (max-width: 900px) {
+  .prosopo-hero-inner {
+    flex-direction: column !important;
+    padding: 40px 24px !important;
+  }
+
+  .prosopo-hero-text {
+    order: 1 !important;
+    max-width: 100% !important;
+  }
+
+  .prosopo-hero-media {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 1 1 auto !important;
+    height: 320px !important;
+  }
+}
+
 /* ── Treatment list cards (vertical, reference style) ───────────── */
 .tl-list {
   max-width: 760px;
