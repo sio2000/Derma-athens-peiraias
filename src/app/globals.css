@@ -220,6 +220,28 @@ strong, b {
     grid-template-columns: 1fr !important;
     gap: 36px !important;
   }
+
+  .exo-title {
+    display: block !important;
+    order: 1 !important;
+    grid-column: 1 !important;
+  }
+
+  .exo-video {
+    order: 2 !important;
+    grid-column: 1 !important;
+  }
+
+  .exo-copy {
+    order: 3 !important;
+    grid-column: 1 !important;
+  }
+}
+
+@media (min-width: 901px) {
+  .exo-title {
+    display: none !important;
+  }
 }
 
 /* ── Treatment list cards (vertical, reference style) ───────────── */

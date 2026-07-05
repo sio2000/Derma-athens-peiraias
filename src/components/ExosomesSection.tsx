@@ -48,8 +48,54 @@ export default function ExosomesSection() {
           alignItems: 'center',
         }}
       >
+        {/* Title — shown on mobile only */}
+        <div
+          className="exo-title"
+          style={{
+            display: 'none',
+            fontFamily: 'HarmoniaSans, sans-serif',
+          }}
+        >
+          <p
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              fontSize: '16px',
+              fontWeight: 600,
+              letterSpacing: '2px',
+              textTransform: 'uppercase',
+              color: 'rgb(147, 123, 76)',
+              marginBottom: '14px',
+            }}
+          >
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: 'rgb(203, 179, 121)' }} />
+            Viral Trend · 2026
+          </p>
+          <h2
+            style={{
+              fontSize: '52px',
+              fontWeight: 700,
+              color: 'rgb(110, 90, 51)',
+              lineHeight: 1.1,
+              marginBottom: '8px',
+            }}
+          >
+            Exosomes
+          </h2>
+          <p
+            style={{
+              fontSize: '16px',
+              color: 'rgb(147, 123, 76)',
+              marginBottom: '20px',
+            }}
+          >
+            Η νέα γενιά κυτταρικής αναγέννησης
+          </p>
+        </div>
+
         {/* Video */}
-        <div style={{ position: 'relative' }}>
+        <div className="exo-video" style={{ position: 'relative' }}>
           <span
             style={{
               position: 'absolute',
@@ -134,7 +180,7 @@ export default function ExosomesSection() {
         </div>
 
         {/* Copy */}
-        <div>
+        <div className="exo-copy">
           <p
             style={{
               display: 'inline-flex',

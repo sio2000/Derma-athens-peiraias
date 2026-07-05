@@ -10,8 +10,7 @@ import MythsSection from '@/components/MythsSection';
 import WhyChooseUsSection from '@/components/WhyChooseUsSection';
 import WhyUsSection from '@/components/WhyUsSection';
 import ConferencesSection from '@/components/ConferencesSection';
-import BiofillerSection from '@/components/BiofillerSection';
-import ExosomesSection from '@/components/ExosomesSection';
+
 import BeforeAfterSection from '@/components/BeforeAfterSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import Footer from '@/components/Footer';
@@ -110,12 +109,6 @@ export default function Home() {
 
       {/* Scientific activity & conferences */}
       <ConferencesSection />
-
-      {/* Biofiller — Νέα Τεχνική (above reviews) */}
-      <BiofillerSection />
-
-      {/* Viral Trend · 2026 — Exosomes (above Before & After) */}
-      <ExosomesSection />
 
       {/* Before & After (between doctor bio and reviews) */}
       <BeforeAfterSection />
