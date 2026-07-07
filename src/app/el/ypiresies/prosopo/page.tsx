@@ -2,8 +2,6 @@ import Image from 'next/image';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import TreatmentList from '@/components/TreatmentList';
-import BiofillerSection from '@/components/BiofillerSection';
-import ExosomesSection from '@/components/ExosomesSection';
 import { prosopoTreatments } from '@/data/treatments';
 
 export const metadata = {
@@ -97,11 +95,8 @@ export default function ProsopoPage() {
         <TreatmentList treatments={prosopoTreatments} basePath="/el/ypiresies/prosopo" />
       </section>
 
-      {/* Biofiller */}
-      <BiofillerSection />
-
-      {/* Exosomes */}
-      <ExosomesSection />
+      {/* Biofiller & Exosomes sections moved into their respective treatment pages
+          (aytologo-biofiller / therapia-me-exosomata). */}
 
       <Footer />
     </>

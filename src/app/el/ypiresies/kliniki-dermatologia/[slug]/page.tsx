@@ -67,6 +67,7 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
               borderRadius: '10px',
               overflow: 'hidden',
               boxShadow: '0 8px 28px rgba(110, 90, 51, 0.18)',
+              backgroundColor: 'rgb(244, 238, 224)',
             }}
           >
             {treatment.slug === 'smn' ? (
@@ -77,13 +78,13 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
                 loop
                 playsInline
                 preload="metadata"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
               />
             ) : (
               <img
                 src={treatment.heroImage}
                 alt={treatment.name}
-                style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center' }}
+                style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
               />
             )}
           </div>
@@ -222,21 +223,23 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
         )}
 
         {treatment.sections &&
-          treatment.sections.map((sec) => (
-            <div key={sec.heading} style={{ marginBottom: '36px' }}>
-              <h2
-                style={{
-                  fontFamily: 'HarmoniaSans, sans-serif',
-                  fontSize: '26px',
-                  fontWeight: 700,
-                  color: 'rgb(110, 90, 51)',
-                  marginTop: '40px',
-                  marginBottom: '14px',
-                  lineHeight: 1.3,
-                }}
-              >
-                {sec.heading}
-              </h2>
+          treatment.sections.map((sec, si) => (
+            <div key={sec.heading || si} style={{ marginBottom: '36px' }}>
+              {sec.heading && (
+                <h2
+                  style={{
+                    fontFamily: 'HarmoniaSans, sans-serif',
+                    fontSize: '26px',
+                    fontWeight: 700,
+                    color: 'rgb(110, 90, 51)',
+                    marginTop: '40px',
+                    marginBottom: '14px',
+                    lineHeight: 1.3,
+                  }}
+                >
+                  {sec.heading}
+                </h2>
+              )}
               {sec.body.map((para, i) => (
                 <p
                   key={i}

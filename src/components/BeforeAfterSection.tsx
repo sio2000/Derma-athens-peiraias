@@ -2,11 +2,26 @@ import Image from 'next/image';
 
 /* Πριν & Μετά — κάθε εικόνα περιέχει ήδη το «πριν» (αριστερά) και το «μετά» (δεξιά).
    Αντιστοιχούν στα αρχεία αποτελεσμάτων του πελάτη (gallery/g02..g32). */
-const beforeAfter = [
+type BAItem = { type: 'image' | 'video'; src: string };
+
+const beforeAfter: BAItem[] = [
   ...['g02', 'g03', 'g04', 'g11', 'g13', 'g14', 'g16', 'g17', 'g28', 'g31'].map(
-    (g) => `/images/gallery/${g}.png`
+    (g): BAItem => ({ type: 'image', src: `/images/gallery/${g}.png` })
   ),
-  '/images/gallery/akmi.jpeg',
+  { type: 'image', src: '/images/gallery/akmi.jpeg' },
+  // Επιπλέον αποτελέσματα ασθενών
+  { type: 'image', src: '/images/results/9602.jpg' },
+  { type: 'image', src: '/images/results/652349.jpg' },
+  { type: 'image', src: '/images/results/5061.jpg' },
+  { type: 'image', src: '/images/results/9993.png' },
+  { type: 'image', src: '/images/results/23323.png' },
+  { type: 'image', src: '/images/results/4323.png' },
+  { type: 'image', src: '/images/results/23432.png' },
+  { type: 'image', src: '/images/results/78456.png' },
+  { type: 'image', src: '/images/results/6795.png' },
+  { type: 'video', src: '/videos/before-after-1.mp4' },
+  { type: 'image', src: '/images/results/1835.jpg' },
+  { type: 'image', src: '/images/results/portada.jpg' },
 ];
 
 export default function BeforeAfterSection() {
@@ -58,9 +73,9 @@ export default function BeforeAfterSection() {
             gap: '20px',
           }}
         >
-          {beforeAfter.map((src, i) => (
+          {beforeAfter.map((item, i) => (
             <div
-              key={src}
+              key={item.src}
               style={{
                 position: 'relative',
                 width: '100%',
@@ -71,14 +86,33 @@ export default function BeforeAfterSection() {
                 backgroundColor: 'rgb(244, 238, 224)',
               }}
             >
-              <Image
-                src={src}
-                alt={`Πριν και Μετά — αποτέλεσμα θεραπείας ${i + 1}`}
-                fill
-                loading="lazy"
-                sizes="(max-width: 600px) 100vw, 260px"
-                style={{ objectFit: 'contain' }}
-              />
+              {item.type === 'video' ? (
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  data-no-lightbox
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    backgroundColor: '#000',
+                  }}
+                >
+                  <source src={item.src} type="video/mp4" />
+                </video>
+              ) : (
+                <Image
+                  src={item.src}
+                  alt={`Πριν και Μετά — αποτέλεσμα θεραπείας ${i + 1}`}
+                  fill
+                  loading="lazy"
+                  sizes="(max-width: 600px) 100vw, 260px"
+                  style={{ objectFit: 'contain' }}
+                />
+              )}
             </div>
           ))}
         </div>

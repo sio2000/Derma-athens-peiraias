@@ -14,51 +14,80 @@ export default function SomaPage() {
     <>
       <Navbar />
 
-      {/* Hero */}
+      {/* Hero — same structure as the prosopo hero (text + clean image, side by
+          side on desktop; on mobile the title/copy stacks first, image below). */}
       <section
+        className="prosopo-hero"
         style={{
-          position: 'relative',
           width: '100%',
-          height: '420px',
-          backgroundColor: 'rgb(110, 90, 51)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          overflow: 'hidden',
+          backgroundColor: 'rgb(244, 238, 224)',
           marginTop: '135px',
+          overflow: 'hidden',
         }}
       >
-        <Image
-          src="/images/body-treatments.png"
-          alt="Θεραπείες Σώματος"
-          fill
-          style={{ objectFit: 'cover', opacity: 0.35 }}
-          priority
-        />
-        <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', padding: '0 24px' }}>
-          <h1
+        <div
+          className="prosopo-hero-inner"
+          style={{
+            maxWidth: '1280px',
+            margin: '0 auto',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '48px',
+            padding: '56px 64px',
+            minHeight: '420px',
+          }}
+        >
+          <div className="prosopo-hero-text" style={{ flex: 1, maxWidth: '560px' }}>
+            <h1
+              style={{
+                fontFamily: 'HarmoniaSans, sans-serif',
+                fontSize: 'clamp(32px, 4.2vw, 52px)',
+                fontWeight: 700,
+                color: 'rgb(110, 90, 51)',
+                lineHeight: 1.15,
+                margin: '0 0 20px',
+              }}
+            >
+              Σώμα
+            </h1>
+            <p
+              style={{
+                fontFamily: 'HarmoniaSans, sans-serif',
+                fontSize: '16px',
+                color: '#5a4a30',
+                lineHeight: 1.8,
+                margin: 0,
+              }}
+            >
+              Η φροντίδα του σώματος βασίζεται στον συνδυασμό ιατρικής{' '}
+              <strong>γνώσης</strong>, σύγχρονης <strong>τεχνολογίας</strong> και εξατομικευμένων{' '}
+              <strong>πρωτοκόλλων</strong>. Κάθε θεραπεία σχεδιάζεται σύμφωνα με τις ανάγκες του σώματος, με στόχο τη βελτίωση της{' '}
+              <strong>υφής</strong> του δέρματος, τη <strong>σύσφιγξη</strong> και τη συνολική{' '}
+              <strong>αναδιαμόρφωση της σιλουέτας</strong>. Χρησιμοποιούνται προηγμένα μηχανήματα και πιστοποιημένα υλικά, με έμφαση στην ασφάλεια και στο φυσικό αποτέλεσμα.
+            </p>
+          </div>
+
+          <div
+            className="prosopo-hero-media"
             style={{
-              fontFamily: 'HarmoniaSans, sans-serif',
-              fontSize: 'clamp(32px, 5vw, 56px)',
-              fontWeight: 700,
-              color: '#fff',
-              marginBottom: '16px',
+              flex: '0 0 46%',
+              maxWidth: '46%',
+              position: 'relative',
+              height: '380px',
+              borderRadius: '10px',
+              overflow: 'hidden',
+              boxShadow: '0 8px 28px rgba(110, 90, 51, 0.18)',
             }}
           >
-            Θεραπείες Σώματος
-          </h1>
-          <p
-            style={{
-              fontFamily: 'HarmoniaSans, sans-serif',
-              fontSize: '16px',
-              color: 'rgba(255,255,255,0.9)',
-              maxWidth: '600px',
-              margin: '0 auto',
-              lineHeight: 1.6,
-            }}
-          >
-            Αισθητικές λύσεις για σύσφιξη, κυτταρίτιδα και αναδιαμόρφωση σιλουέτας
-          </p>
+            <Image
+              src="/images/body-treatments.png"
+              alt="Θεραπείες Σώματος"
+              fill
+              sizes="(max-width: 900px) 100vw, 46vw"
+              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              priority
+            />
+          </div>
         </div>
       </section>
 

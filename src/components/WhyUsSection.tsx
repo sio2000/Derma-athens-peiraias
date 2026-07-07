@@ -41,7 +41,7 @@ export default function WhyUsSection() {
         <div className="ad-whyus-imgcol" style={{ flex: '0 0 443px' }}>
           <Image
             className="ad-whyus-img"
-            src="/images/doctor.jpg"
+            src="/images/doctor-7.jpg"
             alt="Δρ. Χρυσούλα Ζήσιμου — Δερματολόγος, Αφροδισιολόγος"
             width={443}
             height={520}

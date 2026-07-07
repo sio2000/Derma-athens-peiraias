@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import TreatmentCTA from '@/components/TreatmentCTA';
-import TreatmentMedia from '@/components/TreatmentMedia';
+import TreatmentContent from '@/components/TreatmentContent';
 import { somaTreatments } from '@/data/treatments';
 
 export async function generateStaticParams() {
@@ -23,13 +23,6 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 export default function SomaTreatmentPage({ params }: { params: { slug: string } }) {
   const treatment = somaTreatments.find((t) => t.slug === params.slug);
   if (!treatment) notFound();
-
-  // One image goes in the hero; every other image/video is collected and shown
-  // at the bottom of the page (after the text, before the CTA).
-  const galleryMedia = [
-    ...(treatment.sections?.flatMap((s) => s.media ?? []) ?? []),
-    ...(treatment.media ?? []),
-  ];
 
   return (
     <>
@@ -68,13 +61,15 @@ export default function SomaTreatmentPage({ params }: { params: { slug: string }
               borderRadius: '10px',
               overflow: 'hidden',
               boxShadow: '0 8px 28px rgba(110, 90, 51, 0.18)',
+              backgroundColor: 'rgb(244, 238, 224)',
             }}
           >
             <Image
               src={treatment.heroImage}
               alt={treatment.name}
               fill
-              style={{ objectFit: 'cover', objectPosition: 'center' }}
+              sizes="(max-width: 900px) 100vw, 46vw"
+              style={{ objectFit: 'contain', objectPosition: 'center' }}
               priority
             />
           </div>
@@ -179,74 +174,8 @@ export default function SomaTreatmentPage({ params }: { params: { slug: string }
         ))}
       </div>
 
-      {/* Content */}
-      <section style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 24px 80px' }}>
-        {treatment.bullets && treatment.bullets.length > 0 && (
-          <ul
-            style={{
-              listStyle: 'none',
-              padding: 0,
-              margin: '0 0 40px',
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
-              gap: '12px 24px',
-            }}
-          >
-            {treatment.bullets.map((b) => (
-              <li
-                key={b}
-                style={{
-                  display: 'flex',
-                  gap: '10px',
-                  alignItems: 'flex-start',
-                  fontFamily: 'HarmoniaSans, sans-serif',
-                  fontSize: '16px',
-                  color: '#444',
-                  lineHeight: 1.5,
-                }}
-              >
-                <span style={{ flexShrink: 0, width: '7px', height: '7px', borderRadius: '50%', backgroundColor: 'rgb(203, 179, 121)', marginTop: '7px' }} />
-                {b}
-              </li>
-            ))}
-          </ul>
-        )}
-
-        {treatment.sections &&
-          treatment.sections.map((sec) => (
-            <div key={sec.heading} style={{ marginBottom: '36px' }}>
-              <h2
-                style={{
-                  fontFamily: 'HarmoniaSans, sans-serif',
-                  fontSize: '26px',
-                  fontWeight: 700,
-                  color: 'rgb(110, 90, 51)',
-                  marginTop: '40px',
-                  marginBottom: '14px',
-                  lineHeight: 1.3,
-                }}
-              >
-                {sec.heading}
-              </h2>
-              {sec.body.map((para, i) => (
-                <p
-                  key={i}
-                  style={{
-                    fontFamily: 'HarmoniaSans, sans-serif',
-                    fontSize: '16px',
-                    lineHeight: 1.8,
-                    color: '#444',
-                    marginBottom: '14px',
-                  }}
-                >
-                  {para}
-                </p>
-              ))}
-            </div>
-          ))}
-
-        {galleryMedia.length > 0 && <TreatmentMedia media={galleryMedia} />}
-      </section>
+      {/* Content — shared renderer (inline media, two-column bullet lists) */}
+      <TreatmentContent treatment={treatment} />
 
       <TreatmentCTA />
 
