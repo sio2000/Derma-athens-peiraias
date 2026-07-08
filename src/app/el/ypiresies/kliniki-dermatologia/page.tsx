@@ -82,7 +82,7 @@ export default function KlinikiDermatologiaPage() {
             }}
           >
             <Image
-              src="/images/clinical-dermatology.png"
+              src="/images/kliniki.png"
               alt="Κλινική Δερματολογία"
               fill
               sizes="(max-width: 900px) 100vw, 46vw"
@@ -90,6 +90,17 @@ export default function KlinikiDermatologiaPage() {
               priority
             />
           </div>
+        </div>
+      </section>
+
+      {/* Video section */}
+      <section style={{ maxWidth: '800px', margin: '0 auto', padding: '0 24px 64px' }}>
+        <div style={{ width: '100%', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 8px 28px rgba(110, 90, 51, 0.18)' }}>
+          <video
+            src="/images/IMG_2632.mp4"
+            controls
+            style={{ width: '100%', display: 'block', maxHeight: '400px' }}
+          />
         </div>
       </section>
 
