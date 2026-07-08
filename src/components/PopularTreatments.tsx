@@ -25,7 +25,7 @@ const popularImageOverride: Record<string, string> = {
 
 // These replacements are promo graphics with text/branding — show them whole
 // (objectFit: contain) instead of cropping them.
-const containSlugs = new Set(['hydrafacial', 'apotrixosi-laser-alexandrite', 'polynucleotides']);
+const containSlugs = new Set(['hydrafacial', 'apotrixosi-laser-alexandrite', 'polynucleotides', 'aqualyx-michelangelo']);
 
 const treatments = popularSlugs
   .map((slug) => allTreatments.find((item) => item.slug === slug))

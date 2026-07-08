@@ -3420,7 +3420,7 @@ export const somaTreatments: Treatment[] = [
     tagline: 'Ενέσιμη αντιμετώπιση του επίμονου τοπικού λίπους, χωρίς χειρουργείο.',
     description:
       'Η ενέσιμη λιποδιάλυση είναι μια προηγμένη μέθοδος που στοχεύει τοπικά και εστιακά το επίμονο πάχος. Δρα με δεοξυχολικό οξύ — ένα είδος χολικού οξέος που παράγεται φυσιολογικά από τον οργανισμό — το οποίο βοηθά στην αποδόμηση του λίπους.',
-    heroImage: '/images/lipodialisi.png',
+    heroImage: '/images/aqualyxherosection.png',
     thumb: '/images/lipodialisi.png',
     sections: [
       {

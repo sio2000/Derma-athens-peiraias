@@ -19,7 +19,6 @@ const beforeAfter: BAItem[] = [
   { type: 'image', src: '/images/results/23432.png' },
   { type: 'image', src: '/images/results/78456.png' },
   { type: 'image', src: '/images/results/6795.png' },
-  { type: 'video', src: '/videos/before-after-1.mp4' },
   { type: 'image', src: '/images/results/1835.jpg' },
   { type: 'image', src: '/images/results/portada.jpg' },
 ];
