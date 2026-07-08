@@ -2185,7 +2185,7 @@ export const prosopoTreatments: Treatment[] = [
 {
     slug: 'apotrixosi-laser-alexandrite',
     name: 'Αποτρίχωση Laser Alexandrite',
-    category: 'soma',
+    category: 'prosopo',
     tagline: 'Δίνει τέλος στην ανεπιθύμητη τριχοφυΐα, γρήγορα και με ασφάλεια, σε πρόσωπο και σώμα.',
     description:
       'Έχετε κουραστεί με το ξυραφάκι, το κερί, τη χαλάουα; Η Αποτρίχωση Laser Alexadrite δίνει τέλος στην ανεπιθύμητη τριχοφυΐα με τρόπο γρήγορο και ασφαλή, σε πρόσωπο και σώμα!',

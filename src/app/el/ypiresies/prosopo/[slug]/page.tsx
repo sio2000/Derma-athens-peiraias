@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -68,21 +67,17 @@ export default function ProsopoTreatmentPage({ params }: { params: { slug: strin
             style={{
               flex: '0 0 46%',
               maxWidth: '46%',
-              position: 'relative',
-              height: '380px',
               borderRadius: '10px',
               overflow: 'hidden',
               boxShadow: '0 8px 28px rgba(110, 90, 51, 0.18)',
-              backgroundColor: 'rgb(244, 238, 224)',
+              lineHeight: 0,
             }}
           >
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={treatment.heroImage}
               alt={treatment.name}
-              fill
-              sizes="(max-width: 900px) 100vw, 46vw"
-              style={{ objectFit: 'contain', objectPosition: 'center' }}
-              priority
+              style={{ display: 'block', width: '100%', height: 'auto' }}
             />
           </div>
           <div className="ad-thero-text" style={{ flex: 1 }}>

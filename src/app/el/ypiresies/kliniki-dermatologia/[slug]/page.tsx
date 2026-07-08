@@ -62,12 +62,10 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
             style={{
               flex: '0 0 46%',
               maxWidth: '46%',
-              position: 'relative',
-              height: '380px',
               borderRadius: '10px',
               overflow: 'hidden',
               boxShadow: '0 8px 28px rgba(110, 90, 51, 0.18)',
-              backgroundColor: 'rgb(244, 238, 224)',
+              lineHeight: 0,
             }}
           >
             {treatment.slug === 'smn' ? (
@@ -78,13 +76,13 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
                 loop
                 playsInline
                 preload="metadata"
-                style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+                style={{ width: '100%', height: 'auto', display: 'block' }}
               />
             ) : (
               <img
                 src={treatment.heroImage}
                 alt={treatment.name}
-                style={{ width: '100%', height: '100%', objectFit: 'contain', objectPosition: 'center' }}
+                style={{ display: 'block', width: '100%', height: 'auto' }}
               />
             )}
           </div>

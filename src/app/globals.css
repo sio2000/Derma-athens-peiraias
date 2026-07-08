@@ -524,7 +524,7 @@ strong, b {
 
   /* Treatment hero: stack copy over bright image (title first on mobile) */
   .ad-thero-inner { flex-direction: column-reverse !important; padding: 32px 24px !important; gap: 28px !important; min-height: 0 !important; }
-  .ad-thero-img { flex: none !important; width: 100% !important; max-width: 100% !important; height: 280px !important; }
+  .ad-thero-img { flex: none !important; width: 100% !important; max-width: 100% !important; height: auto !important; }
   .ad-thero-text { width: 100% !important; }
 
   /* Popular treatments: 3 → 2 columns */
