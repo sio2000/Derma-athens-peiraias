@@ -40,3 +40,7 @@ next-env.d.ts
 
 # local editor / agent config
 .claude/
+
+# large unused source videos (exceed GitHub limits)
+*.MOV
+*.mov

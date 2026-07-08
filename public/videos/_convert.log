@@ -1,0 +1,1079 @@
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 00000161d2dfa080] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_3521.MOV':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 8900858
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-01-18T21:25:32Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:15.63, start: 0.000000, bitrate: 4563 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main 10) (hvc1 / 0x31637668), yuv420p10le(tv, bt2020nc/bt2020/arib-std-b67), 1080x1920, 4428 kb/s, 30 fps, 30 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-01-18T21:25:32.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      DOVI configuration record: version: 1.0, profile: 8, level: 4, rpu flag: 1, el flag: 0, bl flag: 1, compatibility id: 4, compression: 0
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 125 kb/s (default)
+    Metadata:
+      creation_time   : 2026-01-18T21:25:32.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 00000161d2e14000] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000161d2e14000] profile High 10, level 4.0, 4:2:0, 10-bit
+[libx264 @ 00000161d2e14000] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=81 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/yaluroniko-oxy.mp4':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 8900858
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p10le(tv, bt2020nc/bt2020/arib-std-b67, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-01-18T21:25:32.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      Ambient viewing environment: ambient_illuminance=314.000000, ambient_light_x=0.312700, ambient_light_y=0.329000
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-01-18T21:25:32.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.51    frame=    9 fps=8.8 q=44.0 size=       0KiB time=00:00:00.23 bitrate=   1.6kbits/s speed=0.228x elapsed=0:00:01.02    frame=   44 fps= 28 q=44.0 size=     256KiB time=00:00:01.40 bitrate=1498.2kbits/s speed=0.906x elapsed=0:00:01.54    frame=   81 fps= 39 q=44.0 size=     512KiB time=00:00:02.63 bitrate=1592.9kbits/s speed=1.28x elapsed=0:00:02.05    frame=  121 fps= 47 q=44.0 size=     768KiB time=00:00:03.96 bitrate=1586.2kbits/s speed=1.54x elapsed=0:00:02.57    frame=  158 fps= 51 q=44.0 size=    1024KiB time=00:00:05.20 bitrate=1613.3kbits/s speed=1.68x elapsed=0:00:03.09    frame=  194 fps= 54 q=44.0 size=    1280KiB time=00:00:06.40 bitrate=1638.5kbits/s speed=1.78x elapsed=0:00:03.60    frame=  227 fps= 55 q=44.0 size=    1792KiB time=00:00:07.50 bitrate=1957.4kbits/s speed=1.82x elapsed=0:00:04.11    frame=  264 fps= 57 q=44.0 size=    2048KiB time=00:00:08.73 bitrate=1921.1kbits/s speed=1.88x elapsed=0:00:04.64    frame=  301 fps= 58 q=44.0 size=    2304KiB time=00:00:09.96 bitrate=1893.8kbits/s speed=1.94x elapsed=0:00:05.14    frame=  335 fps= 59 q=44.0 size=    2560KiB time=00:00:11.10 bitrate=1889.4kbits/s speed=1.96x elapsed=0:00:05.66    frame=  372 fps= 60 q=44.0 size=    3072KiB time=00:00:12.33 bitrate=2040.5kbits/s speed=1.99x elapsed=0:00:06.19    frame=  423 fps= 63 q=44.0 size=    3328KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:06.70    [mp4 @ 00000161d2e22c40] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000161d2dfdc00] video:3540KiB audio:245KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.470620%
+frame=  469 fps= 66 q=-1.0 Lsize=    3804KiB time=00:00:15.56 bitrate=2001.6kbits/s speed= 2.2x elapsed=0:00:07.07    
+[libx264 @ 00000161d2e14000] frame I:2     Avg QP:34.18  size: 45570
+[libx264 @ 00000161d2e14000] frame P:144   Avg QP:36.95  size: 15294
+[libx264 @ 00000161d2e14000] frame B:323   Avg QP:40.08  size:  4121
+[libx264 @ 00000161d2e14000] consecutive B-frames:  6.2%  3.8%  6.4% 83.6%
+[libx264 @ 00000161d2e14000] mb I  I16..4: 42.7% 52.6%  4.7%
+[libx264 @ 00000161d2e14000] mb P  I16..4: 12.1% 11.6%  0.4%  P16..4: 33.4%  4.0%  1.3%  0.0%  0.0%    skip:37.2%
+[libx264 @ 00000161d2e14000] mb B  I16..4:  0.6%  0.9%  0.0%  B16..8: 21.0%  1.3%  0.1%  direct: 0.4%  skip:75.7%  L0:40.7% L1:57.1% BI: 2.2%
+[libx264 @ 00000161d2e14000] 8x8 transform intra:49.6% inter:91.2%
+[libx264 @ 00000161d2e14000] coded y,uvDC,uvAC intra: 17.2% 30.5% 2.7% inter: 3.7% 3.5% 0.0%
+[libx264 @ 00000161d2e14000] i16 v,h,dc,p: 30% 22%  7% 41%
+[libx264 @ 00000161d2e14000] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 13% 32%  4%  6%  6%  5%  6%  4%
+[libx264 @ 00000161d2e14000] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 14% 19%  5% 10%  9%  7%  5%  3%
+[libx264 @ 00000161d2e14000] i8c dc,h,v,p: 70% 10% 16%  4%
+[libx264 @ 00000161d2e14000] Weighted P-Frames: Y:0.7% UV:0.7%
+[libx264 @ 00000161d2e14000] ref P L0: 69.9% 20.6%  9.5%
+[libx264 @ 00000161d2e14000] ref B L0: 91.5%  6.6%  2.0%
+[libx264 @ 00000161d2e14000] ref B L1: 97.7%  2.3%
+[libx264 @ 00000161d2e14000] kb/s:1854.79
+[aac @ 00000161d32c2200] Qavg: 498.501
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 000002337c16a080] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_1943.MOV':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 18565637
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-05-29T14:17:48Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:13.21, start: 0.000000, bitrate: 11251 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 1080x1920, 11249 kb/s, 30 fps, 30 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-05-29T14:17:48.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 2 kb/s (default)
+    Metadata:
+      creation_time   : 2026-05-29T14:17:48.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000002337c5d74c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000002337c5d74c0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000002337c5d74c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/lip-filler-1.mp4':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 18565637
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-05-29T14:17:48.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-05-29T14:17:48.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.51    frame=   25 fps= 24 q=32.0 size=     512KiB time=00:00:00.76 bitrate=5471.3kbits/s speed=0.745x elapsed=0:00:01.02    frame=   68 fps= 44 q=32.0 size=    1280KiB time=00:00:02.20 bitrate=4766.4kbits/s speed=1.41x elapsed=0:00:01.55    frame=  112 fps= 54 q=32.0 size=    2048KiB time=00:00:03.66 bitrate=4575.7kbits/s speed=1.77x elapsed=0:00:02.06    frame=  159 fps= 62 q=32.0 size=    2816KiB time=00:00:05.23 bitrate=4408.1kbits/s speed=2.03x elapsed=0:00:02.57    frame=  207 fps= 67 q=32.0 size=    3584KiB time=00:00:06.83 bitrate=4296.7kbits/s speed=2.21x elapsed=0:00:03.09    frame=  255 fps= 70 q=32.0 size=    4352KiB time=00:00:08.43 bitrate=4227.5kbits/s speed=2.33x elapsed=0:00:03.61    frame=  299 fps= 72 q=32.0 size=    4864KiB time=00:00:09.90 bitrate=4024.9kbits/s speed= 2.4x elapsed=0:00:04.13    frame=  346 fps= 74 q=32.0 size=    5632KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:04.64    [mp4 @ 000002337c1850c0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002337c16d6c0] video:7390KiB audio:3KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.207689%
+frame=  396 fps= 77 q=-1.0 Lsize=    7408KiB time=00:00:13.13 bitrate=4621.0kbits/s speed=2.55x elapsed=0:00:05.15    
+[libx264 @ 000002337c5d74c0] frame I:2     Avg QP:25.91  size: 98598
+[libx264 @ 000002337c5d74c0] frame P:105   Avg QP:27.23  size: 45066
+[libx264 @ 000002337c5d74c0] frame B:289   Avg QP:30.50  size:  9125
+[libx264 @ 000002337c5d74c0] consecutive B-frames:  1.8%  2.0%  2.3% 93.9%
+[libx264 @ 000002337c5d74c0] mb I  I16..4: 15.7% 71.5% 12.8%
+[libx264 @ 000002337c5d74c0] mb P  I16..4:  3.2% 10.8%  1.5%  P16..4: 45.0% 12.4%  6.7%  0.0%  0.0%    skip:20.5%
+[libx264 @ 000002337c5d74c0] mb B  I16..4:  0.2%  0.8%  0.1%  B16..8: 38.3%  2.5%  0.6%  direct: 1.4%  skip:56.2%  L0:38.8% L1:55.8% BI: 5.5%
+[libx264 @ 000002337c5d74c0] 8x8 transform intra:70.5% inter:80.7%
+[libx264 @ 000002337c5d74c0] coded y,uvDC,uvAC intra: 53.5% 40.2% 4.8% inter: 12.5% 8.4% 0.1%
+[libx264 @ 000002337c5d74c0] i16 v,h,dc,p: 24% 27%  8% 41%
+[libx264 @ 000002337c5d74c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 12% 19%  5%  7% 11%  4% 11%  4%
+[libx264 @ 000002337c5d74c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31%  9% 12%  6% 11% 15%  4% 10%  2%
+[libx264 @ 000002337c5d74c0] i8c dc,h,v,p: 65% 14% 18%  3%
+[libx264 @ 000002337c5d74c0] Weighted P-Frames: Y:10.5% UV:7.6%
+[libx264 @ 000002337c5d74c0] ref P L0: 62.8% 22.5% 12.2%  2.3%  0.1%
+[libx264 @ 000002337c5d74c0] ref B L0: 96.8%  2.6%  0.6%
+[libx264 @ 000002337c5d74c0] ref B L1: 98.9%  1.1%
+[libx264 @ 000002337c5d74c0] kb/s:4585.64
+[aac @ 000002337c63dec0] Qavg: 65536.000
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 000001a939dfa080] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_2647.MOV':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 27630706
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-07-03T10:01:33Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:26.56, start: 0.000000, bitrate: 8329 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 1080x1920, 8198 kb/s, 28.01 fps, 120 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-07-03T10:01:33.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 124 kb/s (default)
+    Metadata:
+      creation_time   : 2026-07-03T10:01:33.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000001a939e1ebc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001a939e1ebc0] profile High, level 5.1, 4:2:0, 8-bit
+[libx264 @ 000001a939e1ebc0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/lip-filler-2.mp4':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 27630706
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, q=2-31, 120 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-07-03T10:01:33.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-07-03T10:01:33.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    4 fps=0.0 q=31.0 size=       0KiB time=00:00:00.08 bitrate=   4.6kbits/s speed=0.165x elapsed=0:00:00.50    frame=   49 fps= 48 q=32.0 size=     256KiB time=00:00:01.95 bitrate=1071.1kbits/s speed=1.92x elapsed=0:00:01.02    frame=  102 fps= 66 q=32.0 size=     768KiB time=00:00:03.89 bitrate=1616.7kbits/s speed=2.53x elapsed=0:00:01.54    frame=  158 fps= 76 q=32.0 size=    1280KiB time=00:00:05.75 bitrate=1821.0kbits/s speed=2.79x elapsed=0:00:02.06    frame=  213 fps= 83 q=32.0 size=    1536KiB time=00:00:07.59 bitrate=1657.5kbits/s speed=2.94x elapsed=0:00:02.57    frame=  267 fps= 86 q=32.0 size=    2048KiB time=00:00:09.39 bitrate=1786.4kbits/s speed=3.04x elapsed=0:00:03.09    frame=  314 fps= 87 q=32.0 size=    2560KiB time=00:00:10.95 bitrate=1913.8kbits/s speed=3.03x elapsed=0:00:03.61    frame=  361 fps= 88 q=32.0 size=    3328KiB time=00:00:12.52 bitrate=2176.7kbits/s speed=3.04x elapsed=0:00:04.12    frame=  416 fps= 90 q=32.0 size=    3840KiB time=00:00:14.35 bitrate=2190.9kbits/s speed=3.09x elapsed=0:00:04.64    frame=  467 fps= 91 q=32.0 size=    4352KiB time=00:00:16.05 bitrate=2220.2kbits/s speed=3.11x elapsed=0:00:05.15    frame=  516 fps= 91 q=32.0 size=    4864KiB time=00:00:17.69 bitrate=2252.3kbits/s speed=3.12x elapsed=0:00:05.67    frame=  581 fps= 94 q=31.0 size=    5120KiB time=00:00:19.85 bitrate=2112.1kbits/s speed= 3.2x elapsed=0:00:06.20    frame=  647 fps= 97 q=31.0 size=    5632KiB time=00:00:22.43 bitrate=2056.7kbits/s speed=3.35x elapsed=0:00:06.70    [mp4 @ 000001a93a262b80] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001a93a262a80] video:5676KiB audio:419KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.436579%
+frame=  744 fps=105 q=-1.0 Lsize=    6121KiB time=00:00:26.47 bitrate=1894.1kbits/s speed=3.73x elapsed=0:00:07.09    
+[libx264 @ 000001a939e1ebc0] frame I:9     Avg QP:21.48  size: 37602
+[libx264 @ 000001a939e1ebc0] frame P:219   Avg QP:24.02  size: 16558
+[libx264 @ 000001a939e1ebc0] frame B:516   Avg QP:26.51  size:  3579
+[libx264 @ 000001a939e1ebc0] consecutive B-frames:  6.5%  1.9%  4.0% 87.6%
+[libx264 @ 000001a939e1ebc0] mb I  I16..4: 25.5% 71.1%  3.5%
+[libx264 @ 000001a939e1ebc0] mb P  I16..4:  7.2% 12.5%  0.2%  P16..4: 31.6%  4.8%  2.7%  0.0%  0.0%    skip:41.0%
+[libx264 @ 000001a939e1ebc0] mb B  I16..4:  0.3%  0.3%  0.0%  B16..8: 28.6%  0.7%  0.1%  direct: 1.0%  skip:69.1%  L0:41.4% L1:57.7% BI: 0.9%
+[libx264 @ 000001a939e1ebc0] 8x8 transform intra:63.1% inter:90.3%
+[libx264 @ 000001a939e1ebc0] coded y,uvDC,uvAC intra: 19.6% 33.6% 3.2% inter: 4.4% 6.6% 0.0%
+[libx264 @ 000001a939e1ebc0] i16 v,h,dc,p: 34% 19% 10% 37%
+[libx264 @ 000001a939e1ebc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 14% 29%  4%  5%  4%  4%  4%  2%
+[libx264 @ 000001a939e1ebc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 25% 16% 18%  5% 11%  9%  8%  4%  3%
+[libx264 @ 000001a939e1ebc0] i8c dc,h,v,p: 64% 15% 17%  4%
+[libx264 @ 000001a939e1ebc0] Weighted P-Frames: Y:12.3% UV:11.4%
+[libx264 @ 000001a939e1ebc0] ref P L0: 66.7% 13.9% 16.0%  3.3%  0.1%
+[libx264 @ 000001a939e1ebc0] ref B L0: 94.7%  4.5%  0.7%
+[libx264 @ 000001a939e1ebc0] ref B L1: 97.3%  2.7%
+[libx264 @ 000001a939e1ebc0] kb/s:1750.60
+[aac @ 000001a93a2c5e80] Qavg: 778.332
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 0000027c4155a080] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_2503.MOV':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 30493336
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-06-20T07:22:02Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:20.65, start: 0.000000, bitrate: 8525 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709/smpte432/bt709), 1080x1920, 8393 kb/s, 28.29 fps, 30 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-20T07:22:48.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : FFMP
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 126 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-20T07:22:48.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0000027c41573200] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000027c41573200] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000027c41573200] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/bacio.mp4':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 30493336
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709/smpte432/bt709, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-06-20T07:22:48.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-06-20T07:22:48.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+frame=    2 fps=0.0 q=32.0 size=       0KiB time=00:00:00.00 bitrate=N/A speed=   0x elapsed=0:00:00.50    frame=   53 fps= 52 q=32.0 size=     512KiB time=00:00:01.70 bitrate=2467.5kbits/s speed=1.66x elapsed=0:00:01.02    frame=  101 fps= 66 q=32.0 size=    1024KiB time=00:00:03.30 bitrate=2542.1kbits/s speed=2.14x elapsed=0:00:01.54    frame=  151 fps= 73 q=32.0 size=    1536KiB time=00:00:04.96 bitrate=2533.5kbits/s speed=2.41x elapsed=0:00:02.06    frame=  205 fps= 79 q=32.0 size=    2048KiB time=00:00:06.76 bitrate=2479.4kbits/s speed=2.62x elapsed=0:00:02.58    frame=  261 fps= 84 q=32.0 size=    2304KiB time=00:00:08.63 bitrate=2186.3kbits/s speed=2.79x elapsed=0:00:03.08    frame=  317 fps= 88 q=32.0 size=    2560KiB time=00:00:10.50 bitrate=1997.3kbits/s speed= 2.9x elapsed=0:00:03.61    frame=  361 fps= 87 q=32.0 size=    3072KiB time=00:00:11.96 bitrate=2103.0kbits/s speed= 2.9x elapsed=0:00:04.12    frame=  419 fps= 90 q=30.0 size=    3584KiB time=00:00:13.90 bitrate=2112.3kbits/s speed=   3x elapsed=0:00:04.63    frame=  487 fps= 95 q=31.0 size=    4096KiB time=00:00:16.53 bitrate=2029.5kbits/s speed=3.21x elapsed=0:00:05.15    [mp4 @ 0000027c41a92b80] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000027c41a92a80] video:4171KiB audio:327KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.503532%
+frame=  584 fps=106 q=-1.0 Lsize=    4520KiB time=00:00:20.56 bitrate=1800.5kbits/s speed=3.72x elapsed=0:00:05.52    
+[libx264 @ 0000027c41573200] frame I:4     Avg QP:22.26  size: 33642
+[libx264 @ 0000027c41573200] frame P:172   Avg QP:24.26  size: 14948
+[libx264 @ 0000027c41573200] frame B:408   Avg QP:25.70  size:  3834
+[libx264 @ 0000027c41573200] consecutive B-frames:  5.7%  3.1%  1.5% 89.7%
+[libx264 @ 0000027c41573200] mb I  I16..4: 24.3% 71.8%  3.9%
+[libx264 @ 0000027c41573200] mb P  I16..4:  7.9% 14.9%  0.4%  P16..4: 29.4%  3.7%  1.7%  0.0%  0.0%    skip:42.0%
+[libx264 @ 0000027c41573200] mb B  I16..4:  0.4%  0.5%  0.0%  B16..8: 27.5%  0.8%  0.1%  direct: 0.5%  skip:70.1%  L0:41.5% L1:57.7% BI: 0.8%
+[libx264 @ 0000027c41573200] 8x8 transform intra:64.0% inter:93.4%
+[libx264 @ 0000027c41573200] coded y,uvDC,uvAC intra: 19.2% 29.4% 1.3% inter: 3.8% 5.2% 0.0%
+[libx264 @ 0000027c41573200] i16 v,h,dc,p: 26% 23%  8% 43%
+[libx264 @ 0000027c41573200] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 15% 29%  3%  5%  4%  5%  4%  3%
+[libx264 @ 0000027c41573200] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 21% 17%  4%  9%  7%  7%  4%  3%
+[libx264 @ 0000027c41573200] i8c dc,h,v,p: 68% 16% 14%  2%
+[libx264 @ 0000027c41573200] Weighted P-Frames: Y:14.5% UV:4.7%
+[libx264 @ 0000027c41573200] ref P L0: 63.7% 14.8% 16.6%  4.9%  0.1%
+[libx264 @ 0000027c41573200] ref B L0: 93.2%  5.6%  1.2%
+[libx264 @ 0000027c41573200] ref B L1: 96.9%  3.1%
+[libx264 @ 0000027c41573200] kb/s:1650.24
+[aac @ 0000027c41af7a00] Qavg: 841.234
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 00000170890fa080] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_2477.MOV':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 50775357
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-06-18T14:04:44Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:43.63, start: 0.000000, bitrate: 9315 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 1080x1920, 9198 kb/s, 30 fps, 30 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-18T14:04:44.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 111 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-18T14:04:44.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000001708911d7c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001708911d7c0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001708911d7c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/iv-drip.mp4':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 50775357
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-06-18T14:04:44.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-06-18T14:04:44.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=   50 fps= 49 q=32.0 size=     512KiB time=00:00:01.60 bitrate=2621.7kbits/s speed=1.57x elapsed=0:00:01.01    frame=  107 fps= 69 q=32.0 size=    1024KiB time=00:00:03.46 bitrate=2419.9kbits/s speed=2.25x elapsed=0:00:01.53    frame=  164 fps= 80 q=32.0 size=    1536KiB time=00:00:05.40 bitrate=2330.2kbits/s speed=2.62x elapsed=0:00:02.05    frame=  227 fps= 88 q=32.0 size=    1792KiB time=00:00:07.50 bitrate=1957.4kbits/s speed=2.91x elapsed=0:00:02.58    frame=  280 fps= 91 q=32.0 size=    2304KiB time=00:00:09.26 bitrate=2036.8kbits/s speed=   3x elapsed=0:00:03.08    frame=  338 fps= 94 q=32.0 size=    2816KiB time=00:00:11.20 bitrate=2059.7kbits/s speed= 3.1x elapsed=0:00:03.60    frame=  389 fps= 94 q=32.0 size=    3584KiB time=00:00:12.90 bitrate=2276.0kbits/s speed=3.13x elapsed=0:00:04.12    frame=  449 fps= 97 q=32.0 size=    4096KiB time=00:00:14.90 bitrate=2252.0kbits/s speed=3.21x elapsed=0:00:04.64    frame=  506 fps= 98 q=32.0 size=    4608KiB time=00:00:16.80 bitrate=2247.0kbits/s speed=3.26x elapsed=0:00:05.15    frame=  568 fps=100 q=32.0 size=    5120KiB time=00:00:18.86 bitrate=2223.1kbits/s speed=3.33x elapsed=0:00:05.67    frame=  624 fps=101 q=32.0 size=    5632KiB time=00:00:20.73 bitrate=2225.3kbits/s speed=3.35x elapsed=0:00:06.19    frame=  684 fps=102 q=32.0 size=    6144KiB time=00:00:22.73 bitrate=2214.0kbits/s speed=3.39x elapsed=0:00:06.70    frame=  743 fps=103 q=32.0 size=    6400KiB time=00:00:24.70 bitrate=2122.6kbits/s speed=3.41x elapsed=0:00:07.23    frame=  799 fps=103 q=32.0 size=    6912KiB time=00:00:26.56 bitrate=2131.4kbits/s speed=3.43x elapsed=0:00:07.73    frame=  855 fps=104 q=32.0 size=    7424KiB time=00:00:28.43 bitrate=2139.0kbits/s speed=3.44x elapsed=0:00:08.25    frame=  912 fps=104 q=32.0 size=    7936KiB time=00:00:30.33 bitrate=2143.3kbits/s speed=3.45x elapsed=0:00:08.78    frame=  968 fps=104 q=32.0 size=    8192KiB time=00:00:32.20 bitrate=2084.1kbits/s speed=3.47x elapsed=0:00:09.28    frame= 1038 fps=106 q=32.0 size=    8960KiB time=00:00:34.53 bitrate=2125.5kbits/s speed=3.52x elapsed=0:00:09.80    frame= 1142 fps=111 q=32.0 size=    9216KiB time=00:00:38.00 bitrate=1986.8kbits/s speed=3.68x elapsed=0:00:10.32    frame= 1273 fps=117 q=32.0 size=    9216KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:10.84    [mp4 @ 0000017089109f00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001708910a740] video:8756KiB audio:692KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.498614%
+frame= 1309 fps=120 q=-1.0 Lsize=    9495KiB time=00:00:43.56 bitrate=1785.4kbits/s speed=   4x elapsed=0:00:10.89    
+[libx264 @ 000001708911d7c0] frame I:8     Avg QP:19.06  size: 68271
+[libx264 @ 000001708911d7c0] frame P:389   Avg QP:24.48  size: 14660
+[libx264 @ 000001708911d7c0] frame B:912   Avg QP:26.55  size:  2979
+[libx264 @ 000001708911d7c0] consecutive B-frames:  6.5%  1.1%  2.3% 90.1%
+[libx264 @ 000001708911d7c0] mb I  I16..4: 33.4% 53.3% 13.3%
+[libx264 @ 000001708911d7c0] mb P  I16..4:  3.8%  5.0%  0.5%  P16..4: 27.0%  5.2%  3.2%  0.0%  0.0%    skip:55.2%
+[libx264 @ 000001708911d7c0] mb B  I16..4:  0.6%  0.8%  0.0%  B16..8: 26.8%  0.7%  0.1%  direct: 0.5%  skip:70.6%  L0:43.0% L1:55.9% BI: 1.0%
+[libx264 @ 000001708911d7c0] 8x8 transform intra:54.4% inter:81.8%
+[libx264 @ 000001708911d7c0] coded y,uvDC,uvAC intra: 15.8% 22.9% 3.7% inter: 3.2% 4.0% 0.1%
+[libx264 @ 000001708911d7c0] i16 v,h,dc,p: 49% 25%  7% 19%
+[libx264 @ 000001708911d7c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 32% 18% 39%  2%  2%  2%  2%  2%  2%
+[libx264 @ 000001708911d7c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 35% 20% 14%  5%  6%  6%  5%  6%  4%
+[libx264 @ 000001708911d7c0] i8c dc,h,v,p: 72% 13% 14%  1%
+[libx264 @ 000001708911d7c0] Weighted P-Frames: Y:6.2% UV:5.9%
+[libx264 @ 000001708911d7c0] ref P L0: 61.4% 14.0% 17.8%  6.6%  0.2%
+[libx264 @ 000001708911d7c0] ref B L0: 92.5%  6.0%  1.5%
+[libx264 @ 000001708911d7c0] ref B L1: 95.9%  4.1%
+[libx264 @ 000001708911d7c0] kb/s:1643.76
+[aac @ 00000170895d2780] Qavg: 24426.008
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 0000017119b6a080] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_2473.MOV':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 42353815
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-06-18T09:04:18Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:35.69, start: 0.000000, bitrate: 9500 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 1080x1668, 9366 kb/s, 28.75 fps, 120 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-18T09:04:18.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-18T09:04:18.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000001711a036b80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001711a036b80] profile High, level 5.1, 4:2:0, 8-bit
+[libx264 @ 000001711a036b80] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/bbl-dr-zisimou.mp4':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 42353815
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1668, q=2-31, 120 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-06-18T09:04:18.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-06-18T09:04:18.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   20 fps=0.0 q=31.0 size=       0KiB time=00:00:00.75 bitrate=   0.5kbits/s speed=1.49x elapsed=0:00:00.50    frame=   83 fps= 82 q=32.0 size=     256KiB time=00:00:03.30 bitrate= 635.6kbits/s speed=3.24x elapsed=0:00:01.01    frame=  145 fps= 94 q=32.0 size=     768KiB time=00:00:05.36 bitrate=1172.4kbits/s speed=3.48x elapsed=0:00:01.54    frame=  194 fps= 94 q=32.0 size=    1024KiB time=00:00:07.00 bitrate=1198.4kbits/s speed= 3.4x elapsed=0:00:02.05    frame=  258 fps=100 q=32.0 size=    1536KiB time=00:00:09.13 bitrate=1377.7kbits/s speed=3.55x elapsed=0:00:02.57    frame=  319 fps=103 q=32.0 size=    2048KiB time=00:00:11.16 bitrate=1502.5kbits/s speed=3.62x elapsed=0:00:03.08    frame=  364 fps=101 q=32.0 size=    2304KiB time=00:00:12.66 bitrate=1490.1kbits/s speed=3.52x elapsed=0:00:03.59    frame=  432 fps=105 q=32.0 size=    2816KiB time=00:00:14.93 bitrate=1544.8kbits/s speed=3.62x elapsed=0:00:04.12    frame=  488 fps=105 q=32.0 size=    3072KiB time=00:00:16.80 bitrate=1498.0kbits/s speed=3.62x elapsed=0:00:04.63    frame=  554 fps=107 q=32.0 size=    3584KiB time=00:00:19.00 bitrate=1545.3kbits/s speed=3.68x elapsed=0:00:05.15    frame=  616 fps=109 q=32.0 size=    4096KiB time=00:00:21.06 bitrate=1592.8kbits/s speed=3.71x elapsed=0:00:05.67    frame=  666 fps=107 q=32.0 size=    4608KiB time=00:00:22.73 bitrate=1660.5kbits/s speed=3.66x elapsed=0:00:06.21    frame=  726 fps=108 q=32.0 size=    5120KiB time=00:00:24.73 bitrate=1695.8kbits/s speed=3.68x elapsed=0:00:06.72    frame=  788 fps=109 q=32.0 size=    5888KiB time=00:00:26.80 bitrate=1799.8kbits/s speed= 3.7x elapsed=0:00:07.25    frame=  853 fps=110 q=32.0 size=    6400KiB time=00:00:28.96 bitrate=1810.0kbits/s speed=3.72x elapsed=0:00:07.77    frame=  923 fps=111 q=31.0 size=    6912KiB time=00:00:31.30 bitrate=1808.6kbits/s speed=3.78x elapsed=0:00:08.28    [mp4 @ 0000017119b93800] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000017119b830c0] video:6949KiB audio:569KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.484056%
+frame= 1026 fps=118 q=-1.0 Lsize=    7554KiB time=00:00:35.60 bitrate=1738.3kbits/s speed= 4.1x elapsed=0:00:08.68    
+[libx264 @ 000001711a036b80] frame I:8     Avg QP:23.56  size: 40039
+[libx264 @ 000001711a036b80] frame P:324   Avg QP:24.53  size: 13436
+[libx264 @ 000001711a036b80] frame B:694   Avg QP:27.85  size:  3518
+[libx264 @ 000001711a036b80] consecutive B-frames:  8.1%  3.5%  5.0% 83.4%
+[libx264 @ 000001711a036b80] mb I  I16..4: 27.9% 67.4%  4.6%
+[libx264 @ 000001711a036b80] mb P  I16..4:  9.1% 11.3%  0.3%  P16..4: 29.3%  3.8%  2.4%  0.0%  0.0%    skip:43.9%
+[libx264 @ 000001711a036b80] mb B  I16..4:  0.9%  1.1%  0.0%  B16..8: 29.2%  0.7%  0.1%  direct: 0.4%  skip:67.7%  L0:42.8% L1:56.3% BI: 0.8%
+[libx264 @ 000001711a036b80] 8x8 transform intra:55.7% inter:90.8%
+[libx264 @ 000001711a036b80] coded y,uvDC,uvAC intra: 16.9% 35.6% 3.1% inter: 4.4% 6.9% 0.3%
+[libx264 @ 000001711a036b80] i16 v,h,dc,p: 31% 25%  9% 35%
+[libx264 @ 000001711a036b80] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 28% 15% 37%  4%  3%  4%  3%  3%  2%
+[libx264 @ 000001711a036b80] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 34% 18% 15%  5%  7%  7%  6%  4%  3%
+[libx264 @ 000001711a036b80] i8c dc,h,v,p: 59% 17% 19%  4%
+[libx264 @ 000001711a036b80] Weighted P-Frames: Y:6.2% UV:6.2%
+[libx264 @ 000001711a036b80] ref P L0: 65.4% 15.4% 14.2%  5.0%  0.0%
+[libx264 @ 000001711a036b80] ref B L0: 90.3%  7.1%  2.6%
+[libx264 @ 000001711a036b80] ref B L1: 96.7%  3.3%
+[libx264 @ 000001711a036b80] kb/s:1595.09
+[aac @ 000001711a0a7280] Qavg: 478.267
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 0000020c3592a0c0] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_0059.MOV':
+  Metadata:
+    bitrate         : 9676800
+    mdat_pos        : 28
+    maxrate         : 0
+    te_is_reencode  : 1
+    moov_pos        : 59859589
+    writerType      : -1
+    com.apple.quicktime.copyright: a703766bde041e3cf388c3b25e4d2cc2
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    com.apple.quicktime.software: {"publicMode":"1","TEEditor":"2","isFastImport":"1","alpha_split_type":"0","transType":"2","te_is_reencode":"1","source":"5"}
+    source          : 5
+    Hw              : 1
+    major_brand     : qt  
+    compatible_brands: qt  
+    creation_time   : 2025-11-01T10:36:51Z
+  Duration: 00:01:09.54, start: 0.000000, bitrate: 6890 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 1080x1920, 6757 kb/s, 29.97 fps, 29.97 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2025-11-01T10:37:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : FFMP
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2025-11-01T10:37:52.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 0000020c359671c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0000020c359671c0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 0000020c359671c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/nimata-aptos-coag.mp4':
+  Metadata:
+    bitrate         : 9676800
+    mdat_pos        : 28
+    maxrate         : 0
+    te_is_reencode  : 1
+    moov_pos        : 59859589
+    writerType      : -1
+    com.apple.quicktime.copyright: a703766bde041e3cf388c3b25e4d2cc2
+    minor_version   : 512
+    compatible_brands: qt  
+    com.apple.quicktime.software: {"publicMode":"1","TEEditor":"2","isFastImport":"1","alpha_split_type":"0","transType":"2","te_is_reencode":"1","source":"5"}
+    source          : 5
+    Hw              : 1
+    major_brand     : qt  
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, q=2-31, 29.97 fps, 30k tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2025-11-01T10:37:52.000000Z
+      handler_name    : Core Media Video
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2025-11-01T10:37:52.000000Z
+      handler_name    : Core Media Audio
+      vendor_id       : [0][0][0][0]
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.51    frame=   54 fps= 52 q=32.0 size=     512KiB time=00:00:01.73 bitrate=2417.6kbits/s speed=1.67x elapsed=0:00:01.03    frame=  113 fps= 73 q=32.0 size=     768KiB time=00:00:03.70 bitrate=1698.8kbits/s speed=2.39x elapsed=0:00:01.55    frame=  174 fps= 84 q=32.0 size=    1280KiB time=00:00:05.73 bitrate=1827.2kbits/s speed=2.79x elapsed=0:00:02.05    frame=  227 fps= 88 q=32.0 size=    1792KiB time=00:00:07.50 bitrate=1955.4kbits/s speed=2.91x elapsed=0:00:02.58    frame=  284 fps= 92 q=32.0 size=    2304KiB time=00:00:09.40 bitrate=2005.9kbits/s speed=3.04x elapsed=0:00:03.09    frame=  335 fps= 93 q=32.0 size=    2816KiB time=00:00:11.11 bitrate=2076.2kbits/s speed=3.08x elapsed=0:00:03.60    frame=  384 fps= 93 q=32.0 size=    3328KiB time=00:00:12.74 bitrate=2139.0kbits/s speed=3.09x elapsed=0:00:04.13    frame=  436 fps= 94 q=32.0 size=    3584KiB time=00:00:14.48 bitrate=2027.5kbits/s speed=3.12x elapsed=0:00:04.64    frame=  481 fps= 93 q=32.0 size=    4096KiB time=00:00:15.98 bitrate=2099.5kbits/s speed= 3.1x elapsed=0:00:05.15    frame=  532 fps= 94 q=32.0 size=    4352KiB time=00:00:17.68 bitrate=2016.0kbits/s speed=3.12x elapsed=0:00:05.67    frame=  582 fps= 94 q=32.0 size=    4864KiB time=00:00:19.35 bitrate=2059.0kbits/s speed=3.13x elapsed=0:00:06.19    frame=  632 fps= 94 q=32.0 size=    5376KiB time=00:00:21.02 bitrate=2095.1kbits/s speed=3.14x elapsed=0:00:06.70    frame=  682 fps= 94 q=32.0 size=    5888KiB time=00:00:22.68 bitrate=2125.9kbits/s speed=3.14x elapsed=0:00:07.22    frame=  725 fps= 94 q=32.0 size=    6400KiB time=00:00:24.12 bitrate=2173.3kbits/s speed=3.12x elapsed=0:00:07.73    frame=  778 fps= 94 q=32.0 size=    6912KiB time=00:00:25.89 bitrate=2186.9kbits/s speed=3.14x elapsed=0:00:08.25    frame=  832 fps= 95 q=32.0 size=    7680KiB time=00:00:27.69 bitrate=2271.8kbits/s speed=3.16x elapsed=0:00:08.77    frame=  882 fps= 95 q=32.0 size=    8192KiB time=00:00:29.36 bitrate=2285.5kbits/s speed=3.16x elapsed=0:00:09.29    frame=  928 fps= 95 q=32.0 size=    8960KiB time=00:00:30.89 bitrate=2375.6kbits/s speed=3.15x elapsed=0:00:09.80    frame=  972 fps= 94 q=32.0 size=    9216KiB time=00:00:32.36 bitrate=2332.7kbits/s speed=3.14x elapsed=0:00:10.31    frame= 1032 fps= 95 q=32.0 size=    9728KiB time=00:00:34.36 bitrate=2318.8kbits/s speed=3.17x elapsed=0:00:10.83    frame= 1085 fps= 96 q=32.0 size=   10240KiB time=00:00:36.13 bitrate=2321.4kbits/s speed=3.18x elapsed=0:00:11.35    frame= 1139 fps= 96 q=32.0 size=   10752KiB time=00:00:37.93 bitrate=2321.7kbits/s speed= 3.2x elapsed=0:00:11.87    frame= 1195 fps= 97 q=32.0 size=   11264KiB time=00:00:39.80 bitrate=2318.1kbits/s speed=3.22x elapsed=0:00:12.37    frame= 1252 fps= 97 q=32.0 size=   11776KiB time=00:00:41.70 bitrate=2313.0kbits/s speed=3.24x elapsed=0:00:12.89    frame= 1304 fps= 97 q=32.0 size=   12288KiB time=00:00:43.44 bitrate=2317.1kbits/s speed=3.24x elapsed=0:00:13.41    frame= 1360 fps= 98 q=32.0 size=   12800KiB time=00:00:45.31 bitrate=2314.1kbits/s speed=3.25x elapsed=0:00:13.93    frame= 1409 fps= 98 q=32.0 size=   13312KiB time=00:00:46.94 bitrate=2322.9kbits/s speed=3.25x elapsed=0:00:14.44    frame= 1465 fps= 98 q=32.0 size=   13824KiB time=00:00:48.81 bitrate=2319.9kbits/s speed=3.26x elapsed=0:00:14.95    frame= 1517 fps= 98 q=32.0 size=   14336KiB time=00:00:50.55 bitrate=2323.2kbits/s speed=3.27x elapsed=0:00:15.47    frame= 1568 fps= 98 q=32.0 size=   14848KiB time=00:00:52.25 bitrate=2327.8kbits/s speed=3.27x elapsed=0:00:15.99    frame= 1623 fps= 98 q=32.0 size=   15360KiB time=00:00:54.08 bitrate=2326.4kbits/s speed=3.28x elapsed=0:00:16.51    frame= 1694 fps= 99 q=32.0 size=   16128KiB time=00:00:56.45 bitrate=2340.2kbits/s speed=3.31x elapsed=0:00:17.04    frame= 1786 fps=102 q=32.0 size=   16128KiB time=00:00:59.52 bitrate=2219.5kbits/s speed=3.39x elapsed=0:00:17.54    frame= 1843 fps=102 q=32.0 size=   16640KiB time=00:01:01.42 bitrate=2219.1kbits/s speed= 3.4x elapsed=0:00:18.06    frame= 1891 fps=102 q=32.0 size=   16896KiB time=00:01:03.02 bitrate=2196.0kbits/s speed=3.39x elapsed=0:00:18.57    frame= 1935 fps=101 q=32.0 size=   17408KiB time=00:01:04.49 bitrate=2211.0kbits/s speed=3.38x elapsed=0:00:19.09    frame= 1979 fps=101 q=32.0 size=   17664KiB time=00:01:05.96 bitrate=2193.6kbits/s speed=3.36x elapsed=0:00:19.61    frame= 2040 fps=101 q=32.0 size=   18432KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:20.12    [mp4 @ 0000020c3593a700] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 0000020c3592db40] video:17766KiB audio:1089KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.397179%
+frame= 2084 fps=102 q=-1.0 Lsize=   18930KiB time=00:01:09.46 bitrate=2232.3kbits/s speed= 3.4x elapsed=0:00:20.40    
+[libx264 @ 0000020c359671c0] frame I:19    Avg QP:22.10  size: 83077
+[libx264 @ 0000020c359671c0] frame P:552   Avg QP:24.84  size: 18766
+[libx264 @ 0000020c359671c0] frame B:1513  Avg QP:26.83  size:  4134
+[libx264 @ 0000020c359671c0] consecutive B-frames:  2.5%  1.0%  3.5% 93.1%
+[libx264 @ 0000020c359671c0] mb I  I16..4: 25.0% 63.3% 11.7%
+[libx264 @ 0000020c359671c0] mb P  I16..4:  4.7%  6.7%  0.5%  P16..4: 37.7%  6.6%  3.3%  0.0%  0.0%    skip:40.5%
+[libx264 @ 0000020c359671c0] mb B  I16..4:  0.4%  0.4%  0.0%  B16..8: 32.1%  1.0%  0.1%  direct: 0.5%  skip:65.5%  L0:44.2% L1:54.4% BI: 1.4%
+[libx264 @ 0000020c359671c0] 8x8 transform intra:57.2% inter:86.5%
+[libx264 @ 0000020c359671c0] coded y,uvDC,uvAC intra: 24.8% 44.6% 8.6% inter: 4.1% 8.0% 0.2%
+[libx264 @ 0000020c359671c0] i16 v,h,dc,p: 46% 21% 10% 23%
+[libx264 @ 0000020c359671c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 23% 17% 37%  3%  4%  4%  4%  4%  4%
+[libx264 @ 0000020c359671c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 24% 13%  5%  7%  7%  7%  5%  4%
+[libx264 @ 0000020c359671c0] i8c dc,h,v,p: 56% 19% 21%  4%
+[libx264 @ 0000020c359671c0] Weighted P-Frames: Y:3.6% UV:1.4%
+[libx264 @ 0000020c359671c0] ref P L0: 67.0% 12.4% 15.6%  4.9%  0.1%
+[libx264 @ 0000020c359671c0] ref B L0: 93.6%  5.3%  1.2%
+[libx264 @ 0000020c359671c0] ref B L1: 97.1%  2.9%
+[libx264 @ 0000020c359671c0] kb/s:2092.92
+[aac @ 0000020c35e2e980] Qavg: 347.629
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 00000243ec699980] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/47DEA2FA-6A3F-4BF0-9CF8-42B0C2A3FE27.MOV':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 28426360
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-06-06T12:53:15Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:34.40, start: 0.000000, bitrate: 6617 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709), 1080x1920, 6492 kb/s, 30 fps, 30 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-06-06T12:53:15.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 118 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-06T12:53:15.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 00000243ecb02280] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 00000243ecb02280] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 00000243ecb02280] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/apotrixosi-laser-alexandrite.mp4':
+  Metadata:
+    bitrate         : 11197440
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 28426360
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-06-06T12:53:15.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-06-06T12:53:15.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.52    frame=   62 fps= 60 q=32.0 size=     512KiB time=00:00:02.00 bitrate=2097.3kbits/s speed=1.93x elapsed=0:00:01.03    frame=  112 fps= 72 q=32.0 size=     768KiB time=00:00:03.66 bitrate=1716.0kbits/s speed=2.36x elapsed=0:00:01.55    frame=  171 fps= 83 q=32.0 size=    1280KiB time=00:00:05.63 bitrate=1861.4kbits/s speed=2.72x elapsed=0:00:02.06    frame=  228 fps= 88 q=29.0 size=    1792KiB time=00:00:07.53 bitrate=1948.7kbits/s speed=2.92x elapsed=0:00:02.58    frame=  287 fps= 93 q=32.0 size=    2560KiB time=00:00:09.50 bitrate=2207.6kbits/s speed=3.07x elapsed=0:00:03.09    frame=  375 fps=104 q=32.0 size=    2816KiB time=00:00:12.43 bitrate=1855.4kbits/s speed=3.44x elapsed=0:00:03.61    frame=  437 fps=106 q=32.0 size=    3072KiB time=00:00:14.50 bitrate=1735.6kbits/s speed=3.51x elapsed=0:00:04.13    frame=  489 fps=105 q=32.0 size=    3584KiB time=00:00:16.23 bitrate=1808.7kbits/s speed=3.49x elapsed=0:00:04.65    frame=  543 fps=105 q=32.0 size=    3840KiB time=00:00:18.03 bitrate=1744.4kbits/s speed=3.49x elapsed=0:00:05.16    frame=  629 fps=111 q=32.0 size=    4096KiB time=00:00:20.90 bitrate=1605.5kbits/s speed=3.68x elapsed=0:00:05.68    frame=  688 fps=111 q=32.0 size=    5120KiB time=00:00:22.86 bitrate=1834.3kbits/s speed=3.69x elapsed=0:00:06.19    frame=  761 fps=113 q=32.0 size=    5376KiB time=00:00:25.30 bitrate=1740.7kbits/s speed=3.77x elapsed=0:00:06.71    frame=  837 fps=116 q=32.0 size=    5888KiB time=00:00:27.83 bitrate=1733.0kbits/s speed=3.85x elapsed=0:00:07.23    frame=  954 fps=123 q=32.0 size=    6144KiB time=00:00:31.73 bitrate=1586.1kbits/s speed= 4.1x elapsed=0:00:07.73    [mp4 @ 00000243ec6bfc00] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 00000243ec6b2a80] video:5806KiB audio:538KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.587370%
+frame= 1032 fps=131 q=-1.0 Lsize=    6381KiB time=00:00:34.33 bitrate=1522.5kbits/s speed=4.35x elapsed=0:00:07.89    
+[libx264 @ 00000243ecb02280] frame I:9     Avg QP:19.90  size: 64635
+[libx264 @ 00000243ecb02280] frame P:328   Avg QP:23.41  size: 12036
+[libx264 @ 00000243ecb02280] frame B:695   Avg QP:26.88  size:  2036
+[libx264 @ 00000243ecb02280] consecutive B-frames:  8.9%  2.3%  4.7% 84.1%
+[libx264 @ 00000243ecb02280] mb I  I16..4: 20.8% 75.2%  4.0%
+[libx264 @ 00000243ecb02280] mb P  I16..4:  7.5% 14.4%  0.4%  P16..4: 16.2%  3.1%  1.8%  0.0%  0.0%    skip:56.6%
+[libx264 @ 00000243ecb02280] mb B  I16..4:  0.5%  0.5%  0.0%  B16..8: 13.0%  0.4%  0.0%  direct: 0.9%  skip:84.6%  L0:36.3% L1:62.2% BI: 1.4%
+[libx264 @ 00000243ecb02280] 8x8 transform intra:64.7% inter:85.3%
+[libx264 @ 00000243ecb02280] coded y,uvDC,uvAC intra: 17.1% 25.1% 3.2% inter: 2.7% 4.0% 0.1%
+[libx264 @ 00000243ecb02280] i16 v,h,dc,p: 30% 31%  7% 32%
+[libx264 @ 00000243ecb02280] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 41% 17% 27%  3%  2%  2%  3%  3%  2%
+[libx264 @ 00000243ecb02280] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 19% 13%  6%  8%  9%  7%  6%  4%
+[libx264 @ 00000243ecb02280] i8c dc,h,v,p: 69% 15% 14%  2%
+[libx264 @ 00000243ecb02280] Weighted P-Frames: Y:8.8% UV:7.0%
+[libx264 @ 00000243ecb02280] ref P L0: 64.8% 17.2% 13.4%  4.3%  0.4%
+[libx264 @ 00000243ecb02280] ref B L0: 91.1%  7.3%  1.6%
+[libx264 @ 00000243ecb02280] ref B L1: 94.7%  5.3%
+[libx264 @ 00000243ecb02280] kb/s:1382.40
+[aac @ 00000243ecb71d40] Qavg: 3652.688
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_9090.MOV':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: isommp41mp42
+    creation_time   : 2026-07-05T15:26:42.000000Z
+  Duration: 00:00:13.88, start: 0.000000, bitrate: 14247 kb/s
+  Stream #0:0[0x1](und): Video: hevc (Main) (hvc1 / 0x31637668), yuvj420p(pc, bt709), 1080x1920, 14124 kb/s, 24 fps, 24 tbr, 600 tbn (default)
+    Metadata:
+      creation_time   : 2026-07-05T15:26:42.000000Z
+      handler_name    : Core Media Video
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 126 kb/s (default)
+    Metadata:
+      creation_time   : 2026-07-05T15:26:42.000000Z
+      handler_name    : Core Media Audio
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000001e3dc050bc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001e3dc050bc0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001e3dc050bc0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=24 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/fractional-laser.mp4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 1
+    compatible_brands: isommp41mp42
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuvj420p(pc, bt709, progressive), 1080x1920, q=2-31, 24 fps, 12288 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-07-05T15:26:42.000000Z
+      handler_name    : Core Media Video
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-07-05T15:26:42.000000Z
+      handler_name    : Core Media Audio
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=   49 fps= 48 q=31.0 size=     256KiB time=00:00:01.95 bitrate=1071.1kbits/s speed=1.91x elapsed=0:00:01.02    frame=  101 fps= 66 q=31.0 size=     768KiB time=00:00:04.12 bitrate=1525.3kbits/s speed=2.68x elapsed=0:00:01.54    frame=  153 fps= 74 q=31.0 size=    1024KiB time=00:00:06.29 bitrate=1333.3kbits/s speed=3.06x elapsed=0:00:02.05    frame=  213 fps= 83 q=31.0 size=    1536KiB time=00:00:08.79 bitrate=1431.3kbits/s speed=3.41x elapsed=0:00:02.58    frame=  266 fps= 86 q=31.0 size=    2048KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:03.09    [mp4 @ 000001e3dbfedec0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001e3dbfedd80] video:2317KiB audio:220KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.467260%
+frame=  333 fps= 96 q=-1.0 Lsize=    2549KiB time=00:00:13.79 bitrate=1514.0kbits/s speed=3.96x elapsed=0:00:03.48    
+[libx264 @ 000001e3dc050bc0] frame I:2     Avg QP:21.53  size: 38222
+[libx264 @ 000001e3dc050bc0] frame P:83    Avg QP:23.89  size: 16211
+[libx264 @ 000001e3dc050bc0] frame B:248   Avg QP:26.03  size:  3831
+[libx264 @ 000001e3dc050bc0] consecutive B-frames:  0.6%  0.0%  0.9% 98.5%
+[libx264 @ 000001e3dc050bc0] mb I  I16..4: 24.9% 73.3%  1.7%
+[libx264 @ 000001e3dc050bc0] mb P  I16..4:  6.8%  7.3%  0.0%  P16..4: 48.2%  4.8%  2.2%  0.0%  0.0%    skip:30.6%
+[libx264 @ 000001e3dc050bc0] mb B  I16..4:  0.2%  0.2%  0.0%  B16..8: 32.2%  0.3%  0.0%  direct: 1.0%  skip:66.1%  L0:44.6% L1:55.0% BI: 0.4%
+[libx264 @ 000001e3dc050bc0] 8x8 transform intra:54.2% inter:96.3%
+[libx264 @ 000001e3dc050bc0] coded y,uvDC,uvAC intra: 19.1% 40.9% 2.1% inter: 4.2% 10.2% 0.0%
+[libx264 @ 000001e3dc050bc0] i16 v,h,dc,p: 27% 12%  7% 54%
+[libx264 @ 000001e3dc050bc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 14% 30%  4%  5%  6%  4%  4%  3%
+[libx264 @ 000001e3dc050bc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 31% 17% 16%  6% 11%  7%  6%  4%  2%
+[libx264 @ 000001e3dc050bc0] i8c dc,h,v,p: 62% 14% 21%  4%
+[libx264 @ 000001e3dc050bc0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 000001e3dc050bc0] ref P L0: 66.7%  8.4% 19.9%  5.1%
+[libx264 @ 000001e3dc050bc0] ref B L0: 92.9%  5.9%  1.2%
+[libx264 @ 000001e3dc050bc0] ref B L1: 96.7%  3.3%
+[libx264 @ 000001e3dc050bc0] kb/s:1367.71
+[aac @ 000001e3dc48b200] Qavg: 704.271
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 000002454e19a080] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/IMG_1942.MOV':
+  Metadata:
+    bitrate         : 12582912
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 2785495
+    minor_version   : 512
+    encoder         : Lavf57.71.100
+    Hw              : 1
+    major_brand     : qt  
+    creation_time   : 2026-05-29T15:57:57Z
+    te_is_reencode  : 1
+    DreaminaMetaInfo: {"data":{}}
+  Duration: 00:00:09.24, start: 0.000000, bitrate: 2422 kb/s
+  Stream #0:0[0x1](eng): Video: hevc (Main) (hvc1 / 0x31637668), yuv420p(tv, bt709/smpte432/bt709), 1080x1920, 2283 kb/s, 30 fps, 30 tbr, 1000k tbn (default)
+    Metadata:
+      creation_time   : 2026-05-29T15:57:57.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      creation_time   : 2026-05-29T15:57:57.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000002454e1a4580] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000002454e1a4580] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000002454e1a4580] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/before-after-1.mp4':
+  Metadata:
+    bitrate         : 12582912
+    mdat_pos        : 28
+    maxrate         : 0
+    compatible_brands: qt  
+    moov_pos        : 2785495
+    minor_version   : 512
+    te_is_reencode  : 1
+    Hw              : 1
+    major_brand     : qt  
+    DreaminaMetaInfo: {"data":{}}
+    encoder         : Lavf62.12.100
+  Stream #0:0(eng): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709/smpte432/bt709, progressive), 1080x1920, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-05-29T15:57:57.000000Z
+      handler_name    : VideoHandler
+      vendor_id       : FFMP
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-05-29T15:57:57.000000Z
+      handler_name    : SoundHandler
+      vendor_id       : [0][0][0][0]
+frame=   30 fps=0.0 q=32.0 size=       0KiB time=00:00:00.93 bitrate=   0.4kbits/s speed=1.79x elapsed=0:00:00.52    frame=  118 fps=114 q=32.0 size=     256KiB time=00:00:03.86 bitrate= 542.5kbits/s speed=3.75x elapsed=0:00:01.03    frame=  196 fps=127 q=32.0 size=     512KiB time=00:00:06.46 bitrate= 648.7kbits/s speed=4.19x elapsed=0:00:01.54    frame=  253 fps=123 q=32.0 size=     768KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:02.05    [mp4 @ 000002454e19da80] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000002454e1a9540] video:1015KiB audio:140KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.947016%
+frame=  277 fps=131 q=-1.0 Lsize=    1166KiB time=00:00:09.16 bitrate=1042.2kbits/s speed=4.32x elapsed=0:00:02.12    
+[libx264 @ 000002454e1a4580] frame I:4     Avg QP:20.96  size: 32339
+[libx264 @ 000002454e1a4580] frame P:94    Avg QP:21.68  size:  8109
+[libx264 @ 000002454e1a4580] frame B:179   Avg QP:28.02  size:   824
+[libx264 @ 000002454e1a4580] consecutive B-frames: 12.6%  2.2%  4.3% 80.9%
+[libx264 @ 000002454e1a4580] mb I  I16..4: 22.1% 76.7%  1.2%
+[libx264 @ 000002454e1a4580] mb P  I16..4:  9.5% 10.4%  0.1%  P16..4: 14.4%  1.4%  1.3%  0.0%  0.0%    skip:62.8%
+[libx264 @ 000002454e1a4580] mb B  I16..4:  0.2%  0.2%  0.0%  B16..8:  8.1%  0.1%  0.0%  direct: 0.8%  skip:90.6%  L0:25.2% L1:74.0% BI: 0.8%
+[libx264 @ 000002454e1a4580] 8x8 transform intra:56.0% inter:84.0%
+[libx264 @ 000002454e1a4580] coded y,uvDC,uvAC intra: 11.3% 35.6% 1.3% inter: 2.0% 5.5% 0.0%
+[libx264 @ 000002454e1a4580] i16 v,h,dc,p: 42% 18%  7% 34%
+[libx264 @ 000002454e1a4580] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 51% 10% 27%  2%  2%  3%  2%  2%  1%
+[libx264 @ 000002454e1a4580] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 27% 20% 18%  6%  7%  6%  6%  5%  4%
+[libx264 @ 000002454e1a4580] i8c dc,h,v,p: 60% 13% 24%  3%
+[libx264 @ 000002454e1a4580] Weighted P-Frames: Y:14.9% UV:11.7%
+[libx264 @ 000002454e1a4580] ref P L0: 77.4%  8.6% 11.7%  2.1%  0.2%
+[libx264 @ 000002454e1a4580] ref B L0: 95.7%  3.9%  0.4%
+[libx264 @ 000002454e1a4580] ref B L1: 87.5% 12.5%
+[libx264 @ 000002454e1a4580] kb/s:900.34
+[aac @ 000002454fe4bac0] Qavg: 4931.450
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 000001f5487fa100] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/dr zissimo gold box .mp4':
+  Metadata:
+    compatible_brands: isomiso2avc1mp41
+    major_brand     : isom
+    minor_version   : 512
+    creation_time   : 2026-06-22T22:59:51.000000Z
+    modification_time: 2026-06-22T23:00:57.000000Z
+    Hw              : 1
+    bitrate         : 12000000
+    maxrate         : 0
+    te_is_reencode  : 1
+    mp4_data_incomplete: false
+    encoder         : Lavf61.1.100
+  Duration: 00:01:10.01, start: 0.000000, bitrate: 10249 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 10053 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      creation_time   : 2026-06-22T22:59:51.000000Z
+      handler_name    : VideoHandler
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 194 kb/s (default)
+    Metadata:
+      creation_time   : 2026-06-22T22:59:51.000000Z
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000001f5496200c0] using SAR=1/1
+[libx264 @ 000001f5496200c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001f5496200c0] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001f5496200c0] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/sisthaema-1.mp4':
+  Metadata:
+    compatible_brands: isomiso2avc1mp41
+    major_brand     : isom
+    minor_version   : 512
+    mp4_data_incomplete: false
+    modification_time: 2026-06-22T23:00:57.000000Z
+    Hw              : 1
+    bitrate         : 12000000
+    maxrate         : 0
+    te_is_reencode  : 1
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-06-22T22:59:51.000000Z
+      handler_name    : VideoHandler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-06-22T22:59:51.000000Z
+      handler_name    : SoundHandler
+frame=    0 fps=0.0 q=0.0 size=       0KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:00.50    frame=   44 fps= 43 q=32.0 size=     512KiB time=00:00:01.40 bitrate=2996.2kbits/s speed=1.37x elapsed=0:00:01.02    frame=   89 fps= 57 q=32.0 size=    1024KiB time=00:00:02.90 bitrate=2892.8kbits/s speed=1.87x elapsed=0:00:01.55    frame=  141 fps= 68 q=32.0 size=    1536KiB time=00:00:04.63 bitrate=2715.8kbits/s speed=2.24x elapsed=0:00:02.07    frame=  192 fps= 74 q=32.0 size=    2304KiB time=00:00:06.33 bitrate=2980.2kbits/s speed=2.44x elapsed=0:00:02.59    frame=  235 fps= 76 q=32.0 size=    2560KiB time=00:00:07.76 bitrate=2700.2kbits/s speed= 2.5x elapsed=0:00:03.11    frame=  274 fps= 76 q=32.0 size=    3072KiB time=00:00:09.06 bitrate=2775.7kbits/s speed= 2.5x elapsed=0:00:03.62    frame=  320 fps= 77 q=32.0 size=    3584KiB time=00:00:10.60 bitrate=2769.9kbits/s speed=2.56x elapsed=0:00:04.14    frame=  377 fps= 81 q=32.0 size=    4096KiB time=00:00:12.50 bitrate=2684.4kbits/s speed=2.69x elapsed=0:00:04.65    frame=  430 fps= 83 q=32.0 size=    4608KiB time=00:00:14.26 bitrate=2646.0kbits/s speed=2.76x elapsed=0:00:05.16    frame=  486 fps= 85 q=32.0 size=    5120KiB time=00:00:16.13 bitrate=2599.8kbits/s speed=2.83x elapsed=0:00:05.69    frame=  536 fps= 86 q=32.0 size=    5632KiB time=00:00:17.80 bitrate=2592.0kbits/s speed=2.87x elapsed=0:00:06.19    frame=  578 fps= 86 q=32.0 size=    5888KiB time=00:00:19.20 bitrate=2512.2kbits/s speed=2.86x elapsed=0:00:06.71    frame=  627 fps= 87 q=32.0 size=    6656KiB time=00:00:20.83 bitrate=2617.3kbits/s speed=2.88x elapsed=0:00:07.23    frame=  677 fps= 87 q=32.0 size=    7168KiB time=00:00:22.50 bitrate=2609.8kbits/s speed=2.91x elapsed=0:00:07.74    frame=  730 fps= 88 q=32.0 size=    7680KiB time=00:00:24.26 bitrate=2592.6kbits/s speed=2.94x elapsed=0:00:08.25    frame=  786 fps= 90 q=32.0 size=    8448KiB time=00:00:26.13 bitrate=2648.2kbits/s speed=2.98x elapsed=0:00:08.77    frame=  838 fps= 90 q=32.0 size=    8960KiB time=00:00:27.86 bitrate=2634.0kbits/s speed=   3x elapsed=0:00:09.30    frame=  883 fps= 90 q=32.0 size=    9216KiB time=00:00:29.36 bitrate=2570.9kbits/s speed=2.99x elapsed=0:00:09.80    frame=  932 fps= 90 q=32.0 size=    9984KiB time=00:00:31.00 bitrate=2638.4kbits/s speed=   3x elapsed=0:00:10.33    frame=  982 fps= 91 q=32.0 size=   10240KiB time=00:00:32.66 bitrate=2568.0kbits/s speed=3.01x elapsed=0:00:10.83    frame= 1042 fps= 92 q=32.0 size=   10752KiB time=00:00:34.66 bitrate=2540.8kbits/s speed=3.05x elapsed=0:00:11.35    frame= 1095 fps= 92 q=32.0 size=   11264KiB time=00:00:36.43 bitrate=2532.7kbits/s speed=3.07x elapsed=0:00:11.87    frame= 1145 fps= 92 q=32.0 size=   11520KiB time=00:00:38.10 bitrate=2477.0kbits/s speed=3.08x elapsed=0:00:12.38    frame= 1193 fps= 92 q=32.0 size=   12288KiB time=00:00:39.70 bitrate=2535.6kbits/s speed=3.08x elapsed=0:00:12.90    frame= 1251 fps= 93 q=32.0 size=   12544KiB time=00:00:41.63 bitrate=2468.2kbits/s speed= 3.1x elapsed=0:00:13.42    frame= 1300 fps= 93 q=32.0 size=   12800KiB time=00:00:43.26 bitrate=2423.5kbits/s speed= 3.1x elapsed=0:00:13.93    frame= 1359 fps= 94 q=29.0 size=   13056KiB time=00:00:45.23 bitrate=2364.5kbits/s speed=3.13x elapsed=0:00:14.45    frame= 1410 fps= 94 q=32.0 size=   13568KiB time=00:00:46.93 bitrate=2368.2kbits/s speed=3.13x elapsed=0:00:14.97    frame= 1461 fps= 94 q=32.0 size=   13824KiB time=00:00:48.63 bitrate=2328.6kbits/s speed=3.14x elapsed=0:00:15.48    frame= 1504 fps= 94 q=32.0 size=   14080KiB time=00:00:50.06 bitrate=2303.8kbits/s speed=3.13x elapsed=0:00:15.99    frame= 1551 fps= 94 q=32.0 size=   14592KiB time=00:00:51.63 bitrate=2315.1kbits/s speed=3.13x elapsed=0:00:16.51    frame= 1599 fps= 94 q=32.0 size=   14848KiB time=00:00:53.23 bitrate=2284.9kbits/s speed=3.13x elapsed=0:00:17.02    frame= 1645 fps= 94 q=32.0 size=   15360KiB time=00:00:54.76 bitrate=2297.6kbits/s speed=3.12x elapsed=0:00:17.55    frame= 1692 fps= 94 q=32.0 size=   15872KiB time=00:00:56.33 bitrate=2308.1kbits/s speed=3.12x elapsed=0:00:18.07    frame= 1741 fps= 94 q=32.0 size=   16384KiB time=00:00:57.96 bitrate=2315.4kbits/s speed=3.12x elapsed=0:00:18.58    frame= 1795 fps= 94 q=32.0 size=   16896KiB time=00:00:59.76 bitrate=2315.9kbits/s speed=3.13x elapsed=0:00:19.10    frame= 1851 fps= 94 q=32.0 size=   17152KiB time=00:01:01.63 bitrate=2279.8kbits/s speed=3.14x elapsed=0:00:19.62    frame= 1907 fps= 95 q=32.0 size=   17664KiB time=00:01:03.50 bitrate=2278.8kbits/s speed=3.15x elapsed=0:00:20.14    frame= 1956 fps= 95 q=29.0 size=   18176KiB time=00:01:05.13 bitrate=2286.1kbits/s speed=3.15x elapsed=0:00:20.64    frame= 2002 fps= 95 q=32.0 size=   18944KiB time=00:01:06.66 bitrate=2327.8kbits/s speed=3.15x elapsed=0:00:21.16    [mp4 @ 000001f548dcebc0] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001f5487fdb80] video:19532KiB audio:1107KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.362697%
+frame= 2099 fps= 97 q=-1.0 Lsize=   20715KiB time=00:01:09.90 bitrate=2427.7kbits/s speed=3.22x elapsed=0:00:21.68    
+[libx264 @ 000001f5496200c0] frame I:23    Avg QP:22.52  size: 43232
+[libx264 @ 000001f5496200c0] frame P:680   Avg QP:24.97  size: 18570
+[libx264 @ 000001f5496200c0] frame B:1396  Avg QP:26.34  size:  4569
+[libx264 @ 000001f5496200c0] consecutive B-frames:  6.3% 14.0%  3.3% 76.4%
+[libx264 @ 000001f5496200c0] mb I  I16..4: 34.1% 61.7%  4.2%
+[libx264 @ 000001f5496200c0] mb P  I16..4: 12.1% 15.6%  0.4%  P16..4: 32.1%  5.2%  2.4%  0.0%  0.0%    skip:32.1%
+[libx264 @ 000001f5496200c0] mb B  I16..4:  1.2%  1.2%  0.0%  B16..8: 26.6%  0.9%  0.1%  direct: 1.2%  skip:68.9%  L0:41.8% L1:56.7% BI: 1.5%
+[libx264 @ 000001f5496200c0] 8x8 transform intra:55.3% inter:87.4%
+[libx264 @ 000001f5496200c0] coded y,uvDC,uvAC intra: 15.8% 46.5% 4.7% inter: 4.6% 9.6% 0.0%
+[libx264 @ 000001f5496200c0] i16 v,h,dc,p: 34% 26% 12% 28%
+[libx264 @ 000001f5496200c0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 30% 16% 39%  3%  3%  3%  3%  3%  2%
+[libx264 @ 000001f5496200c0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 33% 17% 16%  5%  8%  8%  6%  5%  3%
+[libx264 @ 000001f5496200c0] i8c dc,h,v,p: 54% 19% 22%  4%
+[libx264 @ 000001f5496200c0] Weighted P-Frames: Y:12.4% UV:10.9%
+[libx264 @ 000001f5496200c0] ref P L0: 65.9% 12.9% 15.9%  5.1%  0.3%
+[libx264 @ 000001f5496200c0] ref B L0: 91.1%  7.3%  1.6%
+[libx264 @ 000001f5496200c0] ref B L1: 97.4%  2.6%
+[libx264 @ 000001f5496200c0] kb/s:2286.86
+[aac @ 000001f5491cd140] Qavg: 617.624
+ffmpeg version 8.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+  built with gcc 15.2.0 (Rev11, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60. 26.100 / 60. 26.100
+  libavcodec     62. 28.100 / 62. 28.100
+  libavformat    62. 12.100 / 62. 12.100
+  libavdevice    62.  3.100 / 62.  3.100
+  libavfilter    11. 14.100 / 11. 14.100
+  libswscale      9.  5.100 /  9.  5.100
+  libswresample   6.  3.100 /  6.  3.100
+[in#0 @ 000001ab56b6a100] Unknown cover type: 0x1.
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/images/desert teaser 2 .mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    creation_time   : 2026-05-18T05:29:31.000000Z
+    Hw              : 1
+    bitrate         : 12000000
+    maxrate         : 0
+    te_is_reencode  : 1
+    encoder         : Lavf61.1.100
+  Duration: 00:00:27.66, start: 0.000000, bitrate: 10532 kb/s
+  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], 10339 kb/s, 30 fps, 30 tbr, 30 tbn (default)
+    Metadata:
+      creation_time   : 2026-05-18T05:29:31.000000Z
+      handler_name    : VideoHandler
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 194 kb/s (default)
+    Metadata:
+      creation_time   : 2026-05-18T05:29:31.000000Z
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+  Stream #0:1 -> #0:1 (aac (native) -> aac (native))
+Press [q] to stop, [?] for help
+[libx264 @ 000001ab56ba3c40] using SAR=1/1
+[libx264 @ 000001ab56ba3c40] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 000001ab56ba3c40] profile High, level 4.0, 4:2:0, 8-bit
+[libx264 @ 000001ab56ba3c40] 264 - core 165 r3223 0480cb0 - H.264/MPEG-4 AVC codec - Copyleft 2003-2025 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=24 lookahead_threads=4 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=26.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+Output #0, mp4, to 'C:/Users/theoharis/Desktop/DERMA_SAVE/public/videos/sisthaema-2.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    te_is_reencode  : 1
+    Hw              : 1
+    bitrate         : 12000000
+    maxrate         : 0
+    encoder         : Lavf62.12.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1080x1920 [SAR 1:1 DAR 9:16], q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      encoder         : Lavc62.28.100 libx264
+      creation_time   : 2026-05-18T05:29:31.000000Z
+      handler_name    : VideoHandler
+    Side data:
+      CPB properties: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+  Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      encoder         : Lavc62.28.100 aac
+      creation_time   : 2026-05-18T05:29:31.000000Z
+      handler_name    : SoundHandler
+frame=    7 fps=0.0 q=32.0 size=       0KiB time=00:00:00.16 bitrate=   2.3kbits/s speed=0.319x elapsed=0:00:00.52    frame=   72 fps= 69 q=32.0 size=     256KiB time=00:00:02.33 bitrate= 898.9kbits/s speed=2.25x elapsed=0:00:01.03    frame=  148 fps= 95 q=32.0 size=     768KiB time=00:00:04.86 bitrate=1292.8kbits/s speed=3.13x elapsed=0:00:01.55    frame=  212 fps=102 q=32.0 size=    1280KiB time=00:00:07.00 bitrate=1498.0kbits/s speed=3.38x elapsed=0:00:02.06    frame=  271 fps=105 q=32.0 size=    1792KiB time=00:00:08.96 bitrate=1637.2kbits/s speed=3.46x elapsed=0:00:02.58    frame=  330 fps=106 q=32.0 size=    2304KiB time=00:00:10.93 bitrate=1726.3kbits/s speed=3.52x elapsed=0:00:03.10    frame=  384 fps=106 q=32.0 size=    2816KiB time=00:00:12.73 bitrate=1811.7kbits/s speed=3.52x elapsed=0:00:03.62    frame=  436 fps=106 q=32.0 size=    3328KiB time=00:00:14.46 bitrate=1884.6kbits/s speed=3.51x elapsed=0:00:04.12    frame=  484 fps=104 q=32.0 size=    3840KiB time=00:00:16.06 bitrate=1957.9kbits/s speed=3.46x elapsed=0:00:04.64    frame=  520 fps=101 q=32.0 size=    4352KiB time=00:00:17.26 bitrate=2064.8kbits/s speed=3.35x elapsed=0:00:05.15    frame=  566 fps=100 q=32.0 size=    5120KiB time=00:00:18.80 bitrate=2231.0kbits/s speed=3.31x elapsed=0:00:05.68    frame=  616 fps= 99 q=32.0 size=    5888KiB time=00:00:20.46 bitrate=2356.8kbits/s speed= 3.3x elapsed=0:00:06.20    frame=  664 fps= 99 q=32.0 size=    6400KiB time=00:00:22.06 bitrate=2375.9kbits/s speed=3.29x elapsed=0:00:06.70    frame=  712 fps= 99 q=32.0 size=    6912KiB time=00:00:23.66 bitrate=2392.5kbits/s speed=3.28x elapsed=0:00:07.22    frame=  773 fps=100 q=32.0 size=    7936KiB time=N/A bitrate=N/A speed=N/A elapsed=0:00:07.74    [mp4 @ 000001ab56b90580] Starting second pass: moving the moov atom to the beginning of the file
+[out#0/mp4 @ 000001ab56b90440] video:8575KiB audio:435KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.337919%
+frame=  829 fps=104 q=-1.0 Lsize=    9041KiB time=00:00:27.56 bitrate=2686.8kbits/s speed=3.46x elapsed=0:00:07.97    
+[libx264 @ 000001ab56ba3c40] frame I:10    Avg QP:20.89  size: 62274
+[libx264 @ 000001ab56ba3c40] frame P:291   Avg QP:25.17  size: 20425
+[libx264 @ 000001ab56ba3c40] frame B:528   Avg QP:27.00  size:  4193
+[libx264 @ 000001ab56ba3c40] consecutive B-frames:  7.2% 22.7%  2.5% 67.6%
+[libx264 @ 000001ab56ba3c40] mb I  I16..4: 30.5% 63.9%  5.6%
+[libx264 @ 000001ab56ba3c40] mb P  I16..4:  6.8%  8.6%  0.3%  P16..4: 38.3%  7.0%  3.9%  0.0%  0.0%    skip:35.2%
+[libx264 @ 000001ab56ba3c40] mb B  I16..4:  0.4%  0.4%  0.0%  B16..8: 29.6%  0.7%  0.1%  direct: 1.2%  skip:67.6%  L0:42.0% L1:56.5% BI: 1.6%
+[libx264 @ 000001ab56ba3c40] 8x8 transform intra:56.0% inter:82.6%
+[libx264 @ 000001ab56ba3c40] coded y,uvDC,uvAC intra: 24.4% 48.8% 5.4% inter: 6.9% 12.6% 0.1%
+[libx264 @ 000001ab56ba3c40] i16 v,h,dc,p: 34% 29% 12% 25%
+[libx264 @ 000001ab56ba3c40] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 19% 16% 40%  5%  3%  3%  4%  4%  5%
+[libx264 @ 000001ab56ba3c40] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 17% 21%  8%  8%  6%  6%  5%  4%
+[libx264 @ 000001ab56ba3c40] i8c dc,h,v,p: 56% 23% 16%  5%
+[libx264 @ 000001ab56ba3c40] Weighted P-Frames: Y:11.0% UV:10.0%
+[libx264 @ 000001ab56ba3c40] ref P L0: 68.0% 18.9%  9.9%  3.1%  0.2%
+[libx264 @ 000001ab56ba3c40] ref B L0: 94.2%  4.9%  0.9%
+[libx264 @ 000001ab56ba3c40] ref B L1: 98.7%  1.3%
+[libx264 @ 000001ab56ba3c40] kb/s:2542.00
+[aac @ 000001ab570d1780] Qavg: 457.028

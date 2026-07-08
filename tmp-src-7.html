@@ -1,0 +1,1395 @@
+﻿<!DOCTYPE html>
+<html lang="el" class="loading-site no-js">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="https://dermaesthetics.gr/xmlrpc.php" />
+
+	<script type="rocketlazyloadscript">(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<script id="cookie-law-info-gcm-var-js">
+var _ckyGcm = {"status":true,"default_settings":[{"analytics":"denied","advertisement":"denied","functional":"denied","necessary":"granted","ad_user_data":"denied","ad_personalization":"denied","regions":"All"}],"wait_for_update":2000,"url_passthrough":false,"ads_data_redaction":false}</script>
+<script id="cookie-law-info-gcm-js" type="text/javascript" src="https://dermaesthetics.gr/wp-content/plugins/cookie-law-info/lite/frontend/js/gcm.min.js" data-rocket-defer defer></script> <script type="rocketlazyloadscript" data-minify="1" id="cookieyes" data-rocket-type="text/javascript" data-rocket-src="https://dermaesthetics.gr/wp-content/cache/min/1/client_data/392d613138ff38fa92a7f185/script.js?ver=1779689872" data-rocket-defer defer></script><meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- This site is optimized with the Yoast SEO Premium plugin v20.7 (Yoast SEO v27.6) - https://yoast.com/product/yoast-seo-premium-wordpress/ -->
+	<title>Ανακαλύψτε το Barbie Botox: Η Κομψή Λύση για Ένα Λεπτό Λαιμό και Ώμους - Dermaesthetics Πάτρα</title>
+	<link rel="canonical" href="https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/" />
+	<meta property="og:locale" content="el_GR" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Ανακαλύψτε το Barbie Botox: Η Κομψή Λύση για Ένα Λεπτό Λαιμό και Ώμους - Dermaesthetics Πάτρα" />
+	<meta property="og:description" content="Η δερματολόγος – αφροδισιολόγος Χαριτίνη Πετροπούλου είναι διδάκτωρ της Ιατρικής Σχολής του Πανεπιστημίου Αθηνών από το 2006 και ειδικεύθηκε στη δερματολογία στο Νοσοκομείο «Α. Συγγρός».Μετεκπαιδεύτηκε στο Ινστιτούτο Δερματολογίας St. John’s, στο Πανεπιστημιακό Νοσοκομείο St. Thomas’ του Λονδίνου στην παιδοδερματολογία, στην κλινική Laser, στις ειδικές κλινικές για Πομφολυγώδη Νοσήματα, στην κλινική για Δερματοπάθειες της Κύησης και στο εργαστήριο Ανοσοπαθολογίας." />
+	<meta property="og:url" content="https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/" />
+	<meta property="og:site_name" content="Dermaesthetics Πάτρα" />
+	<meta property="article:publisher" content="https://www.facebook.com/charitini.petropoulou/" />
+	<meta property="article:published_time" content="2026-03-05T17:08:03+00:00" />
+	<meta property="article:modified_time" content="2026-03-05T17:10:26+00:00" />
+	<meta property="og:image" content="https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox.webp" />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="720" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="avenue_admin" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Συντάχθηκε από" />
+	<meta name="twitter:data1" content="avenue_admin" />
+	<meta name="twitter:label2" content="Εκτιμώμενος χρόνος ανάγνωσης" />
+	<meta name="twitter:data2" content="4 λεπτά" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"Article","@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#article","isPartOf":{"@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/"},"author":{"name":"avenue_admin","@id":"https:\/\/dermaesthetics.gr\/#\/schema\/person\/675f18b351cded7ee2cd0a73e7e58699"},"headline":"Ανακαλύψτε το Barbie Botox: Η Κομψή Λύση για Ένα Λεπτό Λαιμό και Ώμους","datePublished":"2026-03-05T17:08:03+00:00","dateModified":"2026-03-05T17:10:26+00:00","mainEntityOfPage":{"@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/"},"wordCount":27,"commentCount":0,"publisher":{"@id":"https:\/\/dermaesthetics.gr\/#organization"},"image":{"@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#primaryimage"},"thumbnailUrl":"https:\/\/dermaesthetics.gr\/wp-content\/uploads\/2026\/03\/barbie_botox.webp","articleSection":["Νέα \/ Άρθρα"],"inLanguage":"el","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#respond"]}]},{"@type":"WebPage","@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/","url":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/","name":"Ανακαλύψτε το Barbie Botox: Η Κομψή Λύση για Ένα Λεπτό Λαιμό και Ώμους - Dermaesthetics Πάτρα","isPartOf":{"@id":"https:\/\/dermaesthetics.gr\/#website"},"primaryImageOfPage":{"@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#primaryimage"},"image":{"@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#primaryimage"},"thumbnailUrl":"https:\/\/dermaesthetics.gr\/wp-content\/uploads\/2026\/03\/barbie_botox.webp","datePublished":"2026-03-05T17:08:03+00:00","dateModified":"2026-03-05T17:10:26+00:00","breadcrumb":{"@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#breadcrumb"},"inLanguage":"el","potentialAction":[{"@type":"ReadAction","target":["https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/"]}]},{"@type":"ImageObject","inLanguage":"el","@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#primaryimage","url":"https:\/\/dermaesthetics.gr\/wp-content\/uploads\/2026\/03\/barbie_botox.webp","contentUrl":"https:\/\/dermaesthetics.gr\/wp-content\/uploads\/2026\/03\/barbie_botox.webp","width":1280,"height":720},{"@type":"BreadcrumbList","@id":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https:\/\/dermaesthetics.gr\/"},{"@type":"ListItem","position":2,"name":"Ανακαλύψτε το Barbie Botox: Η Κομψή Λύση για Ένα Λεπτό Λαιμό και Ώμους"}]},{"@type":"WebSite","@id":"https:\/\/dermaesthetics.gr\/#website","url":"https:\/\/dermaesthetics.gr\/","name":"Dermaesthetics Πάτρα","description":"Δερματολόγος, Αφροδισιολόγος, Πάτρα","publisher":{"@id":"https:\/\/dermaesthetics.gr\/#organization"},"alternateName":"Χαριτίνη Πετροπούλου","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/dermaesthetics.gr\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"el"},{"@type":"Organization","@id":"https:\/\/dermaesthetics.gr\/#organization","name":"Χαριτίνη Πετροπούλου Dermaesthetics.gr","alternateName":"Dermaesthetics.gr","url":"https:\/\/dermaesthetics.gr\/","logo":{"@type":"ImageObject","inLanguage":"el","@id":"https:\/\/dermaesthetics.gr\/#\/schema\/logo\/image\/","url":"https:\/\/dermaesthetics.gr\/wp-content\/uploads\/2023\/06\/7.jpg","contentUrl":"https:\/\/dermaesthetics.gr\/wp-content\/uploads\/2023\/06\/7.jpg","width":1062,"height":319,"caption":"Χαριτίνη Πετροπούλου Dermaesthetics.gr"},"image":{"@id":"https:\/\/dermaesthetics.gr\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/charitini.petropoulou\/"]},{"@type":"Person","@id":"https:\/\/dermaesthetics.gr\/#\/schema\/person\/675f18b351cded7ee2cd0a73e7e58699","name":"avenue_admin","image":{"@type":"ImageObject","inLanguage":"el","@id":"https:\/\/secure.gravatar.com\/avatar\/57dae0c5bb47a1e7f0f5fc7a2a02f5432b07db68ae69bebd1b0e6cb737378ac6?s=96&d=mm&r=g","url":"https:\/\/secure.gravatar.com\/avatar\/57dae0c5bb47a1e7f0f5fc7a2a02f5432b07db68ae69bebd1b0e6cb737378ac6?s=96&d=mm&r=g","contentUrl":"https:\/\/secure.gravatar.com\/avatar\/57dae0c5bb47a1e7f0f5fc7a2a02f5432b07db68ae69bebd1b0e6cb737378ac6?s=96&d=mm&r=g","caption":"avenue_admin"},"url":"https:\/\/dermaesthetics.gr\/author\/avenue_admin\/"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//use.fontawesome.com' />
+<link rel='preconnect' href='https://fonts.googleapis.com' />
+<link rel='preconnect' href='https://fonts.gstatic.com' />
+<link rel='prefetch' href='https://dermaesthetics.gr/wp-content/themes/flatsome/assets/js/flatsome.js?ver=e1ad26bd5672989785e1' />
+<link rel='prefetch' href='https://dermaesthetics.gr/wp-content/themes/flatsome/assets/js/chunk.slider.js?ver=3.19.12' />
+<link rel='prefetch' href='https://dermaesthetics.gr/wp-content/themes/flatsome/assets/js/chunk.popups.js?ver=3.19.12' />
+<link rel='prefetch' href='https://dermaesthetics.gr/wp-content/themes/flatsome/assets/js/chunk.tooltips.js?ver=3.19.12' />
+<link rel="alternate" type="application/rss+xml" title="Ροή RSS &raquo; Dermaesthetics Πάτρα" href="https://dermaesthetics.gr/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ροή Σχολίων &raquo; Dermaesthetics Πάτρα" href="https://dermaesthetics.gr/comments/feed/" />
+<link rel="preload" as="image" href="https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox.webp" imagesrcset="https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox.webp 1280w, https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox-711x400.webp 711w, https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox-768x432.webp 768w, https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox-18x10.webp 18w" imagesizes="100vw" type="image/jpeg" fetchpriority="high" />
+<link rel="alternate" type="application/rss+xml" title="Ροή Σχολίων Dermaesthetics Πάτρα &raquo; Ανακαλύψτε το Barbie Botox: Η Κομψή Λύση για Ένα Λεπτό Λαιμό και Ώμους" href="https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/feed/" />
+<style>@font-face{font-family:'fl-icons';font-display:swap;}</style><style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+
+<style id="font-awesome-svg-styles-default-inline-css">
+.svg-inline--fa {
+  display: inline-block;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -.125em;
+}
+/*# sourceURL=font-awesome-svg-styles-default-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='font-awesome-svg-styles-css' href='https://dermaesthetics.gr/wp-content/cache/min/1/wp-content/uploads/font-awesome/v5.15.4/css/svg-with-js.css?ver=1779689872' media='all' />
+<style id="font-awesome-svg-styles-inline-css">
+   .wp-block-font-awesome-icon svg::before,
+   .wp-rich-text-font-awesome-icon svg::before {content: unset;}
+/*# sourceURL=font-awesome-svg-styles-inline-css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--primary: #000000;--wp--preset--color--secondary: #d26e4b;--wp--preset--color--success: #7a9c59;--wp--preset--color--alert: #b20000;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){margin-left: auto !important;margin-right: auto !important;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: none;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-success-color{color: var(--wp--preset--color--success) !important;}.has-alert-color{color: var(--wp--preset--color--alert) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-success-background-color{background-color: var(--wp--preset--color--success) !important;}.has-alert-background-color{background-color: var(--wp--preset--color--alert) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-success-border-color{border-color: var(--wp--preset--color--success) !important;}.has-alert-border-color{border-color: var(--wp--preset--color--alert) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link data-minify="1" rel='stylesheet' id='cpsh-shortcodes-css' href='https://dermaesthetics.gr/wp-content/cache/min/1/wp-content/plugins/column-shortcodes/assets/css/shortcodes.css?ver=1779689872' media='all' />
+<link data-minify="1" rel='stylesheet' id='trp-language-switcher-style-css' href='https://dermaesthetics.gr/wp-content/cache/min/1/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=1779689872' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-official-css' href='https://dermaesthetics.gr/wp-content/cache/min/1/releases/v5.15.4/css/all.css?ver=1779689872' media='all' crossorigin="anonymous" />
+<link data-minify="1" rel='stylesheet' id='flatsome-main-css' href='https://dermaesthetics.gr/wp-content/cache/min/1/wp-content/themes/flatsome/assets/css/flatsome.css?ver=1779689872' media='all' />
+<style id="flatsome-main-inline-css">
+@font-face {
+				font-family: "fl-icons";
+				font-display: block;
+				src: url(https://dermaesthetics.gr/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot?v=3.19.12);
+				src:
+					url(https://dermaesthetics.gr/wp-content/themes/flatsome/assets/css/icons/fl-icons.eot#iefix?v=3.19.12) format("embedded-opentype"),
+					url(https://dermaesthetics.gr/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff2?v=3.19.12) format("woff2"),
+					url(https://dermaesthetics.gr/wp-content/themes/flatsome/assets/css/icons/fl-icons.ttf?v=3.19.12) format("truetype"),
+					url(https://dermaesthetics.gr/wp-content/themes/flatsome/assets/css/icons/fl-icons.woff?v=3.19.12) format("woff"),
+					url(https://dermaesthetics.gr/wp-content/themes/flatsome/assets/css/icons/fl-icons.svg?v=3.19.12#fl-icons) format("svg");
+			}
+/*# sourceURL=flatsome-main-inline-css */
+</style>
+<link rel='stylesheet' id='flatsome-style-css' href='https://dermaesthetics.gr/wp-content/themes/flatsome-child/style.css?ver=3.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://dermaesthetics.gr/wp-content/cache/min/1/releases/v5.15.4/css/v4-shims.css?ver=1779689872' media='all' crossorigin="anonymous" />
+<style id="font-awesome-official-v4shim-inline-css">
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+@font-face {
+font-family: "FontAwesome";
+font-display: block;
+src: url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff2") format("woff2"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.woff") format("woff"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.ttf") format("truetype"),
+		url("https://use.fontawesome.com/releases/v5.15.4/webfonts/fa-regular-400.svg#fontawesome") format("svg");
+unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
+}
+/*# sourceURL=font-awesome-official-v4shim-inline-css */
+</style>
+<script id="jquery-core-js" src="https://dermaesthetics.gr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-remove-uppercase-accents-js-extra">
+var rua = {"accents":[{"original":"\u0386\u0399","convert":"\u0391\u03aa"},{"original":"\u0386\u03a5","convert":"\u0391\u03ab"},{"original":"\u0388\u0399","convert":"\u0395\u03aa"},{"original":"\u038c\u0399","convert":"\u039f\u03aa"},{"original":"\u0388\u03a5","convert":"\u0395\u03ab"},{"original":"\u038c\u03a5","convert":"\u039f\u03ab"},{"original":"\u03ac\u03b9","convert":"\u03b1\u03ca"},{"original":"\u03ad\u03b9","convert":"\u03b5\u03ca"},{"original":"\u0386\u03c5","convert":"\u03b1\u03cb"},{"original":"\u03ac\u03c5","convert":"\u03b1\u03cb"},{"original":"\u03cc\u03b9","convert":"\u03bf\u03ca"},{"original":"\u0388\u03c5","convert":"\u03b5\u03cb"},{"original":"\u03ad\u03c5","convert":"\u03b5\u03cb"},{"original":"\u03cc\u03c5","convert":"\u03bf\u03cb"},{"original":"\u038c\u03c5","convert":"\u03bf\u03cb"},{"original":"\u0386","convert":"\u0391"},{"original":"\u03ac","convert":"\u03b1"},{"original":"\u0388","convert":"\u0395"},{"original":"\u03ad","convert":"\u03b5"},{"original":"\u0389","convert":"\u0397"},{"original":"\u03ae","convert":"\u03b7"},{"original":"\u038a","convert":"\u0399"},{"original":"\u03aa","convert":"\u0399"},{"original":"\u03af","convert":"\u03b9"},{"original":"\u0390","convert":"\u03ca"},{"original":"\u038c","convert":"\u039f"},{"original":"\u03cc","convert":"\u03bf"},{"original":"\u038e","convert":"\u03a5"},{"original":"\u03cd","convert":"\u03c5"},{"original":"\u03b0","convert":"\u03cb"},{"original":"\u038f","convert":"\u03a9"},{"original":"\u03ce","convert":"\u03c9"}],"selectors":"","selAction":""};
+//# sourceURL=jquery-remove-uppercase-accents-js-extra
+</script>
+<script data-minify="1" id="jquery-remove-uppercase-accents-js" src="https://dermaesthetics.gr/wp-content/cache/min/1/wp-content/plugins/remove-uppercase-accents/js/jquery.remove-uppercase-accents.js?ver=1779689872"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dermaesthetics.gr/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.0" />
+<link rel='shortlink' href='https://dermaesthetics.gr/?p=3289' />
+<!-- Event snippet for Contact Forms conversion page -->
+<script type="rocketlazyloadscript">
+  gtag('event', 'conversion', {'send_to': 'AW-380522511/LrIHCIOy3NAZEI-gubUB'});
+</script>
+<link rel="alternate" hreflang="el" href="https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/"/>
+<link rel="alternate" hreflang="en-GB" href="https://dermaesthetics.gr/en/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/"/>
+<link rel="alternate" hreflang="en" href="https://dermaesthetics.gr/en/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/"/>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1464685037539105');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1464685037539105&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FNFWJJP6E8"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FNFWJJP6E8');
+</script><style class="wpcode-css-snippet">.type-post a:where(:not(.wp-element-button)) {
+	text-decoration: underline!important;
+    color: purple;
+	font-weight: 700!important;
+}</style><link rel="icon" href="https://dermaesthetics.gr/wp-content/uploads/2023/06/cropped-favicon-280x280.webp" sizes="32x32" />
+<link rel="icon" href="https://dermaesthetics.gr/wp-content/uploads/2023/06/cropped-favicon-280x280.webp" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://dermaesthetics.gr/wp-content/uploads/2023/06/cropped-favicon-280x280.webp" />
+<meta name="msapplication-TileImage" content="https://dermaesthetics.gr/wp-content/uploads/2023/06/cropped-favicon-280x280.webp" />
+<style id="custom-css" type="text/css">:root {--primary-color: #000000;--fs-color-primary: #000000;--fs-color-secondary: #d26e4b;--fs-color-success: #7a9c59;--fs-color-alert: #b20000;--fs-experimental-link-color: #000000;--fs-experimental-link-color-hover: #111;}.tooltipster-base {--tooltip-color: #fff;--tooltip-bg-color: #000;}.off-canvas-right .mfp-content, .off-canvas-left .mfp-content {--drawer-width: 300px;}.container-width, .full-width .ubermenu-nav, .container, .row{max-width: 1090px}.row.row-collapse{max-width: 1060px}.row.row-small{max-width: 1082.5px}.row.row-large{max-width: 1120px}.header-main{height: 90px}#logo img{max-height: 90px}#logo{width:200px;}.header-top{min-height: 30px}.transparent .header-main{height: 90px}.transparent #logo img{max-height: 90px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 120px;}.header.show-on-scroll,.stuck .header-main{height:90px!important}.stuck #logo img{max-height: 90px!important}.header-bg-color {background-color: #feeff0}.header-bottom {background-color: #f1f1f1}.header-main .nav > li > a{line-height: 16px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.main-menu-overlay{background-color: #731d68}.nav-dropdown-has-arrow.nav-dropdown-has-border li.has-dropdown:before{border-bottom-color: #292929;}.nav .nav-dropdown{border-color: #292929 }.header-top{background-color:#731d68!important;}body{color: #000000}h1,h2,h3,h4,h5,h6,.heading-font{color: #000000;}body{font-size: 100%;}@media screen and (max-width: 549px){body{font-size: 100%;}}body{font-family: Manrope, sans-serif;}body {font-weight: 300;font-style: normal;}.nav > li > a {font-family: Manrope, sans-serif;}.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-family: Manrope, sans-serif;}.nav > li > a,.mobile-sidebar-levels-2 .nav > li > ul > li > a {font-weight: 600;font-style: normal;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: Manrope, sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2 {font-weight: 600;font-style: normal;}.alt-font{font-family: Manrope, sans-serif;}.alt-font {font-weight: 400!important;font-style: normal!important;}.breadcrumbs{text-transform: none;}button,.button{text-transform: none;}.nav > li > a, .links > li > a{text-transform: none;}.section-title span{text-transform: none;}h3.widget-title,span.widget-title{text-transform: none;}.header:not(.transparent) .header-nav-main.nav > li > a {color: #000000;}.header-main .social-icons,.header-main .cart-icon strong,.header-main .menu-title,.header-main .header-button > .button.is-outline,.header-main .nav > li > a > i:not(.icon-angle-down){color: #000000!important;}.header-main .header-button > .button.is-outline,.header-main .cart-icon strong:after,.header-main .cart-icon strong{border-color: #000000!important;}.header-main .header-button > .button:not(.is-outline){background-color: #000000!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover,.header-main .header-button > .button:hover i,.header-main .header-button > .button:hover span{color:#FFF!important;}.header-main .menu-title:hover,.header-main .social-icons a:hover,.header-main .header-button > .button.is-outline:hover,.header-main .nav > li > a:hover > i:not(.icon-angle-down){color: #000000!important;}.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{background-color: #000000!important;}.header-main .current-dropdown .cart-icon strong:after,.header-main .current-dropdown .cart-icon strong,.header-main .header-button > .button:hover{border-color: #000000!important;}.footer-2{background-color: #292929}.absolute-footer, html{background-color: #292929}.nav-vertical-fly-out > li + li {border-top-width: 1px; border-top-style: solid;}/* Custom CSS */.grecaptcha-badge { visibility: hidden;}.skip-link{color: white !important;}.nav-left {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: center!important;}.relative > .row-full-width > .col > .col-inner > .box-text-bottom .box-text{height:120px !important;}/* remove by admin on blog page */#post-list .hentry .byline{visibility:hidden !important;}/* Custom CSS Mobile */@media (max-width: 549px){/* κείμενο από υπηρεσιες στο κινητό*/#content .block p{ font-size:14px !important; font-weight:700 !important;}/* το ύψος του μωβ στα διπλά boxes */#content .block .box-text{height:75px !important;}}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style><style id="wp-custom-css">
+.custom-call {
+	color:#fff;
+}
+.custom-call:hover {
+	color:#fff;
+}
+</style>
+<style id="kirki-inline-styles">/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggqxSuXd.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggOxSuXd.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggSxSuXd.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggixSuXd.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggmxSuXd.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://dermaesthetics.gr/wp-content/fonts/manrope/xn7gYHE41ni1AdIRggexSg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style><style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://dermaesthetics.gr/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://dermaesthetics.gr/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://dermaesthetics.gr/wp-includes/blocks/paragraph/style.min.css */
+</style>
+
+<link rel="preload" as="image" href="https://dermaesthetics.gr/wp-content/uploads/2023/06/newlogo.webp" type="image/jpeg" fetchpriority="high" />
+<meta name="generator" content="WP Rocket 3.19.3" data-wpr-features="wpr_delay_js wpr_defer_js wpr_minify_js wpr_image_dimensions wpr_minify_css wpr_preload_links wpr_desktop" /></head>
+
+<body class="wp-singular post-template-default single single-post postid-3289 single-format-standard wp-theme-flatsome wp-child-theme-flatsome-child translatepress-el lightbox nav-dropdown-has-arrow nav-dropdown-has-shadow nav-dropdown-has-border">
+
+<!-- Custom Popup -->
+<div data-rocket-location-hash="d76cfae68818a81d3769290f9c4b1c51" id="custom-popup">
+<a href="https://dermaesthetics.gr/espa-2/" id="popup-link">
+<img src="https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL.jpg" width="30%" alt="Popup Image" />
+</a>
+</div>
+
+<style>
+    /* Styles for the popup */
+    #custom-popup {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.7); /* Optional: dark background for contrast */
+        z-index: 9999;
+        padding: 10px 0;
+        display: block; /* Ensure it is visible */
+    }
+
+    #custom-popup img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #popup-link {
+        text-decoration: none;
+    }
+</style>
+
+<script type="rocketlazyloadscript">
+    // Debugging Script
+    document.addEventListener('DOMContentLoaded', function () {
+        const popup = document.getElementById('custom-popup');
+        if (popup) {
+            console.log("Popup element found and initialized.");
+        } else {
+            console.error("Popup element not found. Check the ID or HTML placement.");
+        }
+    });
+</script>
+
+<a class="skip-link screen-reader-text" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+<div data-rocket-location-hash="d1cbad6e522075960fde56c8528c3e41" id="wrapper">
+
+	
+	<header data-rocket-location-hash="a47e8220ba593054e04e7403f7cfcfee" id="header" class="header header-full-width has-sticky sticky-jump">
+		<div data-rocket-location-hash="f969658fe136c01ed31affbb15452638" class="header-wrapper">
+			<div id="top-bar" class="header-top hide-for-sticky nav-dark flex-has-center">
+    <div class="flex-row container">
+      <div class="flex-col hide-for-medium flex-left">
+          <ul class="nav nav-left medium-nav-center nav-small  nav-divided">
+                        </ul>
+      </div>
+
+      <div class="flex-col hide-for-medium flex-center">
+          <ul class="nav nav-center nav-small  nav-divided">
+              <li class="html custom html_topbar_right"><font size="3px"><b>Κλείστε ραντεβού με την ιατρό στο τηλέφωνο<a class="custom-call" href="tel:+302610220839 "> 2610 220 839 (Πάτρα)</a> ή <a class="custom-call" href="tel:+302610994960"> 2610 994 960 (Ρίο)</a> ή  <a class="custom-call" href="tel:+302107650977"> 2107650977 (Aθήνα)</a>  </font></b></li>          </ul>
+      </div>
+
+      <div class="flex-col hide-for-medium flex-right">
+         <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
+                        </ul>
+      </div>
+
+            <div class="flex-col show-for-medium flex-grow">
+          <ul class="nav nav-center nav-small mobile-nav  nav-divided">
+              <li class="html custom html_top_right_text"><a href="https://dermaesthetics.gr/epicheirisiako-programmas-2014-2020/" target="_blank"><img width="1183" height="415" alt="espa" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/epsalogogr.jpg" style="width:200px"/></a><br>
+</li><li class="html custom html_topbar_right"><font size="3px"><b>Κλείστε ραντεβού με την ιατρό στο τηλέφωνο<a class="custom-call" href="tel:+302610220839 "> 2610 220 839 (Πάτρα)</a> ή <a class="custom-call" href="tel:+302610994960"> 2610 994 960 (Ρίο)</a> ή  <a class="custom-call" href="tel:+302107650977"> 2107650977 (Aθήνα)</a>  </font></b></li>          </ul>
+      </div>
+      
+    </div>
+</div>
+<div id="masthead" class="header-main ">
+      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            
+<!-- Header logo -->
+<a href="https://dermaesthetics.gr/" title="Dermaesthetics Πάτρα - Δερματολόγος, Αφροδισιολόγος, Πάτρα" rel="home">
+		<img width="1020" height="306" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/newlogo.webp" class="header_logo header-logo" alt="Dermaesthetics Πάτρα"/ width="1020" height="306" loading="eager" decoding="async" fetchpriority="high" width="1020" height="306"><img  width="1020" height="306" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/newlogo.webp" class="header-logo-dark" alt="Dermaesthetics Πάτρα"/ width="1020" height="306" loading="eager" decoding="async" fetchpriority="high" width="1020" height="306"></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+                          </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+            <ul class="header-nav header-nav-main nav nav-left  nav-size-medium nav-uppercase" >
+              <li id="menu-item-210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-210 menu-item-design-default"><a href="https://dermaesthetics.gr/" class="nav-top-link">Αρχική</a></li>
+<li id="menu-item-407" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-407 menu-item-design-default"><a href="https://dermaesthetics.gr/viografiko-simioma/" class="nav-top-link">Η Ιατρός</a></li>
+<li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439 menu-item-design-default"><a href="https://dermaesthetics.gr/i-omada-mas/" class="nav-top-link">Η Ομάδα μας</a></li>
+<li id="menu-item-459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459 menu-item-design-default"><a href="https://dermaesthetics.gr/ta-iatreia-mas/" class="nav-top-link">Τα Ιατρεία μας</a></li>
+<li id="menu-item-487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-487 menu-item-design-container-width menu-item-has-block has-dropdown"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">Αισθητική Δερματολογία<i class="icon-angle-down" ></i></a><div class="sub-menu nav-dropdown"><div class="row row-collapse"  id="row-2029820729">
+
+
+	<div id="col-1126763519" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="row row-large"  id="row-17921284">
+
+
+	<div id="col-261535894" class="col medium-9 small-12 large-9"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="row"  id="row-1264875229">
+
+
+	<div id="col-1436979087" class="col medium-4 small-12 large-4"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="ux-menu stack stack-col justify-start ux-menu--divider-solid">
+		
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/lifting-me-nimata-pdo/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Lifting με νήματα PDO			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/monimi-afairesi-tatouaz-me-laser/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Αφαίρεση tatoo με laser			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/laser-apotrichosi/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Laser αποτρίχωση			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/fractional-laser/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Fractional Laser			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/3d-kriolipolisi-protoporiaki-methodos-monimis-katapolemisis-tou-lipous/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				3D-Κρυολιπόλυση			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/radiosichnotites-rf-vacuum/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Ραδιοσυχνότητες RF - Vacuum			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/votouliniki-toxini/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Βοτουλινική τοξίνη			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/ialouroniko-oxi/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Υαλουρονικό Οξύ			</span>
+		</a>
+	</div>
+	
+
+
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1113562059" class="col medium-4 small-12 large-4"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="ux-menu stack stack-col justify-start ux-menu--divider-solid">
+		
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/telia-chili/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Τέλεια χείλη			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/mesotherapia-prosopou/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Μεσοθεραπεία Προσώπου			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/aftologi-mesotherapeia/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Αυτόλογη Μεσοθεραπεία			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/skin-boosters/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Skin Boosters			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/akmi-oules-akmis/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Ακμή - Ουλές Ακμής			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/evriangies-ke-laser/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Ευρυαγγείες και Laser			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/kittaritida-lipolisi-topiko-pachos/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Κυτταρίτιδα - Λιπόλυση			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/enesimi-lipolysi/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Ενέσιμη Λιπόλυση			</span>
+		</a>
+	</div>
+	
+
+
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-1824230000" class="col medium-4 small-12 large-4"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="ux-menu stack stack-col justify-start ux-menu--divider-solid">
+		
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/katharismos-prosopou-patra/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Βαθύς Καθαρισμός Προσώπου			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/dermoapoxesi-me-mikrokristallous/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Δερμοαπόξεση με Κρυστάλλους ή Διαμάντια			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/kilides-panades/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Κηλίδες - Πανάδες			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/peeling/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Peeling			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/antigiransi-anaplasi-me-laser/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				Αντιγήρανση - Ανάπλαση με Laser			</span>
+		</a>
+	</div>
+	
+
+	<div class="ux-menu-link flex menu-item">
+		<a class="ux-menu-link__link flex" href="https://dermaesthetics.gr/esthitiki-dermatologia/hifu/" >
+			<i class="ux-menu-link__icon text-center icon-angle-right" ></i>			<span class="ux-menu-link__text">
+				HIFU			</span>
+		</a>
+	</div>
+	
+
+
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-805980070" class="col medium-3 small-12 large-3"  >
+				<div class="col-inner"  >
+			
+			
+
+<div class="row"  id="row-1450323834">
+
+
+	<div id="col-870145979" class="col small-12 large-12"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="box has-hover   has-hover box-text-bottom" >
+
+		<div class="box-image" >
+			<a href="/esthitiki-dermatologia/" >			<div class="image-zoom" >
+				<img width="1024" height="633" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/aisthitiki-dermatologia-1024x633-2.webp" class="attachment- size-" alt="aisthitiki-dermatologia" decoding="async" fetchpriority="high" srcset="https://dermaesthetics.gr/wp-content/uploads/2023/06/aisthitiki-dermatologia-1024x633-2.webp 1024w, https://dermaesthetics.gr/wp-content/uploads/2023/06/aisthitiki-dermatologia-1024x633-2-647x400.webp 647w, https://dermaesthetics.gr/wp-content/uploads/2023/06/aisthitiki-dermatologia-1024x633-2-768x475.webp 768w, https://dermaesthetics.gr/wp-content/uploads/2023/06/aisthitiki-dermatologia-1024x633-2-18x12.webp 18w" sizes="(max-width: 1024px) 100vw, 1024px" loading="eager" />											</div>
+			</a>		</div>
+
+		<div class="box-text text-left" >
+			<div class="box-text-inner">
+				
+
+<h4>ΑΙΣΘΗΤΙΚΗ ΔΕΡΜΑΤΟΛΟΓΙΑ</h4>
+
+			</div>
+		</div>
+	</div>
+	
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+		</div>
+				
+<style>
+#col-1126763519 > .col-inner {
+  padding: 60px 0px 0px 0px;
+}
+</style>
+	</div>
+
+	
+
+</div></div></li>
+<li id="menu-item-679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679 menu-item-design-default"><a href="https://dermaesthetics.gr/pedodermatologia/" class="nav-top-link">Παιδοδερματολογία</a></li>
+<li id="menu-item-685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685 menu-item-design-default"><a href="https://dermaesthetics.gr/kliniki-dermatologia-2/" class="nav-top-link">Κλινική Δερματολογία</a></li>
+<li id="menu-item-2676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676 menu-item-design-default"><a href="https://dermaesthetics.gr/afrodisiologia/" class="nav-top-link">Αφροδισιολογία</a></li>
+<li id="menu-item-2316" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2316 menu-item-design-default has-dropdown"><a href="#" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">Δημοσιεύσεις<i class="icon-angle-down" ></i></a>
+<ul class="sub-menu nav-dropdown nav-dropdown-default">
+	<li id="menu-item-2292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2292"><a href="https://dermaesthetics.gr/blog/">Δημοσιευμένα Άρθρα</a></li>
+	<li id="menu-item-3063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3063"><a href="https://dermaesthetics.gr/news-blog/">Νέα / Άρθρα</a></li>
+	<li id="menu-item-2317" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2317"><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=petropoulou+h">Διεθνής Βιβλιογραφία</a></li>
+</ul>
+</li>
+<li id="menu-item-2293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2293 menu-item-design-default"><a href="https://dermaesthetics.gr/contact-us/" class="nav-top-link">Επικοινωνία</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-size-medium nav-uppercase">
+              <li class="html custom html_top_right_text"><a href="https://dermaesthetics.gr/epicheirisiako-programmas-2014-2020/" target="_blank"><img width="1183" height="415" alt="espa" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/epsalogogr.jpg" style="width:200px"/></a><br>
+</li>            </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+              <li class="nav-icon has-icon">
+  		<a href="#" data-open="#main-menu" data-pos="center" data-bg="main-menu-overlay" data-color="dark" class="is-small" aria-label="Menu" aria-controls="main-menu" aria-expanded="false">
+
+		  <i class="icon-menu" ></i>
+		  		</a>
+	</li>
+            </ul>
+          </div>
+
+      </div>
+
+            <div class="container"><div class="top-divider full-width"></div></div>
+      </div>
+
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div>		</div>
+	</header>
+
+	
+	<main data-rocket-location-hash="948ad0d3a8d774225d8e906b9164601b" id="main" class="">
+
+<div data-rocket-location-hash="aa0c6898cf4ac1d59e099b8ac6455dc1" id="content" class="blog-wrapper blog-single page-wrapper">
+	
+
+<div class="row row-large row-divided ">
+
+	<div class="large-9 col">
+		
+
+
+<article id="post-3289" class="post-3289 post type-post status-publish format-standard has-post-thumbnail hentry category-nea-arthra">
+	<div class="article-inner ">
+		<header class="entry-header">
+	<div class="entry-header-text entry-header-text-top text-center">
+		<h6 class="entry-category is-xsmall"><a href="https://dermaesthetics.gr/category/nea-arthra/" rel="category tag">Νέα / Άρθρα</a></h6><h1 class="entry-title">Ανακαλύψτε το Barbie Botox: Η Κομψή Λύση για Ένα Λεπτό Λαιμό και Ώμους</h1><div class="entry-divider is-divider small"></div>
+	</div>
+						<div class="entry-image relative">
+				<a href="https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/">
+    <div class="bialty-container"><img width="1020" height="574" src="https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox.webp" class="attachment-large size-large wp-post-image" alt="Barbie Botox" srcset="https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox.webp 1280w, https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox-711x400.webp 711w, https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox-768x432.webp 768w, https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox-18x10.webp 18w" sizes="(max-width: 1020px) 100vw, 1020px" width="1020" height="574" loading="eager" decoding="async" fetchpriority="high" width="1020" height="574"></div>
+</a>
+				<div class="badge absolute top post-date badge-outline">
+	<div class="badge-inner">
+		<span class="post-date-day">05</span><br>
+		<span class="post-date-month is-small">Μαρ</span>
+	</div>
+</div>
+			</div>
+			</header>
+		<div class="entry-content single-page">
+
+	<div class="bialty-container">
+<p class="wp-block-paragraph">T&omicron; Barbie Botox, &epsilon;&#943;&nu;&alpha;&iota; &mu;&iota;&alpha; &tau;&#940;&sigma;&eta; &pi;&omicron;&upsilon; &#941;&chi;&epsilon;&iota; &kappa;&alpha;&tau;&alpha;&kappa;&lambda;&#973;&sigma;&epsilon;&iota; &tau;&alpha; social media &kappa;&alpha;&iota; &tau;&iota;&sigmaf; &kappa;&lambda;&iota;&nu;&iota;&kappa;&#941;&sigmaf; &omicron;&mu;&omicron;&rho;&phi;&iota;&#940;&sigmaf; &pi;&alpha;&gamma;&kappa;&omicron;&sigma;&mu;&#943;&omega;&sigmaf;. &Epsilon;&#943;&nu;&alpha;&iota; &mu;&iota;&alpha; &kappa;&alpha;&iota;&nu;&omicron;&tau;&#972;&mu;&omicron;&sigmaf; &theta;&epsilon;&rho;&alpha;&pi;&epsilon;&#943;&alpha; &pi;&omicron;&upsilon; &chi;&alpha;&rho;&#943;&zeta;&epsilon;&iota; &#941;&nu;&alpha; &lambda;&epsilon;&pi;&tau;&#972;, &epsilon;&pi;&iota;&mu;&#942;&kappa;&eta; &lambda;&alpha;&iota;&mu;&#972; &kappa;&alpha;&iota; &pi;&iota;&omicron; &kappa;&omicron;&mu;&psi;&omicron;&#973;&sigmaf; &#974;&mu;&omicron;&upsilon;&sigmaf;, &epsilon;&mu;&pi;&nu;&epsilon;&upsilon;&sigma;&mu;&#941;&nu;&eta; &alpha;&pi;&#972;<br>&tau;&eta;&nu; &alpha;&psi;&epsilon;&gamma;&#940;&delta;&iota;&alpha;&sigma;&tau;&eta; &sigma;&iota;&lambda;&omicron;&upsilon;&#941;&tau;&alpha; &tau;&eta;&sigmaf; &delta;&iota;&#940;&sigma;&eta;&mu;&eta;&sigmaf; &kappa;&omicron;&#973;&kappa;&lambda;&alpha;&sigmaf;. &Sigma;&tau;&omicron; &delta;&epsilon;&rho;&mu;&alpha;&tau;&omicron;&lambda;&omicron;&gamma;&iota;&kappa;&#972; &mu;&alpha;&sigmaf; &iota;&alpha;&tau;&rho;&epsilon;&#943;&omicron;, &beta;&lambda;&#941;&pi;&omicron;&upsilon;&mu;&epsilon; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;&#940; &pi;&#974;&sigmaf; &alpha;&upsilon;&tau;&#942; &eta; &alpha;&pi;&lambda;&#942; &delta;&iota;&alpha;&delta;&iota;&kappa;&alpha;&sigma;&#943;&alpha; &mu;&epsilon;&tau;&alpha;&mu;&omicron;&rho;&phi;&#974;&nu;&epsilon;&iota; &tau;&eta;&nu; &alpha;&upsilon;&tau;&omicron;&pi;&epsilon;&pi;&omicron;&#943;&theta;&eta;&sigma;&eta; &tau;&omega;&nu; &alpha;&sigma;&theta;&epsilon;&nu;&#974;&nu; &mu;&alpha;&sigmaf;, &kappa;&#940;&nu;&omicron;&nu;&tau;&#940;&sigmaf; &tau;&omicron;&upsilon;&sigmaf; &nu;&alpha; &lambda;&#940;&mu;&pi;&omicron;&upsilon;&nu; &mu;&epsilon; &phi;&upsilon;&sigma;&iota;&kappa;&#942; &gamma;&omicron;&eta;&tau;&epsilon;&#943;&alpha;.</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-2.webp"><img decoding="async" width="1024" height="527" src="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-2.webp" alt="Unnamed 2" class="wp-image-3292" srcset="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-2.webp 1024w, https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-2-777x400.webp 777w, https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-2-768x395.webp 768w, https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-2-18x9.webp 18w" sizes="(max-width: 1024px) 100vw, 1024px"></a></figure>
+
+
+
+<p class="wp-block-paragraph">&Phi;&alpha;&nu;&tau;&alpha;&sigma;&tau;&epsilon;&#943;&tau;&epsilon; &nu;&alpha; &xi;&upsilon;&pi;&nu;&#940;&tau;&epsilon; &kappa;&#940;&theta;&epsilon; &pi;&rho;&omega;&#943; &kappa;&alpha;&iota; &nu;&alpha; &beta;&lambda;&#941;&pi;&epsilon;&tau;&epsilon; &sigma;&tau;&omicron;&nu; &kappa;&alpha;&theta;&rho;&#941;&phi;&tau;&eta; &#941;&nu;&alpha;&nu; &lambda;&alpha;&iota;&mu;&#972; &pi;&omicron;&upsilon; &phi;&alpha;&#943;&nu;&epsilon;&tau;&alpha;&iota; &pi;&iota;&omicron; &mu;&alpha;&kappa;&rho;&#973;&sigmaf; &kappa;&alpha;&iota; &lambda;&epsilon;&pi;&tau;&#972;&sigmaf;, &chi;&omega;&rho;&#943;&sigmaf; &#943;&chi;&nu;&omicron;&sigmaf; &#941;&nu;&tau;&alpha;&sigma;&eta;&sigmaf; &sigma;&tau;&omicron;&upsilon;&sigmaf; &#974;&mu;&omicron;&upsilon;&sigmaf;. &Tau;&omicron; Barbie Botox, &gamma;&nu;&omega;&sigma;&tau;&#972; &kappa;&alpha;&iota; &omega;&sigmaf; TrapTox, &epsilon;&#943;&nu;&alpha;&iota; &alpha;&kappa;&rho;&iota;&beta;&#974;&sigmaf; &alpha;&upsilon;&tau;&#972;: &mu;&iota;&alpha;<br>&sigma;&tau;&omicron;&chi;&epsilon;&upsilon;&mu;&#941;&nu;&eta; &#941;&gamma;&chi;&upsilon;&sigma;&eta; &beta;&omicron;&tau;&omicron;&upsilon;&lambda;&iota;&nu;&iota;&kappa;&#942;&sigmaf; &tau;&omicron;&xi;&#943;&nu;&eta;&sigmaf; &sigma;&tau;&omicron;&upsilon;&sigmaf; &tau;&rho;&alpha;&pi;&epsilon;&zeta;&omicron;&epsilon;&iota;&delta;&epsilon;&#943;&sigmaf; &mu;&#973;&epsilon;&sigmaf; (&alpha;&upsilon;&tau;&omicron;&#973;&sigmaf; &pi;&omicron;&upsilon; &epsilon;&kappa;&tau;&epsilon;&#943;&nu;&omicron;&nu;&tau;&alpha;&iota; &alpha;&pi;&#972; &tau;&omicron;&nu; &lambda;&alpha;&iota;&mu;&#972; &sigma;&tau;&omicron;&upsilon;&sigmaf; &#974;&mu;&omicron;&upsilon;&sigmaf;). &Alpha;&upsilon;&tau;&omicron;&#943; &omicron;&iota; &mu;&#973;&epsilon;&sigmaf; &sigma;&upsilon;&chi;&nu;&#940; &phi;&alpha;&#943;&nu;&omicron;&nu;&tau;&alpha;&iota; &pi;&iota;&omicron; &upsilon;&pi;&epsilon;&rho;&tau;&rho;&omicron;&phi;&iota;&kappa;&omicron;&#943; &alpha;&pi;&#972; &sigma;&tau;&rho;&epsilon;&sigmaf;, &kappa;&alpha;&kappa;&#942; &sigma;&tau;&#940;&sigma;&eta; &sigma;&#974;&mu;&alpha;&tau;&omicron;&sigmaf; &#942; &#941;&nu;&tau;&omicron;&nu;&eta; &#940;&sigma;&kappa;&eta;&sigma;&eta;, &kappa;&#940;&nu;&omicron;&nu;&tau;&alpha;&sigmaf; &tau;&eta;&nu; &pi;&epsilon;&rho;&iota;&omicron;&chi;&#942; &nu;&alpha; &delta;&epsilon;&#943;&chi;&nu;&epsilon;&iota; &pi;&iota;&omicron; &pi;&lambda;&alpha;&tau;&iota;&#940;. &Mu;&epsilon; &tau;&eta; &theta;&epsilon;&rho;&alpha;&pi;&epsilon;&#943;&alpha;,<br>&chi;&alpha;&lambda;&alpha;&rho;&#974;&nu;&omicron;&upsilon;&nu; &alpha;&pi;&alpha;&lambda;&#940;, &delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;&#974;&nu;&tau;&alpha;&sigmaf; &mu;&iota;&alpha; &pi;&iota;&omicron; &lambda;&epsilon;&pi;&tau;&#942;, &ldquo;&kappa;&#973;&kappa;&nu;&epsilon;&iota;&alpha;&rdquo; &epsilon;&mu;&phi;&#940;&nu;&iota;&sigma;&eta; &ndash; &sigma;&alpha;&nu; &nu;&alpha; &#941;&chi;&epsilon;&tau;&epsilon; &beta;&gamma;&epsilon;&iota; &alpha;&pi;&#972; &sigma;&epsilon;&lambda;&#943;&delta;&alpha; &pi;&epsilon;&rho;&iota;&omicron;&delta;&iota;&kappa;&omicron;&#973; &mu;&#972;&delta;&alpha;&sigmaf;.</p>
+
+
+
+<h2 class="wp-block-heading">&Pi;&#974;&sigmaf; &Lambda;&epsilon;&iota;&tau;&omicron;&upsilon;&rho;&gamma;&epsilon;&#943; &eta; &Delta;&iota;&alpha;&delta;&iota;&kappa;&alpha;&sigma;&#943;&alpha;;</h2>
+
+
+
+<p class="wp-block-paragraph">&Eta; &theta;&epsilon;&rho;&alpha;&pi;&epsilon;&#943;&alpha; &epsilon;&#943;&nu;&alpha;&iota; &gamma;&rho;&#942;&gamma;&omicron;&rho;&eta; &kappa;&alpha;&iota; &alpha;&nu;&#974;&delta;&upsilon;&nu;&eta;. &Sigma;&tau;&omicron; &iota;&alpha;&tau;&rho;&epsilon;&#943;&omicron; &mu;&alpha;&sigmaf;, &eta; &delta;&epsilon;&rho;&mu;&alpha;&tau;&omicron;&lambda;&#972;&gamma;&omicron;&sigmaf; &epsilon;&xi;&epsilon;&tau;&#940;&zeta;&epsilon;&iota; &pi;&rho;&#974;&tau;&alpha; &tau;&eta;&nu; &pi;&epsilon;&rho;&iota;&omicron;&chi;&#942; &gamma;&iota;&alpha; &nu;&alpha; &kappa;&alpha;&theta;&omicron;&rho;&#943;&sigma;&epsilon;&iota; &tau;&alpha; &alpha;&kappa;&rho;&iota;&beta;&#942; &sigma;&eta;&mu;&epsilon;&#943;&alpha; &#941;&gamma;&chi;&upsilon;&sigma;&eta;&sigmaf;. &Chi;&rho;&eta;&sigma;&iota;&mu;&omicron;&pi;&omicron;&iota;&omicron;&#973;&mu;&epsilon; &lambda;&epsilon;&pi;&tau;&#941;&sigmaf;<br>&beta;&epsilon;&lambda;&#972;&nu;&epsilon;&sigmaf; &gamma;&iota;&alpha; &nu;&alpha; &epsilon;&gamma;&chi;&#973;&sigma;&omicron;&upsilon;&mu;&epsilon; &mu;&iota;&kappa;&rho;&#941;&sigmaf; &delta;&#972;&sigma;&epsilon;&iota;&sigmaf; &beta;&omicron;&tau;&omicron;&upsilon;&lambda;&iota;&nu;&iota;&kappa;&#942;&sigmaf; &tau;&omicron;&xi;&#943;&nu;&eta;&sigmaf; &alpha;&pi;&epsilon;&upsilon;&theta;&epsilon;&#943;&alpha;&sigmaf; &sigma;&tau;&omicron;&upsilon;&sigmaf; &mu;&#973;&epsilon;&sigmaf;. &Eta; &#972;&lambda;&eta; &delta;&iota;&alpha;&delta;&iota;&kappa;&alpha;&sigma;&#943;&alpha; &delta;&iota;&alpha;&rho;&kappa;&epsilon;&#943; &mu;&#972;&lambda;&iota;&sigmaf; 15-30 &lambda;&epsilon;&pi;&tau;&#940;, &kappa;&alpha;&iota; &mu;&pi;&omicron;&rho;&epsilon;&#943;&tau;&epsilon; &nu;&alpha; &epsilon;&pi;&iota;&sigma;&tau;&rho;&#941;&psi;&epsilon;&tau;&epsilon; &alpha;&mu;&#941;&sigma;&omega;&sigmaf; &sigma;&tau;&iota;&sigmaf; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;&#941;&sigmaf; &sigma;&alpha;&sigmaf; &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&#972;&tau;&eta;&tau;&epsilon;&sigmaf;. &Tau;&alpha; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&#941;&sigma;&mu;&alpha;&tau;&alpha; &alpha;&rho;&chi;&#943;&zeta;&omicron;&upsilon;&nu; &nu;&alpha; &phi;&alpha;&#943;&nu;&omicron;&nu;&tau;&alpha;&iota; &sigma;&epsilon; 3-7 &eta;&mu;&#941;&rho;&epsilon;&sigmaf; &kappa;&alpha;&iota; &kappa;&omicron;&rho;&upsilon;&phi;&#974;&nu;&omicron;&nu;&tau;&alpha;&iota;<br>&sigma;&epsilon; 2 &epsilon;&beta;&delta;&omicron;&mu;&#940;&delta;&epsilon;&sigmaf;, &mu;&epsilon; &delta;&iota;&#940;&rho;&kappa;&epsilon;&iota;&alpha; 3-4 &mu;&#942;&nu;&epsilon;&sigmaf;.</p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-3.webp"><img loading="lazy" decoding="async" width="1024" height="683" src="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-3.webp" alt="Unnamed 3" class="wp-image-3291" srcset="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-3.webp 1024w, https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-3-600x400.webp 600w, https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-3-768x512.webp 768w, https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-3-18x12.webp 18w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></a></figure>
+
+
+
+<h2 class="wp-block-heading">&Tau;&alpha; &Omicron;&phi;&#941;&lambda;&eta; &pi;&omicron;&upsilon; &theta;&alpha; &Lambda;&alpha;&tau;&rho;&#941;&psi;&epsilon;&tau;&epsilon;</h2>
+
+
+
+<p class="wp-block-paragraph">&Pi;&#941;&rho;&alpha; &alpha;&pi;&#972; &tau;&eta;&nu; &alpha;&iota;&sigma;&theta;&eta;&tau;&iota;&kappa;&#942; &beta;&epsilon;&lambda;&tau;&#943;&omega;&sigma;&eta;, &tau;&omicron; Barbie Botox &pi;&rho;&omicron;&sigma;&phi;&#941;&rho;&epsilon;&iota; &kappa;&alpha;&iota; &pi;&rho;&alpha;&kappa;&tau;&iota;&kappa;&#940; &pi;&lambda;&epsilon;&omicron;&nu;&epsilon;&kappa;&tau;&#942;&mu;&alpha;&tau;&alpha; &pi;&omicron;&upsilon; &kappa;&#940;&nu;&omicron;&upsilon;&nu; &tau;&eta;&nu; &kappa;&alpha;&theta;&eta;&mu;&epsilon;&rho;&iota;&nu;&#972;&tau;&eta;&tau;&#940; &sigma;&alpha;&sigmaf; &pi;&iota;&omicron; &epsilon;&upsilon;&chi;&#940;&rho;&iota;&sigma;&tau;&eta;:</p>
+
+
+
+<p class="wp-block-paragraph">&Alpha;&iota;&sigma;&theta;&eta;&tau;&iota;&kappa;&#940;: &Lambda;&epsilon;&pi;&tau;&#972;&tau;&epsilon;&rho;&omicron;&sigmaf; &lambda;&alpha;&iota;&mu;&#972;&sigmaf; &kappa;&alpha;&iota; &pi;&iota;&omicron; &omicron;&rho;&iota;&sigma;&mu;&#941;&nu;&omicron;&iota; &#974;&mu;&omicron;&iota;, &iota;&delta;&alpha;&nu;&iota;&kappa;&#972; &gamma;&iota;&alpha; &phi;&omicron;&rho;&#941;&mu;&alpha;&tau;&alpha; &mu;&epsilon; &alpha;&nu;&omicron;&iota;&chi;&tau;&omicron;&#973;&sigmaf; &#974;&mu;&omicron;&upsilon;&sigmaf; &#942; &kappa;&alpha;&lambda;&omicron;&kappa;&alpha;&iota;&rho;&iota;&nu;&#940; looks.<br>&Theta;&epsilon;&rho;&alpha;&pi;&epsilon;&upsilon;&tau;&iota;&kappa;&#940;: &Mu;&epsilon;&#943;&omega;&sigma;&eta; &pi;&#972;&nu;&omicron;&upsilon; &sigma;&tau;&omicron;&upsilon;&sigmaf; &#974;&mu;&omicron;&upsilon;&sigmaf;, &pi;&omicron;&nu;&omicron;&kappa;&epsilon;&phi;&#940;&lambda;&omega;&nu; &kappa;&alpha;&iota; &eta;&mu;&iota;&kappa;&rho;&alpha;&nu;&iota;&#974;&nu; &alpha;&pi;&#972; &#941;&nu;&tau;&alpha;&sigma;&eta;. &Pi;&omicron;&lambda;&lambda;&omicron;&#943; &alpha;&sigma;&theta;&epsilon;&nu;&epsilon;&#943;&sigmaf; &mu;&alpha;&sigmaf; &lambda;&#941;&nu;&epsilon; &#972;&tau;&iota; &nu;&iota;&#974;&theta;&omicron;&upsilon;&nu; &pi;&iota;&omicron; &epsilon;&lambda;&alpha;&phi;&rho;&iota;&omicron;&#943; &kappa;&alpha;&iota; &xi;&epsilon;&kappa;&omicron;&#973;&rho;&alpha;&sigma;&tau;&omicron;&iota;.<br>&Psi;&upsilon;&chi;&omicron;&lambda;&omicron;&gamma;&iota;&kappa;&#940;: &Alpha;&upsilon;&xi;&#940;&nu;&epsilon;&iota; &tau;&eta;&nu; &alpha;&upsilon;&tau;&omicron;&pi;&epsilon;&pi;&omicron;&#943;&theta;&eta;&sigma;&eta;, &beta;&omicron;&eta;&theta;&#974;&nu;&tau;&alpha;&sigmaf; &sigma;&alpha;&sigmaf; &nu;&alpha; &nu;&iota;&#974;&theta;&epsilon;&tau;&epsilon; &pi;&iota;&omicron; &theta;&eta;&lambda;&upsilon;&kappa;&#942; &kappa;&alpha;&iota; &kappa;&omicron;&mu;&psi;&#942; &chi;&omega;&rho;&#943;&sigmaf; &chi;&epsilon;&iota;&rho;&omicron;&upsilon;&rho;&gamma;&iota;&kappa;&#941;&sigmaf; &epsilon;&pi;&epsilon;&mu;&beta;&#940;&sigma;&epsilon;&iota;&sigmaf;.<br>&Phi;&alpha;&nu;&tau;&alpha;&sigma;&tau;&epsilon;&#943;&tau;&epsilon; &nu;&alpha; &phi;&omicron;&rho;&#940;&tau;&epsilon; &tau;&omicron; &alpha;&gamma;&alpha;&pi;&eta;&mu;&#941;&nu;&omicron; &sigma;&alpha;&sigmaf; &phi;&#972;&rho;&epsilon;&mu;&alpha; &kappa;&alpha;&iota; &nu;&alpha; &lambda;&alpha;&mu;&beta;&#940;&nu;&epsilon;&tau;&epsilon; &kappa;&omicron;&mu;&pi;&lambda;&iota;&mu;&#941;&nu;&tau;&alpha; &gamma;&iota;&alpha; &tau;&eta;&nu; &alpha;&rho;&mu;&omicron;&nu;&iota;&kappa;&#942; &sigma;&alpha;&sigmaf; &sigma;&iota;&lambda;&omicron;&upsilon;&#941;&tau;&alpha; &ndash; &alpha;&upsilon;&tau;&#972; &epsilon;&#943;&nu;&alpha;&iota; &tau;&omicron; &mu;&alpha;&gamma;&iota;&kappa;&#972; &tau;&omicron;&upsilon; Barbie Botox!</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h2 class="wp-block-heading">&Pi;&iota;&theta;&alpha;&nu;&omicron;&#943; &Kappa;&#943;&nu;&delta;&upsilon;&nu;&omicron;&iota; &kappa;&alpha;&iota; &Pi;&alpha;&rho;&epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&epsilon;&sigmaf;</h2>
+
+
+
+<p class="wp-block-paragraph">&#908;&pi;&omega;&sigmaf; &kappa;&#940;&theta;&epsilon; &iota;&alpha;&tau;&rho;&iota;&kappa;&#942; &theta;&epsilon;&rho;&alpha;&pi;&epsilon;&#943;&alpha;, &#941;&tau;&sigma;&iota; &kappa;&alpha;&iota; &alpha;&upsilon;&tau;&#942; &#941;&chi;&epsilon;&iota; &mu;&iota;&kappa;&rho;&omicron;&#973;&sigmaf; &kappa;&iota;&nu;&delta;&#973;&nu;&omicron;&upsilon;&sigmaf;, &alpha;&lambda;&lambda;&#940; &#972;&tau;&alpha;&nu; &gamma;&#943;&nu;&epsilon;&tau;&alpha;&iota; &alpha;&pi;&#972; &epsilon;&xi;&epsilon;&iota;&delta;&iota;&kappa;&epsilon;&upsilon;&mu;&#941;&nu;&omicron; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&#943;&alpha;, &epsilon;&#943;&nu;&alpha;&iota; &epsilon;&xi;&alpha;&iota;&rho;&epsilon;&tau;&iota;&kappa;&#940; &alpha;&sigma;&phi;&alpha;&lambda;&#942;&sigmaf;. &Omicron;&iota; &sigma;&upsilon;&nu;&eta;&theta;&iota;&sigma;&mu;&#941;&nu;&epsilon;&sigmaf; &pi;&alpha;&rho;&epsilon;&nu;&#941;&rho;&gamma;&epsilon;&iota;&epsilon;&sigmaf; &pi;&epsilon;&rho;&iota;&lambda;&alpha;&mu;&beta;&#940;&nu;&omicron;&upsilon;&nu; &epsilon;&lambda;&alpha;&phi;&rho;&#973; &pi;&rho;&#942;&xi;&iota;&mu;&omicron;, &mu;&#974;&lambda;&omega;&pi;&epsilon;&sigmaf;<br>&#942; &epsilon;&upsilon;&alpha;&iota;&sigma;&theta;&eta;&sigma;&#943;&alpha; &sigma;&tau;&alpha; &sigma;&eta;&mu;&epsilon;&#943;&alpha; &#941;&gamma;&chi;&upsilon;&sigma;&eta;&sigmaf;, &pi;&omicron;&upsilon; &upsilon;&pi;&omicron;&chi;&omega;&rho;&omicron;&#973;&nu; &sigma;&epsilon; &lambda;&#943;&gamma;&epsilon;&sigmaf; &eta;&mu;&#941;&rho;&epsilon;&sigmaf;. &Sigma;&pi;&#940;&nu;&iota;&alpha;, &mu;&pi;&omicron;&rho;&epsilon;&#943; &nu;&alpha; &epsilon;&mu;&phi;&alpha;&nu;&iota;&sigma;&tau;&epsilon;&#943; &pi;&rho;&omicron;&sigma;&omega;&rho;&iota;&nu;&#942; &alpha;&delta;&upsilon;&nu;&alpha;&mu;&#943;&alpha; &sigma;&tau;&omicron;&upsilon;&sigmaf; &mu;&#973;&epsilon;&sigmaf;, &alpha;&lambda;&lambda;&#940; &alpha;&upsilon;&tau;&#972; &alpha;&pi;&omicron;&phi;&epsilon;&#973;&gamma;&epsilon;&tau;&alpha;&iota; &mu;&epsilon; &sigma;&omega;&sigma;&tau;&#942; &delta;&omicron;&sigma;&omicron;&lambda;&omicron;&gamma;&#943;&alpha;. &Pi;&#940;&nu;&tau;&alpha; &sigma;&upsilon;&zeta;&eta;&tau;&#940;&mu;&epsilon; &tau;&omicron; &iota;&alpha;&tau;&rho;&iota;&kappa;&#972; &sigma;&alpha;&sigmaf; &iota;&sigma;&tau;&omicron;&rho;&iota;&kappa;&#972; &gamma;&iota;&alpha; &nu;&alpha; &epsilon;&xi;&alpha;&sigma;&phi;&alpha;&lambda;&#943;&sigma;&omicron;&upsilon;&mu;&epsilon; &tau;&eta;&nu; &kappa;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&eta; &epsilon;&mu;&pi;&epsilon;&iota;&rho;&#943;&alpha;.</p>
+
+
+
+<h2 class="wp-block-heading">&Sigma;&upsilon;&chi;&nu;&#941;&sigmaf; &Epsilon;&rho;&omega;&tau;&#942;&sigma;&epsilon;&iota;&sigmaf; (FAQs)</h2>
+
+
+
+<p class="wp-block-paragraph">&Alpha;&sigmaf; &alpha;&pi;&alpha;&nu;&tau;&#942;&sigma;&omicron;&upsilon;&mu;&epsilon; &sigma;&epsilon; &mu;&epsilon;&rho;&iota;&kappa;&#941;&sigmaf; &alpha;&pi;&#972; &tau;&iota;&sigmaf; &pi;&iota;&omicron; &kappa;&omicron;&iota;&nu;&#941;&sigmaf; &alpha;&pi;&omicron;&rho;&#943;&epsilon;&sigmaf; &pi;&omicron;&upsilon; &alpha;&kappa;&omicron;&#973;&mu;&epsilon; &sigma;&tau;&omicron; &iota;&alpha;&tau;&rho;&epsilon;&#943;&omicron; &mu;&alpha;&sigmaf;:</p>
+
+
+
+<p class="wp-block-paragraph"><strong>&Pi;&omicron;&iota;&omicron;&sigmaf; &epsilon;&#943;&nu;&alpha;&iota; &omicron; &iota;&delta;&alpha;&nu;&iota;&kappa;&#972;&sigmaf; &upsilon;&pi;&omicron;&psi;&#942;&phi;&iota;&omicron;&sigmaf; &gamma;&iota;&alpha; Barbie Botox</strong>; &Iota;&delta;&alpha;&nu;&iota;&kappa;&omicron;&#943; &epsilon;&#943;&nu;&alpha;&iota; &#972;&sigma;&omicron;&iota; &#941;&chi;&omicron;&upsilon;&nu; &upsilon;&pi;&epsilon;&rho;&tau;&rho;&omicron;&phi;&iota;&kappa;&omicron;&#973;&sigmaf; &tau;&rho;&alpha;&pi;&epsilon;&zeta;&omicron;&epsilon;&iota;&delta;&epsilon;&#943;&sigmaf; &mu;&#973;&epsilon;&sigmaf; &alpha;&pi;&#972; &sigma;&tau;&rho;&epsilon;&sigmaf;, &gamma;&upsilon;&mu;&nu;&alpha;&sigma;&tau;&iota;&kappa;&#942; &#942; &kappa;&alpha;&kappa;&#942; &sigma;&tau;&#940;&sigma;&eta;, &kappa;&alpha;&iota; &theta;&#941;&lambda;&omicron;&upsilon;&nu; &mu;&iota;&alpha; &pi;&iota;&omicron; &lambda;&epsilon;&pi;&tau;&#942; &epsilon;&mu;&phi;&#940;&nu;&iota;&sigma;&eta;. &Delta;&epsilon;&nu; &epsilon;&#943;&nu;&alpha;&iota; &mu;&#972;&nu;&omicron; &gamma;&iota;&alpha; &gamma;&upsilon;&nu;&alpha;&#943;&kappa;&epsilon;&sigmaf; &ndash; &kappa;&alpha;&iota; &#940;&nu;&delta;&rho;&epsilon;&sigmaf; &tau;&omicron; &epsilon;&pi;&iota;&lambda;&#941;&gamma;&omicron;&upsilon;&nu; &gamma;&iota;&alpha; &alpha;&nu;&alpha;&kappa;&omicron;&#973;&phi;&iota;&sigma;&eta; &alpha;&pi;&#972; &pi;&#972;&nu;&omicron;!<br><br><strong>&Pi;&omicron;&nu;&#940;&epsilon;&iota; &eta; &theta;&epsilon;&rho;&alpha;&pi;&epsilon;&#943;&alpha;;</strong> &#908;&chi;&iota; &iota;&delta;&iota;&alpha;&#943;&tau;&epsilon;&rho;&alpha;! &Omicron;&iota; &pi;&epsilon;&rho;&iota;&sigma;&sigma;&#972;&tau;&epsilon;&rho;&omicron;&iota; &pi;&epsilon;&rho;&iota;&gamma;&rho;&#940;&phi;&omicron;&upsilon;&nu; &#941;&nu;&alpha; &epsilon;&lambda;&alpha;&phi;&rho;&#973; &tau;&sigma;&#943;&mu;&pi;&eta;&mu;&alpha;, &sigma;&alpha;&nu; &tau;&sigma;&#943;&mu;&pi;&eta;&mu;&alpha; &kappa;&omicron;&upsilon;&nu;&omicron;&upsilon;&pi;&iota;&omicron;&#973;. &Chi;&rho;&eta;&sigma;&iota;&mu;&omicron;&pi;&omicron;&iota;&omicron;&#973;&mu;&epsilon; &tau;&omicron;&pi;&iota;&kappa;&#942; &alpha;&nu;&alpha;&iota;&sigma;&theta;&eta;&sigma;&#943;&alpha; &alpha;&nu; &chi;&rho;&epsilon;&iota;&#940;&zeta;&epsilon;&tau;&alpha;&iota;, &gamma;&iota;&alpha; &mu;&#941;&gamma;&iota;&sigma;&tau;&eta; &#940;&nu;&epsilon;&sigma;&eta;.<br><br><strong>&Pi;&#972;&sigma;&omicron; &kappa;&omicron;&sigma;&tau;&#943;&zeta;&epsilon;&iota;</strong>; &Eta; &tau;&iota;&mu;&#942; &epsilon;&xi;&alpha;&rho;&tau;&#940;&tau;&alpha;&iota; &alpha;&pi;&#972; &tau;&eta; &delta;&#972;&sigma;&eta; &kappa;&alpha;&iota; &tau;&eta;&nu; &pi;&epsilon;&rho;&iota;&omicron;&chi;&#942;.<br><br><strong>&Mu;&pi;&omicron;&rho;&#974; &nu;&alpha; &sigma;&upsilon;&nu;&delta;&upsilon;&#940;&sigma;&omega; &mu;&epsilon; &#940;&lambda;&lambda;&epsilon;&sigmaf; &theta;&epsilon;&rho;&alpha;&pi;&epsilon;&#943;&epsilon;&sigmaf;</strong>; &Nu;&alpha;&iota;! &Sigma;&upsilon;&chi;&nu;&#940; &tau;&omicron; &sigma;&upsilon;&nu;&delta;&upsilon;&#940;&zeta;&omicron;&upsilon;&mu;&epsilon; &mu;&epsilon; fillers &#942; laser &gamma;&iota;&alpha; &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;&omega;&mu;&#941;&nu;&eta; &alpha;&nu;&alpha;&zeta;&omega;&omicron;&gamma;&#972;&nu;&eta;&sigma;&eta;. &Rho;&omega;&tau;&#942;&sigma;&tau;&epsilon; &mu;&alpha;&sigmaf; &gamma;&iota;&alpha; &epsilon;&xi;&alpha;&tau;&omicron;&mu;&iota;&kappa;&epsilon;&upsilon;&mu;&#941;&nu;&alpha; &pi;&alpha;&kappa;&#941;&tau;&alpha;.<br><br><strong>&Pi;&#972;&sigma;&omicron; &delta;&iota;&alpha;&rho;&kappa;&omicron;&#973;&nu; &tau;&alpha; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&#941;&sigma;&mu;&alpha;&tau;&alpha;</strong>; &Pi;&epsilon;&rho;&#943;&pi;&omicron;&upsilon; 3-4 &mu;&#942;&nu;&epsilon;&sigmaf;, &alpha;&lambda;&lambda;&#940; &mu;&epsilon; &tau;&alpha;&kappa;&tau;&iota;&kappa;&#941;&sigmaf; &sigma;&upsilon;&nu;&epsilon;&delta;&rho;&#943;&epsilon;&sigmaf;, &eta; &epsilon;&mu;&phi;&#940;&nu;&iota;&sigma;&eta; &beta;&epsilon;&lambda;&tau;&iota;&#974;&nu;&epsilon;&tau;&alpha;&iota; &mu;&alpha;&kappa;&rho;&omicron;&pi;&rho;&#972;&theta;&epsilon;&sigma;&mu;&alpha;.<br></p>
+
+
+
+<figure class="wp-block-image size-full"><a href="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-4.webp"><img loading="lazy" decoding="async" width="622" height="356" src="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-4.webp" alt="Unnamed 4" class="wp-image-3290" srcset="https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-4.webp 622w, https://dermaesthetics.gr/wp-content/uploads/2026/03/unnamed-4-18x10.webp 18w" sizes="auto, (max-width: 622px) 100vw, 622px"></a></figure>
+
+
+
+<h2 class="wp-block-heading">&Kappa;&lambda;&epsilon;&#943;&sigma;&tau;&epsilon; &tau;&omicron; &Rho;&alpha;&nu;&tau;&epsilon;&beta;&omicron;&#973; &sigma;&alpha;&sigmaf; &Sigma;&#942;&mu;&epsilon;&rho;&alpha;!</h2>
+
+
+
+<p class="wp-block-paragraph">&Tau;&omicron; Barbie Botox &delta;&epsilon;&nu; &epsilon;&#943;&nu;&alpha;&iota; &alpha;&pi;&lambda;&#974;&sigmaf; &mu;&iota;&alpha; &tau;&#940;&sigma;&eta; &ndash; &epsilon;&#943;&nu;&alpha;&iota; &#941;&nu;&alpha;&sigmaf; &tau;&rho;&#972;&pi;&omicron;&sigmaf; &nu;&alpha; &alpha;&gamma;&kappa;&alpha;&lambda;&iota;&#940;&sigma;&epsilon;&tau;&epsilon; &tau;&eta;&nu; &kappa;&alpha;&lambda;&#973;&tau;&epsilon;&rho;&eta; &epsilon;&kappa;&delta;&omicron;&chi;&#942; &tau;&omicron;&upsilon; &epsilon;&alpha;&upsilon;&tau;&omicron;&#973; &sigma;&alpha;&sigmaf; &mu;&epsilon; &alpha;&sigma;&phi;&#940;&lambda;&epsilon;&iota;&alpha; &kappa;&alpha;&iota; &phi;&upsilon;&sigma;&iota;&kappa;&#972;&tau;&eta;&tau;&alpha;. &Sigma;&tau;&omicron; &delta;&epsilon;&rho;&mu;&alpha;&tau;&omicron;&lambda;&omicron;&gamma;&iota;&kappa;&#972; &mu;&alpha;&sigmaf; &iota;&alpha;&tau;&rho;&epsilon;&#943;&omicron;, &epsilon;&#943;&mu;&alpha;&sigma;&tau;&epsilon; &epsilon;&delta;&#974; &gamma;&iota;&alpha; &nu;&alpha; &sigma;&alpha;&sigmaf; &kappa;&alpha;&theta;&omicron;&delta;&eta;&gamma;&#942;&sigma;&omicron;&upsilon;&mu;&epsilon;<br>&beta;&#942;&mu;&alpha;-&beta;&#942;&mu;&alpha;, &mu;&epsilon; &chi;&alpha;&mu;&#972;&gamma;&epsilon;&lambda;&omicron; &kappa;&alpha;&iota; &epsilon;&xi;&epsilon;&iota;&delta;&#943;&kappa;&epsilon;&upsilon;&sigma;&eta;. &Epsilon;&pi;&iota;&kappa;&omicron;&iota;&nu;&omega;&nu;&#942;&sigma;&tau;&epsilon; &mu;&alpha;&zeta;&#943; &mu;&alpha;&sigmaf; &gamma;&iota;&alpha; &mu;&iota;&alpha; &delta;&omega;&rho;&epsilon;&#940;&nu; &sigma;&upsilon;&mu;&beta;&omicron;&upsilon;&lambda;&epsilon;&upsilon;&tau;&iota;&kappa;&#942; &sigma;&upsilon;&nu;&#940;&nu;&tau;&eta;&sigma;&eta; &kappa;&alpha;&iota; &alpha;&sigmaf; &delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;&#942;&sigma;&omicron;&upsilon;&mu;&epsilon; &mu;&alpha;&zeta;&#943; &tau;&eta;&nu; &kappa;&omicron;&mu;&psi;&#942; &sigma;&iota;&lambda;&omicron;&upsilon;&#941;&tau;&alpha; &tau;&omega;&nu; &omicron;&nu;&epsilon;&#943;&rho;&omega;&nu; &sigma;&alpha;&sigmaf;.</p>
+</div>
+
+	
+	<div class="blog-share text-center"><div class="is-divider medium"></div><div class="social-icons share-icons share-row relative" ><a href="whatsapp://send?text=%CE%91%CE%BD%CE%B1%CE%BA%CE%B1%CE%BB%CF%8D%CF%88%CF%84%CE%B5%20%CF%84%CE%BF%20Barbie%20Botox%3A%20%CE%97%20%CE%9A%CE%BF%CE%BC%CF%88%CE%AE%20%CE%9B%CF%8D%CF%83%CE%B7%20%CE%B3%CE%B9%CE%B1%20%CE%88%CE%BD%CE%B1%20%CE%9B%CE%B5%CF%80%CF%84%CF%8C%20%CE%9B%CE%B1%CE%B9%CE%BC%CF%8C%20%CE%BA%CE%B1%CE%B9%20%CE%8F%CE%BC%CE%BF%CF%85%CF%82 - https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/" data-action="share/whatsapp/share" class="icon button circle is-outline tooltip whatsapp show-for-medium" title="Share on WhatsApp" aria-label="Share on WhatsApp" ><i class="icon-whatsapp" ></i></a><a href="https://www.facebook.com/sharer.php?u=https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/" data-label="Facebook" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon button circle is-outline tooltip facebook" title="Share on Facebook" aria-label="Share on Facebook" rel="noopener nofollow" ><i class="icon-facebook" ></i></a><a href="https://twitter.com/share?url=https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon button circle is-outline tooltip twitter" title="Share on Twitter" aria-label="Share on Twitter" rel="noopener nofollow" ><i class="icon-twitter" ></i></a><a href="mailto:?subject=%CE%91%CE%BD%CE%B1%CE%BA%CE%B1%CE%BB%CF%8D%CF%88%CF%84%CE%B5%20%CF%84%CE%BF%20Barbie%20Botox%3A%20%CE%97%20%CE%9A%CE%BF%CE%BC%CF%88%CE%AE%20%CE%9B%CF%8D%CF%83%CE%B7%20%CE%B3%CE%B9%CE%B1%20%CE%88%CE%BD%CE%B1%20%CE%9B%CE%B5%CF%80%CF%84%CF%8C%20%CE%9B%CE%B1%CE%B9%CE%BC%CF%8C%20%CE%BA%CE%B1%CE%B9%20%CE%8F%CE%BC%CE%BF%CF%85%CF%82&body=Check%20this%20out%3A%20https%3A%2F%2Fdermaesthetics.gr%2F2026%2F03%2F05%2Fanakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous%2F" class="icon button circle is-outline tooltip email" title="Email to a Friend" aria-label="Email to a Friend" rel="nofollow" ><i class="icon-envelop" ></i></a><a href="https://pinterest.com/pin/create/button?url=https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/&media=https://dermaesthetics.gr/wp-content/uploads/2026/03/barbie_botox.webp&description=%CE%91%CE%BD%CE%B1%CE%BA%CE%B1%CE%BB%CF%8D%CF%88%CF%84%CE%B5%20%CF%84%CE%BF%20Barbie%20Botox%3A%20%CE%97%20%CE%9A%CE%BF%CE%BC%CF%88%CE%AE%20%CE%9B%CF%8D%CF%83%CE%B7%20%CE%B3%CE%B9%CE%B1%20%CE%88%CE%BD%CE%B1%20%CE%9B%CE%B5%CF%80%CF%84%CF%8C%20%CE%9B%CE%B1%CE%B9%CE%BC%CF%8C%20%CE%BA%CE%B1%CE%B9%20%CE%8F%CE%BC%CE%BF%CF%85%CF%82" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon button circle is-outline tooltip pinterest" title="Pin on Pinterest" aria-label="Pin on Pinterest" rel="noopener nofollow" ><i class="icon-pinterest" ></i></a><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://dermaesthetics.gr/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/&title=%CE%91%CE%BD%CE%B1%CE%BA%CE%B1%CE%BB%CF%8D%CF%88%CF%84%CE%B5%20%CF%84%CE%BF%20Barbie%20Botox%3A%20%CE%97%20%CE%9A%CE%BF%CE%BC%CF%88%CE%AE%20%CE%9B%CF%8D%CF%83%CE%B7%20%CE%B3%CE%B9%CE%B1%20%CE%88%CE%BD%CE%B1%20%CE%9B%CE%B5%CF%80%CF%84%CF%8C%20%CE%9B%CE%B1%CE%B9%CE%BC%CF%8C%20%CE%BA%CE%B1%CE%B9%20%CE%8F%CE%BC%CE%BF%CF%85%CF%82" onclick="window.open(this.href,this.title,'width=500,height=500,top=300px,left=300px'); return false;" target="_blank" class="icon button circle is-outline tooltip linkedin" title="Share on LinkedIn" aria-label="Share on LinkedIn" rel="noopener nofollow" ><i class="icon-linkedin" ></i></a></div></div></div>
+
+
+
+        <nav role="navigation" id="nav-below" class="navigation-post">
+	<div class="flex-row next-prev-nav bt bb">
+		<div class="flex-col flex-grow nav-prev text-left">
+			    <div class="nav-previous"><a href="https://dermaesthetics.gr/2025/10/21/polynoukleotidia-mia-kainotomos-therapeftiki-prosengisi-gia-tin-anazoogonisi-tis-periochis-ton-mation/" rel="prev"><span class="hide-for-small"><i class="icon-angle-left" ></i></span> Πολυνουκλεοτίδια: Μια καινοτόμος θεραπευτική προσέγγιση για την αναζωογόνηση της περιοχής των ματιών</a></div>
+		</div>
+		<div class="flex-col flex-grow nav-next text-right">
+			    		</div>
+	</div>
+
+	    </nav>
+
+    	</div>
+</article>
+
+
+
+
+<div id="comments" class="comments-area">
+
+	
+	
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Αφήστε μια απάντηση <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2026/03/05/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous/#respond" style="display:none;">Ακύρωση απάντησης</a></small></h3><form action="https://dermaesthetics.gr/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Η ηλ. διεύθυνση σας δεν δημοσιεύεται.</span> <span class="required-field-message">Τα υποχρεωτικά πεδία σημειώνονται με <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Σχόλιο <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Όνομα <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="comment-form-url"><label for="url">Ιστότοπος</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" autocomplete="url" /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Αποθήκευσε το όνομά μου, email, και τον ιστότοπο μου σε αυτόν τον πλοηγό για την επόμενη φορά που θα σχολιάσω.</label></p>
+<span class="cerber-form-marker"></span><div class="g-recaptcha" data-sitekey="6LfG908sAAAAADbV8kkjbuRcmubIDS6FCWysapX5" data-callback="form_button_enabler" id="cerber-recaptcha"></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Δημοσίευση σχολίου" /> <input type='hidden' name='comment_post_ID' value='3289' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+	
+</div>
+	</div>
+	<div class="post-sidebar large-3 col">
+				<div id="secondary" class="widget-area " role="complementary">
+		<aside id="nav_menu-5" class="widget widget_nav_menu"><span class="widget-title "><span>Εξατομικευμένες Λύσεις</span></span><div class="is-divider small"></div><div class="menu-menu-exatomikevmenes-lyseis-container"><ul id="menu-menu-exatomikevmenes-lyseis" class="menu"><li id="menu-item-2210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2210"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/laser-apotrichosi/">Laser Αποτρίχωση</a></li>
+<li id="menu-item-2209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2209"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/fractional-laser/">Fractional Laser</a></li>
+<li id="menu-item-2673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2673"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/monimi-afairesi-tatouaz-me-laser/">Μόνιμη αφαίρεση τατουάζ με laser</a></li>
+<li id="menu-item-2217" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2217"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/evriangies-ke-laser/">Ευρυαγγείες και Laser</a></li>
+<li id="menu-item-2216" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2216"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/votouliniki-toxini/">Βοτουλινική τοξίνη</a></li>
+<li id="menu-item-2223" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2223"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/ialouroniko-oxi/">Υαλουρονικό Οξύ</a></li>
+<li id="menu-item-2222" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2222"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/telia-chili/">Τέλεια Χείλη</a></li>
+<li id="menu-item-2220" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2220"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/mesotherapia-prosopou/">Μεσοθεραπεία Προσώπου</a></li>
+<li id="menu-item-2674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2674"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/aftologi-mesotherapeia/">Αυτόλογη Μεσοθεραπεία</a></li>
+<li id="menu-item-2213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2213"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/skin-boosters/">Skin Boosters</a></li>
+<li id="menu-item-2211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2211"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/lifting-me-nimata-pdo/">Lifting με νήματα PDO</a></li>
+<li id="menu-item-2655" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2655"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/akmi-oules-akmis/">Ακμή – Ουλές Ακμής</a></li>
+<li id="menu-item-2225" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2225"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/dermoapoxesi-me-mikrokristallous/">Δερμοαπόξεση με Κρυστάλλους ή διαμάντια</a></li>
+<li id="menu-item-2218" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2218"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/kilides-panades/">Κηλίδες – πανάδες</a></li>
+<li id="menu-item-2212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2212"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/peeling/">Peeling</a></li>
+<li id="menu-item-2215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2215"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/antigiransi-anaplasi-me-laser/">Αντιγήρανση – Ανάπλαση με Laser</a></li>
+<li id="menu-item-3036" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3036"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/enesimi-lipolysi/">Ενέσιμη λιπόλυση</a></li>
+<li id="menu-item-2208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2208"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/3d-kriolipolisi-protoporiaki-methodos-monimis-katapolemisis-tou-lipous/">3D-Κρυολιπόλυση</a></li>
+<li id="menu-item-2219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2219"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/kittaritida-lipolisi-topiko-pachos/">Κυτταρίτιδα – Λιπόλυση</a></li>
+<li id="menu-item-2221" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2221"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/radiosichnotites-rf-vacuum/">Ραδιο συχνότητες RF – Vacuum</a></li>
+<li id="menu-item-2654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2654"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/spiloi-psifiaki-chartografisi/">Χαρτογράφηση Σπίλων</a></li>
+<li id="menu-item-2737" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2737"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/trichoptosi/">Τριχόπτωση</a></li>
+<li id="menu-item-2224" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2224"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/genetiko-test-trichotest-antimetopisi-trichoptos/">Γενετικό Test (TrichoTest)</a></li>
+<li id="menu-item-2226" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2226"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/iperidrosia/">Υπεριδρωσία</a></li>
+<li id="menu-item-2675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2675"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/therapeies-meta-tin-egkymosyni/">Θεραπείες μετά την Εγκυμοσύνη</a></li>
+</ul></div></aside></div>
+			</div>
+</div>
+
+</div>
+
+
+</main>
+
+<footer data-rocket-location-hash="88b261c5335c828595d6d695b925054e" id="footer" class="footer-wrapper">
+
+	<div data-rocket-location-hash="8a1b36b7849eee017e6b5ee14df28df2" class="is-divider divider clearfix" style="margin-top:0px;margin-bottom:0px;max-width:100%;height:1px;"></div>
+
+
+	<section data-rocket-location-hash="20b785fc4863401e40257d0c4492f3d7" class="section dark" id="section_595662629">
+		<div class="section-bg fill" >
+									<div class="section-bg-overlay absolute fill"></div>
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+
+	<div id="gap-328333078" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-328333078 {
+  padding-top: 80px;
+}
+</style>
+	</div>
+	
+
+<div class="row"  id="row-533679119">
+
+
+	<div id="col-1567844488" class="col medium-6 small-12 large-3 medium-col-first"  >
+				<div class="col-inner"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_1638224042">
+								<div class="img-inner dark" >
+			<img width="1020" height="306" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/7.webp" class="attachment-large size-large" alt="" srcset="https://dermaesthetics.gr/wp-content/uploads/2023/06/7.webp 1062w, https://dermaesthetics.gr/wp-content/uploads/2023/06/7-800x240.webp 800w, https://dermaesthetics.gr/wp-content/uploads/2023/06/7-768x231.webp 768w, https://dermaesthetics.gr/wp-content/uploads/2023/06/7-18x5.webp 18w" sizes="auto, (max-width: 1020px) 100vw, 1020px" / width="1020" height="306" loading="eager" decoding="async" fetchpriority="high" width="1020" height="306">						
+					</div>
+								
+<style>
+#image_1638224042 {
+  width: 100%;
+}
+</style>
+	</div>
+	
+
+<p>Καθημερινά σας περιμένουμε στα ιατρεία μας, μέσα σ’ ένα άνετο και φιλικό περιβάλλον κατόπιν ραντεβού. Προσπαθούμε να σας παρέχουμε με σεβασμό, υπευθυνότητα και συνέπεια τις πιο σύγχρονες και ανώδυνες θεραπείες, χρησιμοποιώντας τις νεότερες επιστημονικές εξελίξεις και μηχανήματα.</p>
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-703526150" class="col medium-6 small-12 large-3 medium-col-first"  >
+				<div class="col-inner"  >
+			
+			
+
+<h5>ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ</h5>
+<p><span style="text-decoration: underline;"><b>Δερματολογικό Ιατρείο Πάτρας</b></span><br /><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.gr/maps/dir/38.0201923,23.8637872/%CE%91%CF%81%CE%AC%CF%84%CE%BF%CF%85+12,+%CE%A0%CE%AC%CF%84%CF%81%CE%B1/@38.115866,22.1431497,9z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x135e49e810b45377:0xec9ffe37c96c1bf!2m2!1d21.7384439!2d38.2490392!3e0?entry=ttu">Αράτου 12 &amp; Μαιζώνος, Πάτρα</a><br />1ος όροφος (Πλ. Όλγας)</p>
+<p><i class="fas fa-phone"></i> <a href="tel:+302610220839"> 2610-220839</a></p>
+<p><i class="fas fa-mobile"></i> <a href="tel:+306970187804"> 6970-187804</a></p>
+<h5>ΩΡΕΣ ΛΕΙΤΟΥΡΓΙΑΣ</h5>
+<p>Δευτέρα : 10:00 - 20:00<br />Τρίτη : 10:00 - 20:00<br />Τετάρτη : 10:00 - 16:00<br />Πέμπτη : 10:00 - 20:00<br />Παρασκευή :10:00 - 20:00<br />Σάββατο : ΚΛΕΙΣΤΑ<br />Κυριακή : ΚΛΕΙΣΤΑ</p>
+<p><span style="text-decoration: underline;"><b>Δερματολογικό Ιατρείο Ρίου</b></span><br /><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.gr/maps/dir/38.0201923,23.8637872/%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CE%AC+%CE%95.%CE%9F.+%CE%9A%CE%BF%CF%81%CE%AF%CE%BD%CE%B8%CE%BF%CF%85+%CE%A0%CE%B1%CF%84%CF%81%CF%8E%CE%BD+11,+%CE%A1%CE%AF%CE%BF+265+04/@38.1103323,21.5116672,8z/data=!3m1!4b1!4m19!1m8!3m7!1s0x135e4b93d5b04601:0xa190f6d7aa216b42!2zzqDOsc67zrHOuc6sIM6VLs6fLiDOms6_z4HOr869zrjOv8-FIM6gzrHPhM-Bz47OvSAxMSwgzqHOr86_IDI2NSAwNA!3b1!8m2!3d38.3036482!4d21.8006859!16s%2Fg%2F11c2g6hhqy!4m9!1m1!4e1!1m5!1m1!1s0x135e4b93d5b04601:0xa190f6d7aa216b42!2m2!1d21.8006859!2d38.3036482!3e0?entry=ttu">Παλαιά Εθνική Οδός Πατρών-Αθηνών 11, Ρίο Πάτρας</a><br />1ος όροφος</p>
+<p><i class="fas fa-phone"></i> <a href="tel:+302610994960"> 2610-994960</a></p>
+<p><i class="fas fa-mobile"></i> <a href="tel:+306970187804"> 6970-187804</a></p>
+<p><i class="fas fa-envelope-square"></i> <a href="mailto:info@dermaesthetics.gr">info@dermaesthetics.gr</a></p>
+<p><strong>Ωράριο</strong><br />Δευτέρα 10:00- 17:00, Τρίτη 13:00- 20:00, Τετάρτη 10:00-16:00,<br />Πέμπτη 13:00- 20:00, Παρασκευή 10:00- 17:00</p>
+<p><span style="text-decoration: underline;"><b>Δερματολογικό Ιατρείο Αθήνας<br /></b></span><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/dir//%CE%A7%CE%B5%CE%B9%CE%BC%CE%AC%CF%81%CE%B1%CF%82+1,+%CE%92%CF%8D%CF%81%CF%89%CE%BD%CE%B1%CF%82+162+32/@37.9596926,23.7120056,13z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14a1bd6515e76a3b:0xf297eb954ca1588b!2m2!1d23.7532051!2d37.9596321?entry=ttu&amp;g_ep=EgoyMDI1MTExNi4wIKXMDSoASAFQAw%3D%3D">Χειμάρρας 1 &amp; Λεωφόρος Κύπρου, Αθήνα Βύρωνας</a><br />1ος όροφος</p>
+<p><i class="fas fa-phone"></i> <a href="tel:+302107650977">2107650977</a></p>
+<p><strong>Ωράριο</strong><br />Δευτέρα- Παρασκευή 12:00- 20:00</p>
+<p> </p>
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-800757553" class="col medium-6 small-12 large-3 medium-col-first"  >
+				<div class="col-inner"  >
+			
+			
+
+<p>Τα ιατρεία λειτουργούν με ραντεβού.</p>
+
+		</div>
+					</div>
+
+	
+
+	<div id="col-53741422" class="col medium-6 small-12 large-3 medium-col-first"  >
+				<div class="col-inner"  >
+			
+			
+
+<p><iframe name="f28f5b9e01ac7cc" width="380px" height="1000px" data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v6.0/plugins/page.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df17549cec1a44%26domain%3Ddermaesthetics.gr%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fdermaesthetics.gr%252Ff280e9e8cbbac%26relation%3Dparent.parent&amp;container_width=329&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fcharitini.petropoulou%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=false&amp;width=380" style="border: none; visibility: visible; width: 329px; height: 130px;" class=""></iframe></p>
+<div class="fb-page" 
+data-href="https://www.facebook.com/charitini.petropoulou/"
+data-width="380" 
+data-hide-cover="false"
+data-show-facepile="false"></div>
+<p><img width="350" height="350" alt="award" class="award-img" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/dermaesthetics-award.jpg"></p>
+<div style="background-color:#FFEFF0; padding:10px;"><a href="https://dermaesthetics.gr/epicheirisiako-programmas-2014-2020/" target="_blank"><img width="1183" height="415" alt="espa" src="https://dermaesthetics.gr/wp-content/uploads/2023/06/epsalogogr.jpg" style="width:200px"/></a></div>
+
+		</div>
+					</div>
+
+	
+
+</div>
+<div class="row align-middle align-center"  id="row-375574032">
+
+
+	<div id="col-1160960458" class="col small-12 large-12"  >
+				<div class="col-inner text-center"  >
+			
+			
+
+	<div class="img has-hover x md-x lg-x y md-y lg-y" id="image_25989152">
+		<a class="" href="https://dermaesthetics.gr/espa-2/" >						<div class="img-inner dark" >
+			<img width="1956" height="231" src="https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL.webp" class="attachment-original size-original" alt="" decoding="async" loading="lazy" srcset="https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL.webp 1956w, https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL-800x94.webp 800w, https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL-1400x165.webp 1400w, https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL-768x91.webp 768w, https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL-1536x181.webp 1536w, https://dermaesthetics.gr/wp-content/uploads/2025/01/antagonistikotitaframeEL-18x2.webp 18w" sizes="auto, (max-width: 1956px) 100vw, 1956px" />						
+					</div>
+						</a>		
+<style>
+#image_25989152 {
+  width: 80%;
+}
+</style>
+	</div>
+	
+
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+		</div>
+
+		
+<style>
+#section_595662629 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: rgb(41, 41, 41);
+}
+#section_595662629 .section-bg-overlay {
+  background-color: rgb(115, 29, 104);
+}
+</style>
+	</section>
+	
+<div data-rocket-location-hash="4b124a2d1ee8e28b6da23109bf4c2e5a" class="is-divider divider clearfix" style="margin-top:0px;margin-bottom:0px;max-width:100%;height:1px;"></div>
+
+
+	<section data-rocket-location-hash="d38e662001280323d16f8076092d411f" class="section dark" id="section_615411032">
+		<div class="section-bg fill" >
+									
+			
+
+		</div>
+
+		
+
+		<div class="section-content relative">
+			
+
+	<div id="gap-1217681601" class="gap-element clearfix" style="display:block; height:auto;">
+		
+<style>
+#gap-1217681601 {
+  padding-top: 30px;
+}
+</style>
+	</div>
+	
+
+<div class="row row-small"  id="row-600880438">
+
+
+	<div id="col-713861316" class="col medium-12 small-12 large-12"  >
+				<div class="col-inner text-center dark"  >
+			
+			
+
+<p><span style="font-size: 90%;">© 2026 ΔΕΡΜΑΤΟΛΟΓΟΣ ΠΑΤΡΑ | ΑΦΡΟΔΙΣΙΟΛΟΓΟΣ ΠΑΤΡΑ | ΔΕΡΜΑΤΟΛΟΓΟΙ ΠΑΤΡΑ | ΔΕΡΜΑΤΟΛΟΓΟΙ ΠΑΤΡΑ ΑΧΑΪΑΣ | ΠΕΤΡΟΠΟΥΛΟΥ ΧΑΡΙΤΙΝΗ www.dermaeshetics.gr. All Rights Reserved.</span></p>
+<p><!--Copyright &#091;ux_current_year&#093; © <strong>XXXXX.gr</strong> --> Website by <a href="https://indesignwebs.com">InDesignWebs</a></p>
+
+		</div>
+					</div>
+
+	
+
+</div>
+
+		</div>
+
+		
+<style>
+#section_615411032 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: rgb(41, 41, 41);
+}
+</style>
+	</section>
+	
+<div data-rocket-location-hash="d512c395c5fd6f0d920c0b69f28c2577" class="absolute-footer dark medium-text-center text-center">
+  <div class="container clearfix">
+
+    
+    <div class="footer-primary pull-left">
+            <div class="copyright-footer">
+        <!--Copyright [ux_current_year] © <strong>XXXXX.gr</strong> --> Website by <a href"https://indesignwebs.com>InDesignWebs</a>      </div>
+          </div>
+  </div>
+</div>
+
+</footer>
+
+</div>
+
+<template id="tp-language" data-tp-language="el"></template><div data-rocket-location-hash="bf8605c40084dfd28c15569dbfe45186" id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+
+	
+	<div data-rocket-location-hash="410eae17f4c69b0bf86de66fb207a970" class="sidebar-menu no-scrollbar text-center">
+
+		
+					<ul class="nav nav-sidebar nav-vertical nav-uppercase nav-anim" data-tab="1">
+				<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-210"><a href="https://dermaesthetics.gr/">Αρχική</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-407"><a href="https://dermaesthetics.gr/viografiko-simioma/">Η Ιατρός</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-439"><a href="https://dermaesthetics.gr/i-omada-mas/">Η Ομάδα μας</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-459"><a href="https://dermaesthetics.gr/ta-iatreia-mas/">Τα Ιατρεία μας</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-487"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/">Αισθητική Δερματολογία</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li id="menu-item-510" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/laser-apotrichosi/">Laser Αποτρίχωση</a></li>
+	<li id="menu-item-3283" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3283"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/katharismos-prosopou-patra/">Βαθύς Καθαρισμός Προσώπου</a></li>
+	<li id="menu-item-522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-522"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/fractional-laser/">Fractional Laser</a></li>
+	<li id="menu-item-621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-621"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/evriangies-ke-laser/">Ευρυαγγείες και Laser</a></li>
+	<li id="menu-item-572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-572"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/votouliniki-toxini/">Βοτουλινική τοξίνη</a></li>
+	<li id="menu-item-583" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-583"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/ialouroniko-oxi/">Υαλουρονικό Οξύ</a></li>
+	<li id="menu-item-588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-588"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/telia-chili/">Τέλεια Χείλη</a></li>
+	<li id="menu-item-602" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-602"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/mesotherapia-prosopou/">Μεσοθεραπεία Προσώπου</a></li>
+	<li id="menu-item-2684" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2684"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/aftologi-mesotherapeia/">Αυτόλογη Μεσοθεραπεία</a></li>
+	<li id="menu-item-608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/skin-boosters/">Skin Boosters</a></li>
+	<li id="menu-item-498" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/lifting-me-nimata-pdo/">Lifting με νήματα PDO</a></li>
+	<li id="menu-item-615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-615"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/akmi-oules-akmis/">Ακμή – Ουλές Ακμής</a></li>
+	<li id="menu-item-647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-647"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/dermoapoxesi-me-mikrokristallous/">Δερμοαπόξεση με Κρυστάλλους ή διαμάντια</a></li>
+	<li id="menu-item-654" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-654"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/kilides-panades/">Κηλίδες – πανάδες</a></li>
+	<li id="menu-item-660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-660"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/peeling/">Peeling</a></li>
+	<li id="menu-item-666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-666"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/antigiransi-anaplasi-me-laser/">Αντιγήρανση – Ανάπλαση με Laser</a></li>
+	<li id="menu-item-536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-536"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/3d-kriolipolisi-protoporiaki-methodos-monimis-katapolemisis-tou-lipous/">3D-Κρυολιπόλυση</a></li>
+	<li id="menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-634"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/kittaritida-lipolisi-topiko-pachos/">Κυτταρίτιδα – Λιπόλυση</a></li>
+	<li id="menu-item-3037" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3037"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/enesimi-lipolysi/">Ενέσιμη λιπόλυση</a></li>
+	<li id="menu-item-556" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-556"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/radiosichnotites-rf-vacuum/">Ραδιο συχνότητες RF – Vacuum</a></li>
+	<li id="menu-item-3301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3301"><a href="https://dermaesthetics.gr/esthitiki-dermatologia/hifu/">HIFU</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"><a href="https://dermaesthetics.gr/pedodermatologia/">Παιδοδερματολογία</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-685"><a href="https://dermaesthetics.gr/kliniki-dermatologia-2/">Κλινική Δερματολογία</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2676"><a href="https://dermaesthetics.gr/afrodisiologia/">Αφροδισιολογία</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2316"><a href="#">Δημοσιεύσεις</a>
+<ul class="sub-menu nav-sidebar-ul children">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2292"><a href="https://dermaesthetics.gr/blog/">Δημοσιευμένα Άρθρα</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3063"><a href="https://dermaesthetics.gr/news-blog/">Νέα / Άρθρα</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2317"><a target="_blank" rel="noopener" href="https://pubmed.ncbi.nlm.nih.gov/?term=petropoulou+h">Διεθνής Βιβλιογραφία</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2293"><a href="https://dermaesthetics.gr/contact-us/">Επικοινωνία</a></li>
+			</ul>
+		
+		
+	</div>
+
+	
+</div>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/flatsome-child/*","/wp-content/themes/flatsome/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript">
+document.addEventListener( 'wpcf7mailsent', function ( event ) {
+    if (event.detail.contactFormId == 6) {
+        fbq('track', 'Contact');
+        gtag('event', 'conversion', {'send_to': 'AW-380522511/LrIHCIOy3NAZEI-gubUB'});
+    }
+}, false );
+jQuery(document).ready(function() {
+       jQuery("a[href^='tel']").on("click",function(){
+		gtag('event', 'conversion', {
+			'send_to': 'AW-380522511/0GTDCIay3NAZEI-gubUB'
+		});
+	});
+});
+</script><script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/checkout/|/cart/|/wishlist/|/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://dermaesthetics.gr","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="hoverIntent-js" src="https://dermaesthetics.gr/wp-includes/js/hoverIntent.min.js?ver=1.10.2" data-rocket-defer defer></script>
+<script id="flatsome-js-js-extra">
+var flatsomeVars = {"theme":{"version":"3.19.12"},"ajaxurl":"https://dermaesthetics.gr/wp-admin/admin-ajax.php","rtl":"","sticky_height":"90","stickyHeaderHeight":"0","scrollPaddingTop":"0","assets_url":"https://dermaesthetics.gr/wp-content/themes/flatsome/assets/","lightbox":{"close_markup":"\u003Cbutton title=\"%title%\" type=\"button\" class=\"mfp-close\"\u003E\u003Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"feather feather-x\"\u003E\u003Cline x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"\u003E\u003C/line\u003E\u003Cline x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"\u003E\u003C/line\u003E\u003C/svg\u003E\u003C/button\u003E","close_btn_inside":false},"user":{"can_edit_pages":false},"i18n":{"mainMenu":"Main Menu","toggleButton":"Toggle"},"options":{"cookie_notice_version":"1","swatches_layout":false,"swatches_disable_deselect":false,"swatches_box_select_event":false,"swatches_box_behavior_selected":false,"swatches_box_update_urls":"1","swatches_box_reset":false,"swatches_box_reset_limited":false,"swatches_box_reset_extent":false,"swatches_box_reset_time":300,"search_result_latency":"0"}};
+//# sourceURL=flatsome-js-js-extra
+</script>
+<script data-minify="1" id="flatsome-js-js" src="https://dermaesthetics.gr/wp-content/cache/min/1/wp-content/themes/flatsome/assets/js/flatsome.js?ver=1779689872" data-rocket-defer defer></script>
+<script type="rocketlazyloadscript" async data-wp-strategy="async" fetchpriority="low" id="comment-reply-js" data-rocket-src="https://dermaesthetics.gr/wp-includes/js/comment-reply.min.js?ver=7.0"></script>
+    <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+        jQuery( function( $ ) {
+
+            for (let i = 0; i < document.forms.length; ++i) {
+                let form = document.forms[i];
+				if ($(form).attr("method") != "get") { $(form).append('<input type="hidden" name="NzFflD_hVMuGCwgy" value="wlgqT6Lp1z" />'); }
+if ($(form).attr("method") != "get") { $(form).append('<input type="hidden" name="fuanrEtbd" value="dz7jGkEfuBODKae" />'); }
+            }
+
+            $(document).on('submit', 'form', function () {
+				if ($(this).attr("method") != "get") { $(this).append('<input type="hidden" name="NzFflD_hVMuGCwgy" value="wlgqT6Lp1z" />'); }
+if ($(this).attr("method") != "get") { $(this).append('<input type="hidden" name="fuanrEtbd" value="dz7jGkEfuBODKae" />'); }
+                return true;
+            });
+
+            jQuery.ajaxSetup({
+                beforeSend: function (e, data) {
+
+                    if (data.type !== 'POST') return;
+
+                    if (typeof data.data === 'object' && data.data !== null) {
+						data.data.append("NzFflD_hVMuGCwgy", "wlgqT6Lp1z");
+data.data.append("fuanrEtbd", "dz7jGkEfuBODKae");
+                    }
+                    else {
+                        data.data = data.data + '&NzFflD_hVMuGCwgy=wlgqT6Lp1z&fuanrEtbd=dz7jGkEfuBODKae';
+                    }
+                }
+            });
+
+        });
+    </script>
+		<script type="text/javascript">
+
+        jQuery( function( $ ) {
+
+            let recaptcha_ok = false;
+            let the_recaptcha_widget = $("#cerber-recaptcha");
+            let is_recaptcha_visible = ($(the_recaptcha_widget).data('size') !== 'invisible');
+
+            let the_form = $(the_recaptcha_widget).closest("form");
+            let the_button = $(the_form).find('input[type="submit"]');
+            if (!the_button.length) {
+                the_button = $(the_form).find(':button');
+            }
+
+            // visible
+            if (the_button.length && is_recaptcha_visible) {
+                the_button.prop("disabled", true);
+                the_button.css("opacity", 0.5);
+            }
+
+            window.form_button_enabler = function () {
+                if (!the_button.length) return;
+                the_button.prop("disabled", false);
+                the_button.css( "opacity", 1 );
+            };
+
+            // invisible
+            if (!is_recaptcha_visible) {
+                $(the_button).on('click', function (event) {
+                    if (recaptcha_ok) return;
+                    event.preventDefault();
+                    grecaptcha.execute();
+                });
+            }
+
+            window.now_submit_the_form = function () {
+                recaptcha_ok = true;
+                //$(the_button).click(); // this is only way to submit a form that contains "submit" inputs
+                $(the_button).trigger('click'); // this is only way to submit a form that contains "submit" inputs
+            };
+        });
+	</script>
+	<script type="rocketlazyloadscript" data-rocket-src="https://www.google.com/recaptcha/api.js?hl=el" async defer></script>
+	
+<script>var rocket_beacon_data = {"ajax_url":"https:\/\/dermaesthetics.gr\/wp-admin\/admin-ajax.php","nonce":"d589e0cef2","url":"https:\/\/dermaesthetics.gr\/2026\/03\/05\/anakalypste-to-barbie-botox-i-kompsi-lysi-gia-ena-lepto-laimo-kai-omous","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true,"preconnect_external_domain":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800,"preconnect_external_domain_elements":["link","script","iframe"],"preconnect_external_domain_exclusions":["static.cloudflareinsights.com","rel=\"profile\"","rel=\"preconnect\"","rel=\"dns-prefetch\"","rel=\"icon\""]}</script><script data-name="wpr-wpr-beacon" src='https://dermaesthetics.gr/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1779690076 -->
