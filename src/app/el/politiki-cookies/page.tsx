@@ -64,7 +64,7 @@ export default function PolitikiCookiesPage() {
           },
           {
             title: '6. Επικοινωνία',
-            body: 'Για ερωτήματα σχετικά με την πολιτική cookies, επικοινωνήστε μαζί μας στο: advaderma@gmail.com',
+            body: 'Για ερωτήματα σχετικά με την πολιτική cookies, επικοινωνήστε μαζί μας στο: advancedermabooking@gmail.com',
           },
         ].map((section) => (
           <div key={section.title} style={{ marginBottom: '36px' }}>

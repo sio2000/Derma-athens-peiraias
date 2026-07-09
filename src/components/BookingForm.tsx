@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 // Διεύθυνση παραλήπτη για τα αιτήματα ραντεβού.
-const RECIPIENT = 'advaderma@gmail.com';
+const RECIPIENT = 'advancedermabooking@gmail.com';
 
 const labelStyle = {
   fontFamily: 'HarmoniaSans, sans-serif',

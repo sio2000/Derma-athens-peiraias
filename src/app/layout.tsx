@@ -30,7 +30,7 @@ const jsonLd = {
   medicalSpecialty: 'Dermatology',
   priceRange: '€€',
   currenciesAccepted: 'EUR',
-  email: 'advaderma@gmail.com',
+  email: 'advancedermabooking@gmail.com',
   telephone: '+30 697 510 5858',
   areaServed: ['Αθήνα', 'Ζωγράφου', 'Πειραιάς', 'Αττική'],
   founder: {

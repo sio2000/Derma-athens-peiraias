@@ -141,7 +141,7 @@ export default function BookingRequestPage() {
                 Email
               </h3>
               <p style={{ fontFamily: 'HarmoniaSans, sans-serif', fontSize: '16px', color: '#333' }}>
-                <a href="mailto:advaderma@gmail.com" style={{ color: 'rgb(110, 90, 51)', textDecoration: 'none' }}>advaderma@gmail.com</a>
+                <a href="mailto:advancedermabooking@gmail.com" style={{ color: 'rgb(110, 90, 51)', textDecoration: 'none' }}>advancedermabooking@gmail.com</a>
               </p>
             </div>
 

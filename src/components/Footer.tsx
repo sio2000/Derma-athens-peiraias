@@ -205,8 +205,8 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="mailto:advaderma@gmail.com" style={{ fontFamily: 'HarmoniaSans, sans-serif', fontSize: '16px', color: 'rgb(110, 90, 51)' }}>
-                advaderma@gmail.com
+              <a href="mailto:advancedermabooking@gmail.com" style={{ fontFamily: 'HarmoniaSans, sans-serif', fontSize: '16px', color: 'rgb(110, 90, 51)' }}>
+                advancedermabooking@gmail.com
               </a>
             </li>
           </ul>
