@@ -4,7 +4,7 @@ export default function BiofillerSection() {
   return (
     <section style={{ width: '100%', backgroundColor: '#fff', padding: '60px 0' }}>
       <div
-        className="ad-rgrid"
+        className="derma-rgrid"
         style={{
           maxWidth: '1180px',
           margin: '0 auto',

@@ -26,7 +26,7 @@ export default function WhyUsSection() {
       }}
     >
       <div
-        className="ad-whyus-inner"
+        className="derma-whyus-inner"
         style={{
           maxWidth: '1280px',
           width: '100%',
@@ -38,9 +38,9 @@ export default function WhyUsSection() {
         }}
       >
         {/* Left: Doctor portrait */}
-        <div className="ad-whyus-imgcol" style={{ flex: '0 0 443px' }}>
+        <div className="derma-whyus-imgcol" style={{ flex: '0 0 443px' }}>
           <Image
-            className="ad-whyus-img"
+            className="derma-whyus-img"
             src="/images/doctor-7.jpg"
             alt="Δρ. Χρυσούλα Ζήσιμου — Δερματολόγος, Αφροδισιολόγος"
             width={443}
@@ -71,7 +71,7 @@ export default function WhyUsSection() {
             Η Ιατρός μας
           </p>
           <h2
-            className="ad-whyus-title"
+            className="derma-whyus-title"
             style={{
               fontFamily: 'HarmoniaSans, sans-serif',
               fontSize: '40px',
@@ -127,7 +127,7 @@ export default function WhyUsSection() {
           </p>
 
           <div
-            className="ad-whyus-creds"
+            className="derma-whyus-creds"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(2, 1fr)',
@@ -161,7 +161,7 @@ export default function WhyUsSection() {
             ))}
           </div>
 
-          <div className="ad-whyus-stats" style={{ display: 'flex', gap: '40px' }}>
+          <div className="derma-whyus-stats" style={{ display: 'flex', gap: '40px' }}>
             {stats.map((s) => (
               <div key={s.label}>
                 <div

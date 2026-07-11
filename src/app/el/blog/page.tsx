@@ -104,7 +104,7 @@ export default function BlogPage() {
       {/* Blog Grid */}
       <section style={{ maxWidth: '1100px', margin: '0 auto', padding: '64px 24px 96px' }}>
         <div
-          className="ad-rgrid"
+          className="derma-rgrid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',

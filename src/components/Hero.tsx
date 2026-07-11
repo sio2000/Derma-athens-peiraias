@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       {/* Hero Carousel */}
       <div
-        className="ad-hero"
+        className="derma-hero"
         style={{
           position: 'relative',
           width: '100%',
@@ -17,7 +17,7 @@ export default function Hero() {
         }}
       >
         <div
-          className="ad-hero-inner"
+          className="derma-hero-inner"
           style={{
             maxWidth: '1280px',
             margin: '0 auto',
@@ -31,7 +31,7 @@ export default function Hero() {
         >
           {/* Right: Image */}
           <div
-            className="ad-hero-imgwrap"
+            className="derma-hero-imgwrap"
             style={{
               flex: '0 0 auto',
               width: '503px',
@@ -42,7 +42,7 @@ export default function Hero() {
             }}
           >
             <Image
-              className="ad-hero-img"
+              className="derma-hero-img"
               src="/images/treatment-baby-botox.png"
               alt="Δερματολογικά Ιατρεία"
               width={648}
@@ -59,7 +59,7 @@ export default function Hero() {
 
           {/* Left: Text */}
           <div
-            className="ad-hero-text"
+            className="derma-hero-text"
             style={{
               flex: 1,
               display: 'flex',
@@ -70,7 +70,7 @@ export default function Hero() {
             }}
           >
             <h2
-              className="ad-hero-title"
+              className="derma-hero-title"
               style={{
                 fontFamily: 'HarmoniaSans, sans-serif',
                 fontSize: '52px',
@@ -125,7 +125,7 @@ export default function Hero() {
 
       {/* Feature bar */}
       <div
-        className="ad-featbar"
+        className="derma-featbar"
         style={{
           width: '100%',
           backgroundColor: '#fff',
@@ -137,7 +137,7 @@ export default function Hero() {
         }}
       >
         <div
-          className="ad-featbar-inner"
+          className="derma-featbar-inner"
           style={{
             maxWidth: '1280px',
             width: '100%',
@@ -153,7 +153,7 @@ export default function Hero() {
           ].map((item, i) => (
             <div
               key={i}
-              className="ad-featbar-item"
+              className="derma-featbar-item"
               style={{
                 display: 'flex',
                 alignItems: 'center',

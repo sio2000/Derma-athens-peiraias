@@ -66,7 +66,7 @@ export default function BookingForm() {
 
   return (
     <form
-      className="ad-booking-form"
+      className="derma-booking-form"
       onSubmit={handleSubmit}
       style={{
         backgroundColor: '#fff',
@@ -75,7 +75,7 @@ export default function BookingForm() {
         boxShadow: '0 4px 24px rgba(110, 90, 51,0.1)',
       }}
     >
-      <div className="ad-booking-names" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '24px' }}>
+      <div className="derma-booking-names" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginBottom: '24px' }}>
         <div>
           <label htmlFor="firstName" style={labelStyle}>
             Όνομα *

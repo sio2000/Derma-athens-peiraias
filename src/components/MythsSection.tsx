@@ -12,7 +12,7 @@ export default function MythsSection() {
       }}
     >
       <div
-        className="ad-myths"
+        className="derma-myths"
         style={{
           maxWidth: '1200px',
           width: '100%',
@@ -25,7 +25,7 @@ export default function MythsSection() {
         }}
       >
         <h2
-          className="ad-myths-title"
+          className="derma-myths-title"
           style={{
             fontFamily: 'HarmoniaSans, sans-serif',
             fontSize: '40px',

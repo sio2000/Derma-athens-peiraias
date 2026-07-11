@@ -141,7 +141,7 @@ export default function ClinicDetailPage({ params }: { params: { slug: string } 
       {/* Content */}
       <section style={{ maxWidth: '1000px', margin: '0 auto', padding: '48px 24px 80px' }}>
         <div
-          className="ad-clinic-grid"
+          className="derma-clinic-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: '1fr 1fr',

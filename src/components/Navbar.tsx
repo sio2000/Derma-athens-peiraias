@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <header
-      className="ad-header"
+      className="derma-header"
       style={{
         position: 'fixed',
         top: 0,
@@ -54,7 +54,7 @@ export default function Navbar() {
           flex: 1,
           flexWrap: 'wrap',
         }}
-        className="hidden md:flex ad-nav"
+        className="hidden md:flex derma-nav"
       >
         {navLinks.map((link) => (
           <Link
@@ -79,7 +79,7 @@ export default function Navbar() {
       </nav>
 
       {/* Right CTA buttons */}
-      <div className="ad-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginLeft: 'auto', flexShrink: 0 }}>
+      <div className="derma-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginLeft: 'auto', flexShrink: 0 }}>
         <Link
           href="/el/booking-request/"
           style={{
@@ -122,13 +122,13 @@ export default function Navbar() {
       {/* ── Mobile hamburger toggle (mobile/tablet only, hidden on desktop) ── */}
       <button
         type="button"
-        className="ad-burger"
+        className="derma-burger"
         aria-label={menuOpen ? 'Κλείσιμο μενού' : 'Άνοιγμα μενού'}
         aria-expanded={menuOpen}
-        aria-controls="ad-mobile-panel"
+        aria-controls="derma-mobile-panel"
         onClick={() => setMenuOpen((v) => !v)}
       >
-        <span className="ad-burger-box" data-open={menuOpen}>
+        <span className="derma-burger-box" data-open={menuOpen}>
           <span />
           <span />
           <span />
@@ -137,25 +137,25 @@ export default function Navbar() {
 
       {/* ── Mobile dropdown panel (mobile/tablet only) ── */}
       <nav
-        id="ad-mobile-panel"
-        className={`ad-mobile-panel${menuOpen ? ' is-open' : ''}`}
+        id="derma-mobile-panel"
+        className={`derma-mobile-panel${menuOpen ? ' is-open' : ''}`}
         aria-hidden={!menuOpen}
       >
         {navLinks.map((link) => (
-          <Link key={link.label} href={link.href} className="ad-mobile-link" onClick={() => setMenuOpen(false)}>
+          <Link key={link.label} href={link.href} className="derma-mobile-link" onClick={() => setMenuOpen(false)}>
             {link.label}
           </Link>
         ))}
         <Link
           href="/el/booking-request/"
-          className="ad-mobile-cta ad-mobile-cta--solid"
+          className="derma-mobile-cta derma-mobile-cta--solid"
           onClick={() => setMenuOpen(false)}
         >
           Κλείστε το ραντεβού σας
         </Link>
         <Link
           href="/el/dermatologika-iatreia/"
-          className="ad-mobile-cta ad-mobile-cta--outline"
+          className="derma-mobile-cta derma-mobile-cta--outline"
           onClick={() => setMenuOpen(false)}
         >
           Ιατρεία

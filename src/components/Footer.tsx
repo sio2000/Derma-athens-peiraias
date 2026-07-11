@@ -39,7 +39,7 @@ export default function Footer() {
       }}
     >
       <div
-        className="ad-footer-grid"
+        className="derma-footer-grid"
         style={{
           maxWidth: '1280px',
           margin: '0 auto',

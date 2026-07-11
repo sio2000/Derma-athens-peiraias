@@ -19,11 +19,11 @@ const ITEMS = [
 
 function Group({ suffix }: { suffix: string }) {
   return (
-    <span className="ad-marquee-group">
+    <span className="derma-marquee-group">
       {ITEMS.map((label) => (
-        <span key={`${suffix}-${label}`} className="ad-marquee-group">
-          <span className="ad-marquee-item">{label}</span>
-          <span className="ad-marquee-dot">◆</span>
+        <span key={`${suffix}-${label}`} className="derma-marquee-group">
+          <span className="derma-marquee-item">{label}</span>
+          <span className="derma-marquee-dot">◆</span>
         </span>
       ))}
     </span>
@@ -32,8 +32,8 @@ function Group({ suffix }: { suffix: string }) {
 
 export default function TreatmentsMarquee() {
   return (
-    <div className="ad-marquee-strip" role="presentation" aria-hidden>
-      <div className="ad-marquee-track">
+    <div className="derma-marquee-strip" role="presentation" aria-hidden>
+      <div className="derma-marquee-track">
         <Group suffix="a" />
         <Group suffix="b" />
       </div>

@@ -40,7 +40,7 @@ const treatments = popularSlugs
 export default function PopularTreatments() {
   return (
     <div
-      className="ad-pop"
+      className="derma-pop"
       style={{
         width: '100%',
         minHeight: '1013px',
@@ -55,7 +55,7 @@ export default function PopularTreatments() {
 
       <div style={{ maxWidth: '1280px', width: '100%', position: 'relative', zIndex: 1 }}>
         <h2
-          className="ad-pop-title"
+          className="derma-pop-title"
           style={{
             fontFamily: 'HarmoniaSans, sans-serif',
             fontSize: 'clamp(22px, 4vw, 40px)',
@@ -69,7 +69,7 @@ export default function PopularTreatments() {
         </h2>
 
         <div
-          className="ad-pop-grid"
+          className="derma-pop-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',

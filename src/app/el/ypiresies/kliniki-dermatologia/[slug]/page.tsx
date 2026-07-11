@@ -36,7 +36,7 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
 
       {/* Hero — bright treatment image at the start of the page */}
       <section
-        className="ad-thero"
+        className="derma-thero"
         style={{
           width: '100%',
           backgroundColor: 'rgb(244, 238, 224)',
@@ -45,7 +45,7 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
         }}
       >
         <div
-          className="ad-thero-inner"
+          className="derma-thero-inner"
           style={{
             maxWidth: '1280px',
             margin: '0 auto',
@@ -58,7 +58,7 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
           }}
         >
           <div
-            className="ad-thero-img"
+            className="derma-thero-img"
             style={{
               flex: '0 0 46%',
               maxWidth: '46%',
@@ -86,7 +86,7 @@ export default function KlinikiTreatmentPage({ params }: { params: { slug: strin
               />
             )}
           </div>
-          <div className="ad-thero-text" style={{ flex: 1 }}>
+          <div className="derma-thero-text" style={{ flex: 1 }}>
             <h1
               style={{
                 fontFamily: 'HarmoniaSans, sans-serif',

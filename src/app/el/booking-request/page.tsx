@@ -60,7 +60,7 @@ export default function BookingRequestPage() {
         }}
       >
         <div
-          className="ad-booking-grid"
+          className="derma-booking-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: '1.5fr 1fr',
@@ -214,7 +214,7 @@ export default function BookingRequestPage() {
         </div>
 
         <div
-          className="ad-booking-locs"
+          className="derma-booking-locs"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',

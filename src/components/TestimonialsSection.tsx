@@ -229,7 +229,7 @@ export default function TestimonialsSection() {
         </div>
 
         <div
-          className="ad-rgrid"
+          className="derma-rgrid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',

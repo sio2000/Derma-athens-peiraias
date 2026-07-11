@@ -11,7 +11,7 @@ export default function NewsSection() {
       }}
     >
       <div
-        className="ad-news"
+        className="derma-news"
         style={{
           maxWidth: '1400px',
           width: '100%',
@@ -27,13 +27,13 @@ export default function NewsSection() {
         }}
       >
         <div
-          className="ad-news-copy"
+          className="derma-news-copy"
           style={{
             maxWidth: '560px',
           }}
         >
           <h2
-            className="ad-news-title"
+            className="derma-news-title"
             style={{
               fontFamily: 'HarmoniaSans, sans-serif',
               fontSize: '40px',

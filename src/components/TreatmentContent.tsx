@@ -34,7 +34,7 @@ function renderBody(body: string[]) {
     out.push(
       <ul
         key={`ul-${key}`}
-        className={isShort ? 'ad-two-col' : undefined}
+        className={isShort ? 'derma-two-col' : undefined}
         style={{ listStyle: 'none', padding: 0, margin: '4px 0 18px' }}
       >
         {items.map((b, i) => (

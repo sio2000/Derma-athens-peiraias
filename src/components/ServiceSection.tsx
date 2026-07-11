@@ -28,7 +28,7 @@ export default function ServiceSection({
 }: ServiceSectionProps) {
   return (
     <div
-      className="ad-svc"
+      className="derma-svc"
       style={{
         width: '100%',
         backgroundColor: '#fff',
@@ -38,7 +38,7 @@ export default function ServiceSection({
       }}
     >
       <div
-        className="ad-svc-inner"
+        className="derma-svc-inner"
         style={{
           maxWidth: '1440px',
           width: '100%',
@@ -51,7 +51,7 @@ export default function ServiceSection({
       >
         {/* Image column */}
         <div
-          className="ad-svc-imgcol"
+          className="derma-svc-imgcol"
           style={{
             flex: '0 0 45%',
             display: 'flex',
@@ -63,7 +63,7 @@ export default function ServiceSection({
           }}
         >
           <Image
-            className="ad-svc-img"
+            className="derma-svc-img"
             src={imageSrc}
             alt={imageAlt}
             width={479}
@@ -80,7 +80,7 @@ export default function ServiceSection({
 
         {/* Text column */}
         <div
-          className="ad-svc-textcol"
+          className="derma-svc-textcol"
           style={{
             flex: '0 0 55%',
             display: 'flex',
@@ -92,7 +92,7 @@ export default function ServiceSection({
           }}
         >
           <h2
-            className="ad-svc-title"
+            className="derma-svc-title"
             style={{
               fontFamily: 'HarmoniaSans, sans-serif',
               fontSize: '40px',
