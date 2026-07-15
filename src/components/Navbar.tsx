@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import LanguageSwitcher from '@/components/i18n/LanguageSwitcher';
 
 const navLinks = [
   { label: 'Πρόσωπο', href: '/el/ypiresies/prosopo/' },
@@ -80,6 +81,7 @@ export default function Navbar() {
 
       {/* Right CTA buttons */}
       <div className="derma-actions" style={{ display: 'flex', alignItems: 'center', gap: '8px', marginLeft: 'auto', flexShrink: 0 }}>
+        <LanguageSwitcher />
         <Link
           href="/el/booking-request/"
           style={{
@@ -141,6 +143,9 @@ export default function Navbar() {
         className={`derma-mobile-panel${menuOpen ? ' is-open' : ''}`}
         aria-hidden={!menuOpen}
       >
+        <div style={{ display: 'flex', justifyContent: 'center', padding: '4px 0 12px' }}>
+          <LanguageSwitcher />
+        </div>
         {navLinks.map((link) => (
           <Link key={link.label} href={link.href} className="derma-mobile-link" onClick={() => setMenuOpen(false)}>
             {link.label}

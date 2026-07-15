@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import LoadingScreen from '@/components/LoadingScreen';
 import LightboxProvider from '@/components/LightboxProvider';
+import TranslationEngine from '@/components/i18n/TranslationEngine';
 import { SITE_URL, SITE_NAME } from '@/lib/site';
 
 const SITE_TITLE = 'Advanced Derma | Δερματολογία & Αισθητική Ιατρική — Δρ. Χρυσούλα Ζήσιμου';
@@ -165,6 +166,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <TranslationEngine />
         <LoadingScreen />
         <LightboxProvider />
         {children}
